@@ -32,20 +32,17 @@ jobs:
           persist-credentials: false
           fetch-depth: 1
 
-      # - name: Update and Upgrade
-      #   id: update_upgrade
-      #   run: sudo apt update && sudo apt -y upgrade
+      - name: Update and Upgrade
+        id: update_upgrade
+        run: sudo apt update && sudo apt -y upgrade
 
-      - name: Pull changes from remote
-        run: |
-          # git pull https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$DATASET_NAME main || \
-          # (git merge --strategy-option theirs)
-          git clone https://huggingface.co/datasets/$HF_USERNAME/$DATASET_NAME
+      - name: Cloning datasets from hugging face
+        id: cloning_dataset
+        run: git clone https://huggingface.co/datasets/$HF_USERNAME/$DATASET_NAME
 
-      # - name: Requirements Install
-      #   id: requirements_install
-      #   run: |
-      #     pip install -r requirements/linux/ubuntu.production.txt
+      - name: Requirements Install
+        id: requirements_install
+        run: pip install -r requirements/linux/ubuntu.production.txt
 
       - name: Get Current Date
         id: get_current_date
@@ -64,15 +61,13 @@ jobs:
           else
             GEN_NEW_DATA="False"
           fi
-
-          # python main.py \
-          #   --gen_new_data=$GEN_NEW_DATA --process=SYNC \
-          #   --ranking_by=HEAD_RANK --ranking_number=50
+          python main.py \
+            --gen_new_data=$GEN_NEW_DATA --process=SYNC \
+            --ranking_by=HEAD_RANK --ranking_number=50
 
       - name: ingest to hugging face
         run: |
           cd indonesia_stocks
-          echo "test" > test.txt
           git config --local user.email "alfariqyraihan@gmail.com"
           git config --local user.name "qywok"
           git add -A 
