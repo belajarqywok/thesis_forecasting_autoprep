@@ -15,6 +15,12 @@ jobs:
   data_preparation_job:
     name: Data Preparation Job
     runs-on: ubuntu-latest
+    environment: Production
+
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      DATASET_NAME: indonesia_stocks
+      HF_USERNAME: qywok
 
     steps:
       - name: Set global directory
@@ -28,9 +34,13 @@ jobs:
 
       - name: Update and Upgrade
         id: update_upgrade
+        run: sudo apt update && sudo apt -y upgrade
+
+      - name: Pull changes from remote
         run: |
-          sudo apt update && sudo apt -y upgrade
-          mkdir indonesia_stocks
+          # git pull https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$DATASET_NAME main || \
+          # (git merge --strategy-option theirs)
+          git clone https://huggingface.co/datasets/$HF_USERNAME/$DATASET_NAME
 
       - name: Requirements Install
         id: requirements_install
@@ -40,8 +50,10 @@ jobs:
       - name: Get Current Date
         id: get_current_date
         run: |
+          full_date=$(date)
           current_date=$(date +%d)
           current_date=$((10#$current_date + 1))
+          echo "FULL_DATE=${full_date}" >> $GITHUB_ENV
           echo "CURRENT_DATE=${current_date}" >> $GITHUB_ENV
 
       - name: Collecting, and Preparing Data
@@ -53,9 +65,16 @@ jobs:
             GEN_NEW_DATA="False"
           fi
 
-          python main.py \
-            --gen_new_data=$GEN_NEW_DATA --process=SYNC \
-            --ranking_by=HEAD_RANK --ranking_number=50
+          # python main.py \
+          #   --gen_new_data=$GEN_NEW_DATA --process=SYNC \
+          #   --ranking_by=HEAD_RANK --ranking_number=50
 
-      - name: Check "indonesia_stocks" 
-        run: tree indonesia_stocks
+      - name: ingest to hugging face
+        run: |
+          cd indonesia_stocks
+          echo "test" > test.txt
+          git add -A 
+          git diff-index --quiet HEAD || git commit -m "[Ingest Date ]: $FULL_DATE"
+          git push https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$DATASET_NAME main --force
+
+
