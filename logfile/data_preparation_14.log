@@ -1,0 +1,77 @@
+---------------------------------------------------------
+------------------ [ Iteration - 1 ] ------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-27 17:11:26 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 1;stocks: 1] [AHAP.JK | PT Asuransi Harta Aman Pratama Tbk]
+2025-05-27 17:11:36 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 2;stocks: 2] [MYTX.JK | PT Asia Pacific Investama Tbk]
+2025-05-27 17:11:43 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "AKPI.JK" missing mandatory field: "zip".
+2025-05-27 17:11:48 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 4;stocks: 3] [ANJT.JK | PT Austindo Nusantara Jaya Tbk]
+2025-05-27 17:11:54 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "BNBA.JK" missing mandatory field: "address2".
+2025-05-27 17:11:59 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:72 - __is_valid_stock() - Stock "BMAS.JK" missing optional field: "fax".
+2025-05-27 17:11:59 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 6;stocks: 4] [BMAS.JK | PT Bank Maspion Indonesia Tbk]
+2025-05-27 17:12:03 [PID:262] [TID:MainThread] [ERROR] [Data Preparation Service] infographic_scraper.py:115 - __fetch_stock_info() - NAGA.JK HTTP Error 404: 
+2025-05-27 17:12:07 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 8;stocks: 5] [NISP.JK | PT Bank OCBC NISP Tbk]
+2025-05-27 17:12:13 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "BSWD.JK" missing mandatory field: "address2".
+2025-05-27 17:12:17 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 10;stocks: 6] [BKSW.JK | PT Bank QNB Indonesia Tbk]
+2025-05-27 17:12:21 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "BAYU.JK" missing mandatory field: "address2".
+2025-05-27 17:12:25 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "RMBA.JK" missing mandatory field: "longName".
+2025-05-27 17:12:29 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 13;stocks: 7] [BBLD.JK | PT Buana Finance Tbk]
+2025-05-27 17:12:33 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "CKRA.JK" missing mandatory field: "address1".
+2025-05-27 17:12:36 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "SCBD.JK" missing mandatory field: "longName".
+2025-05-27 17:12:39 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 16;stocks: 8] [DLTA.JK | PT Delta Djakarta Tbk]
+2025-05-27 17:12:44 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:72 - __is_valid_stock() - Stock "PDES.JK" missing optional field: "fax".
+2025-05-27 17:12:44 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 17;stocks: 9] [PDES.JK | PT Destinasi Tirta Nusantara Tbk]
+2025-05-27 17:12:47 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:72 - __is_valid_stock() - Stock "EMTK.JK" missing optional field: "fax".
+2025-05-27 17:12:47 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 18;stocks: 10] [EMTK.JK | PT Elang Mahkota Teknologi Tbk]
+2025-05-27 17:12:54 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:72 - __is_valid_stock() - Stock "EPMT.JK" missing optional field: "fax".
+2025-05-27 17:12:54 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 19;stocks: 11] [EPMT.JK | PT Enseval Putera Megatrading Tbk.]
+2025-05-27 17:12:58 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 20;stocks: 12] [GSMF.JK | PT Equity Development Investment Tbk]
+2025-05-27 17:13:01 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 21;stocks: 13] [ERTX.JK | PT Eratex Djaja Tbk]
+2025-05-27 17:13:05 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 22;stocks: 14] [ESTI.JK | PT Ever Shine Tex Tbk]
+2025-05-27 17:13:09 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "FAST.JK" missing mandatory field: "address2".
+2025-05-27 17:13:13 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 24;stocks: 15] [FISH.JK | PT FKS Multi Agro Tbk]
+2025-05-27 17:13:19 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 25;stocks: 16] [GEMS.JK | PT Golden Energy Mines Tbk]
+2025-05-27 17:13:29 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 26;stocks: 17] [BRAM.JK | PT Indo Kordsa Tbk]
+2025-05-27 17:13:36 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 27;stocks: 18] [PTIS.JK | PT Indo Straits Tbk]
+2025-05-27 17:13:38 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 28;stocks: 19] [INDR.JK | PT. Indo-Rama Synthetics Tbk]
+2025-05-27 17:13:41 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "JKSW.JK" missing mandatory field: "address1".
+2025-05-27 17:13:46 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 30;stocks: 20] [KBLM.JK | PT Kabelindo Murni Tbk]
+2025-05-27 17:13:51 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "KICI.JK" missing mandatory field: "address2".
+2025-05-27 17:13:56 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 32;stocks: 21] [KOIN.JK | PT Kokoh Inti Arebama Tbk]
+2025-05-27 17:14:00 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "LMAS.JK" missing mandatory field: "address1".
+2025-05-27 17:14:16 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 34;stocks: 22] [LMSH.JK | PT Lionmesh Prima Tbk]
+2025-05-27 17:14:20 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 35;stocks: 23] [FPNI.JK | PT Lotte Chemical Titan Tbk]
+2025-05-27 17:14:24 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 36;stocks: 24] [MFIN.JK | PT Mandala Multifinance Tbk]
+2025-05-27 17:14:28 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:72 - __is_valid_stock() - Stock "MREI.JK" missing optional field: "fax".
+2025-05-27 17:14:28 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 37;stocks: 25] [MREI.JK | PT Maskapai Reasuransi Indonesia Tbk]
+2025-05-27 17:14:31 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 38;stocks: 26] [MTSM.JK | PT Metro Realty Tbk]
+2025-05-27 17:14:35 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 39;stocks: 27] [MKPI.JK | PT Metropolitan Kentjana Tbk]
+2025-05-27 17:14:38 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 40;stocks: 28] [MFMI.JK | PT Multifiling Mitra Indonesia Tbk]
+2025-05-27 17:14:42 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "OCAP.JK" missing mandatory field: "address1".
+2025-05-27 17:14:45 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 42;stocks: 29] [PGLI.JK | PT Pembangunan Graha Lestari Indah Tbk]
+2025-05-27 17:14:49 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 43;stocks: 30] [TMAS.JK | PT Temas Tbk.]
+2025-05-27 17:14:53 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "HDTX.JK" missing mandatory field: "longName".
+2025-05-27 17:14:59 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "NELY.JK" missing mandatory field: "zip".
+2025-05-27 17:15:19 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 46;stocks: 31] [RODA.JK | PT Pikko Land Development Tbk]
+2025-05-27 17:15:35 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 47;stocks: 32] [PTSP.JK | PT Pioneerindo Gourmet International Tbk]
+2025-05-27 17:15:51 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 48;stocks: 33] [PLIN.JK | PT Plaza Indonesia Realty Tbk]
+2025-05-27 17:16:08 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "POOL.JK" missing mandatory field: "address1".
+2025-05-27 17:16:15 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 50;stocks: 34] [PSDN.JK | PT Prasidha Aneka Niaga Tbk]
+2025-05-27 17:16:25 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 51;stocks: 35] [PALM.JK | PT Provident Investasi Bersama Tbk]
+2025-05-27 17:16:34 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 52;stocks: 36] [PNSE.JK | PT Pudjiadi and Sons Tbk]
+2025-05-27 17:16:35 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 53;stocks: 37] [RELI.JK | PT Reliance Sekuritas Indonesia Tbk]
+2025-05-27 17:16:40 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "RICY.JK" missing mandatory field: "zip".
+2025-05-27 17:16:49 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:72 - __is_valid_stock() - Stock "RIGS.JK" missing optional field: "fax".
+2025-05-27 17:16:49 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 55;stocks: 38] [RIGS.JK | PT Rig Tenders Indonesia Tbk]
+2025-05-27 17:16:55 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 56;stocks: 39] [SMDR.JK | PT Samudera Indonesia Tbk]
+2025-05-27 17:17:04 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 57;stocks: 40] [SKBM.JK | PT Sekar Bumi Tbk]
+2025-05-27 17:17:13 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 58;stocks: 41] [BATA.JK | PT Sepatu Bata Tbk.]
+2025-05-27 17:17:47 [PID:262] [TID:MainThread] [ERROR] [Data Preparation Service] infographic_scraper.py:115 - __fetch_stock_info() - SMRU.JK Failed to perform, curl: (28) Operation timed out after 29175 milliseconds with 248351 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-05-27 17:17:53 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 60;stocks: 42] [SONA.JK | PT Sona Topas Tourism Industry Tbk]
+2025-05-27 17:18:04 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "SCCO.JK" missing mandatory field: "address2".
+2025-05-27 17:18:20 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:64 - __is_valid_stock() - [REJECT] Stock "SSTM.JK" missing mandatory field: "address2".
+2025-05-27 17:18:30 [PID:262] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:163 - __get_stocks_data_sync() - [iter: 63;stocks: 43] [TOTO.JK | PT Surya Toto Indonesia Tbk]
+2025-05-27 17:19:02 [PID:262] [TID:MainThread] [ERROR] [Data Preparation Service] infographic_scraper.py:115 - __fetch_stock_info() - SMDM.JK Failed to perform, curl: (28) Operation timed out after 28113 milliseconds with 6844 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-05-27 17:19:33 [PID:262] [TID:MainThread] [ERROR] [Data Preparation Service] infographic_scraper.py:115 - __fetch_stock_info() - TFCO.JK Failed to perform, curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.

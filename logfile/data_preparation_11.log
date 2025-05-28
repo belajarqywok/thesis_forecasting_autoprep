@@ -1,0 +1,117 @@
+---------------------------------------------------------
+------------------ [ Iteration - 1 ] ------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-21 00:04:33 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:283 - get_stocks_infographic() - "indonesia_stocks/infographic_stocks.csv" already exists.
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:45 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:46 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:47 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:48 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:50 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:51 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:51 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:53 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:54 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:54 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:55 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:56 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:57 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:58 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:04:59 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:01 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:02 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:03 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:04 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:05 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:05 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:06 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MLPT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:07 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MASA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:08 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ADRO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:09 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRMS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:10 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/GEMS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:11 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SUPR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:12 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CASA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:12 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TBIG.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:13 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MDKA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:14 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEGA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:15 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BUMI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:16 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EXCL.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:17 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EMTK.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:18 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SRAJ.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:19 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MIKA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:20 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PNBN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:20 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INKP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:21 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SILO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:23 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PTRO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:24 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INCO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:24 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/NISP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:25 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TCPI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:26 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MSIN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:27 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEDC.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:28 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/FILM.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:29 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ARTO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:30 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BINA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:31 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AKRA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-21 00:05:31 [PID:944] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ITMG.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+-------------------- [ Historicals ] --------------------
+---------------------------------------------------------
+---------------------------------------------------------
+--------------------- [ Indicators ] --------------------
+---------------------------------------------------------
+---------------------------------------------------------
+--------------------- [ Min-Max ] --------------------
+---------------------------------------------------------

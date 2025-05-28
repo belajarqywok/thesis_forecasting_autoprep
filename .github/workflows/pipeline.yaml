@@ -1,0 +1,61 @@
+name: Data Preparation Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'   
+  schedule:
+    - cron: "0 20 * * *"
+    # 3 - 7 = [ -4 ]
+    # karena minus, jadi 24 - 4 = [ 20 ]
+
+jobs:
+  data_preparation_job:
+    name: Data Preparation Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set global directory
+        run: git config --global --add safe.directory /github/workspace
+
+      - uses: actions/checkout@v3     
+        with:
+          lfs: true
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Update and Upgrade
+        id: update_upgrade
+        run: |
+          sudo apt update && sudo apt -y upgrade
+          mkdir indonesia_stocks
+
+      - name: Requirements Install
+        id: requirements_install
+        run: |
+          pip install -r requirements/linux/ubuntu.production.txt
+
+      - name: Get Current Date
+        id: get_current_date
+        run: |
+          current_date=$(date +%d)
+          current_date=$((10#$current_date + 1))
+          echo "CURRENT_DATE=${current_date}" >> $GITHUB_ENV
+
+      - name: Collecting, and Preparing Data
+        id: collect_prepare_data
+        run: |
+          if [ "$CURRENT_DATE" -eq 28 ]; then
+            GEN_NEW_DATA="True"
+          else
+            GEN_NEW_DATA="False"
+          fi
+
+          python main.py \
+            --gen_new_data=$GEN_NEW_DATA --process=SYNC \
+            --ranking_by=HEAD_RANK --ranking_number=50
+
+      - name: Check "indonesia_stocks" 
+        run: tree indonesia_stocks

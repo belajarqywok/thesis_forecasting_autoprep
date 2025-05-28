@@ -1,0 +1,1403 @@
+---------------------------------------------------------
+------------------ [ Iteration - 1 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 12:56:19 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 12:56:30 [PID:5512] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 12:56:30 [PID:5512] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 12:56:31 [PID:5512] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 12:56:32 [PID:5512] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_17] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: FILM.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_34] [ERROR] [Data Preparation Service] 'Date' FILM.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MEDC.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_16] [ERROR] [Data Preparation Service] 'Date' MEDC.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_18] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_13] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: BINA.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_12] [ERROR] [Data Preparation Service] 'Date' BINA.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_36] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_23] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_33] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:34 [PID:5512] [TID:ThreadPoolExecutor-0_10] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:56:35 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 1
+2025-05-16 12:56:36 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:36 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 12:56:38 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: FILM.JK] Number Of Columns Does'nt match
+2025-05-16 12:56:38 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' FILM.JK
+2025-05-16 12:56:45 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+
+1 Failed download:
+['BRIS.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 18195 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 12:56:52 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+
+1 Failed download:
+['DNET.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 35276 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 12:56:54 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 12:56:56 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 12:56:56 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+2025-05-16 12:57:03 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:03 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 12:57:05 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:05 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 12:57:07 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:07 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:57:09 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 2
+2025-05-16 12:57:10 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 12:57:11 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 12:57:12 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 12:57:13 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 12:57:14 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:14 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:57:16 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 3
+2025-05-16 12:57:20 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:20 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:57:22 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 4
+2025-05-16 12:57:23 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:23 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:57:25 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 5
+2025-05-16 12:57:27 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:27 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:57:29 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 6
+2025-05-16 12:57:30 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:30 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:57:32 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 7
+2025-05-16 12:57:33 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:33 [PID:5512] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 12:57:35 [PID:5512] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 8
+2025-05-16 12:57:35 [PID:5512] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 2 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 12:57:42 [PID:5777] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 12:57:48 [PID:5777] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 12:57:49 [PID:5777] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 12:57:50 [PID:5777] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 12:57:51 [PID:5777] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 12:57:51 [PID:5777] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 12:57:51 [PID:5777] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 12:57:51 [PID:5777] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 12:57:51 [PID:5777] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 12:57:51 [PID:5777] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 12:57:52 [PID:5777] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+2025-05-16 12:57:52 [PID:5777] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 12:57:52 [PID:5777] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 12:57:52 [PID:5777] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: BINA.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:52 [PID:5777] [TID:ThreadPoolExecutor-0_16] [ERROR] [Data Preparation Service] 'Date' BINA.JK
+2025-05-16 12:57:53 [PID:5777] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 12:57:53 [PID:5777] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+2025-05-16 12:57:53 [PID:5777] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 12:57:53 [PID:5777] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 12:57:53 [PID:5777] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 12:57:53 [PID:5777] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 12:57:53 [PID:5777] [TID:ThreadPoolExecutor-0_30] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 12:57:53 [PID:5777] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 1
+2025-05-16 12:57:54 [PID:5777] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 12:57:55 [PID:5777] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 3 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:00:00 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:00:23 [PID:5985] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:00:24 [PID:5985] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+
+2 Failed downloads:
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+2 Failed downloads:
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+2 Failed downloads:
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+2 Failed downloads:
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+2 Failed downloads:
+
+2 Failed downloads:
+
+2 Failed downloads:
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+2 Failed downloads:
+
+2 Failed downloads:
+
+2 Failed downloads:
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DSSA.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_4] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_31] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: MEDC.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_17] [ERROR] [Data Preparation Service] 'Date' MEDC.JK
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_3] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: FILM.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_11] [ERROR] [Data Preparation Service] 'Date' FILM.JK
+2025-05-16 13:00:42 [PID:5985] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_22] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_1] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: BINA.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_6] [ERROR] [Data Preparation Service] 'Date' BINA.JK
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_20] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+2025-05-16 13:00:43 [PID:5985] [TID:ThreadPoolExecutor-0_9] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:00:43 [PID:5985] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 1
+
+4 Failed downloads:
+['BBNI.JK']: SSLError('Failed to perform, curl: (35) BoringSSL SSL_connect: SSL_ERROR_SYSCALL in connection to fc.yahoo.com:443 . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['ASII.JK', 'ICBP.JK', 'DNET.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:01:39 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 25] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:01:39 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:01:45 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:01:48 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+
+4 Failed downloads:
+['AMRT.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 28779 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['UNTR.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10002 milliseconds with 102087 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['CPIN.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10002 milliseconds with 30184 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BRPT.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:02:18 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 25] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 13:02:18 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 13:02:25 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 13:02:26 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 13:02:28 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:02:28 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:02:29 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:02:32 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+2025-05-16 13:02:32 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+2025-05-16 13:02:35 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:02:35 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:02:38 [PID:5985] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 2
+
+1 Failed download:
+['MEGA.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 56392 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:02:48 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 12] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:02:48 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:02:55 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 13:02:57 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:02:57 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:03:00 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+2025-05-16 13:03:03 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:03:03 [PID:5985] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:03:06 [PID:5985] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 3
+2025-05-16 13:03:09 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 13:03:09 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 13:03:11 [PID:5985] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 4 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 5 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 6 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 7 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 8 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 9 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 10 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 11 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 12 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 13 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 14 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 15 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 16 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 17 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 18 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 19 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 20 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 21 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 22 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 23 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed: = failed_symbols.copy()
+                    ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 24 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed:  = failed_symbols.copy()
+                     ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 25 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+Traceback (most recent call last):
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/main.py", line 4, in <module>
+    from stock_scraping.historical_scraper import HistoricalScraper
+  File "/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/stock_scraping/historical_scraper.py", line 141
+    current_failed:  = failed_symbols.copy()
+                     ^
+SyntaxError: invalid syntax
+---------------------------------------------------------
+------------------ [ Iteration - 26 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:05:16 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:05:27 [PID:6477] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:05:27 [PID:6477] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:05:27 [PID:6477] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:05:28 [PID:6477] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:05:29 [PID:6477] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: FILM.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_34] [ERROR] [Data Preparation Service] 'Date' FILM.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_32] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_29] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_10] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: BINA.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_20] [ERROR] [Data Preparation Service] 'Date' BINA.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: MEDC.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_5] [ERROR] [Data Preparation Service] 'Date' MEDC.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_24] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_37] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_28] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:32 [PID:6477] [TID:ThreadPoolExecutor-0_17] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 13:05:32 [PID:6477] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 1
+2025-05-16 13:05:35 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 13:05:41 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:41 [PID:6477] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 13:05:46 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 13:05:47 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+2025-05-16 13:05:47 [PID:6477] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+2025-05-16 13:05:49 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:05:52 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 13:05:55 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+
+1 Failed download:
+['BRPT.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 114421 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:06:00 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 12] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:06:00 [PID:6477] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:06:04 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+2025-05-16 13:06:07 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:06:10 [PID:6477] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 2
+2025-05-16 13:06:11 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 13:06:13 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+2025-05-16 13:06:13 [PID:6477] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 27 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:08:21 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:08:40 [PID:6717] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:08:41 [PID:6717] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:08:41 [PID:6717] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:08:41 [PID:6717] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:08:41 [PID:6717] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:08:41 [PID:6717] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:08:42 [PID:6717] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_39] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_37] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_16] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_19] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: FILM.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MEDC.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_5] [ERROR] [Data Preparation Service] 'Date' FILM.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_23] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_22] [ERROR] [Data Preparation Service] 'Date' MEDC.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: BINA.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_24] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_29] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 13:09:12 [PID:6717] [TID:ThreadPoolExecutor-0_8] [ERROR] [Data Preparation Service] 'Date' BINA.JK
+2025-05-16 13:09:13 [PID:6717] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 1
+2025-05-16 13:09:15 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+2025-05-16 13:09:18 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+
+1 Failed download:
+['ASII.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 82501 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:09:24 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:09:28 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:28 [PID:6717] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+
+1 Failed download:
+['ICBP.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 48346 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:09:36 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 13:09:40 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:09:40 [PID:6717] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:09:45 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 13:09:47 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 13:09:49 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 13:09:50 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:09:53 [PID:6717] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 2
+2025-05-16 13:09:56 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+
+2 Failed downloads:
+['INDF.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 39264 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['KLBF.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 60194 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:10:01 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 18] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:10:01 [PID:6717] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:10:04 [PID:6717] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 3
+
+3 Failed downloads:
+['MLPT.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 20804 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['MASA.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 16895 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['ADRO.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:10:55 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:10:55 [PID:6717] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:10:58 [PID:6717] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 4
+2025-05-16 13:11:00 [PID:6717] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 28 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:12:35 [PID:6960] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:12:44 [PID:6960] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:12:45 [PID:6960] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 13:12:47 [PID:6960] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 29 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:16:38 [PID:7161] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:16:54 [PID:7161] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:16:54 [PID:7161] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:16:55 [PID:7161] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:16:56 [PID:7161] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_26] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_31] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_19] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: FILM.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: BINA.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_38] [ERROR] [Data Preparation Service] 'Date' BINA.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_33] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_20] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MEDC.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_22] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_9] [ERROR] [Data Preparation Service] 'Date' FILM.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_17] [ERROR] [Data Preparation Service] 'Date' MEDC.JK
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:02 [PID:7161] [TID:ThreadPoolExecutor-0_12] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+2025-05-16 13:17:02 [PID:7161] [TID:MainThread] [ERROR] [Data Preparation Service] name 'exponential_backoff' is not defined
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 30 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:17:30 [PID:7363] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:17:38 [PID:7363] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:17:38 [PID:7363] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:17:38 [PID:7363] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:17:39 [PID:7363] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:17:40 [PID:7363] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:17:41 [PID:7363] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:17:46 [PID:7363] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:46 [PID:7363] [TID:ThreadPoolExecutor-0_11] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:17:46 [PID:7363] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 13:17:46 [PID:7363] [TID:ThreadPoolExecutor-0_14] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 13:17:46 [PID:7363] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 1
+2025-05-16 13:18:11 [PID:7363] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 16] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:18:11 [PID:7363] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+
+3 Failed downloads:
+['ICBP.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 49044 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['SMMA.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 1301 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BRIS.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:18:30 [PID:7363] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 13:18:30 [PID:7363] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 13:18:30 [PID:7363] [TID:MainThread] [ERROR] [Data Preparation Service] name 'secexponential_backoff' is not defined
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 31 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:21:20 [PID:7568] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:21:27 [PID:7568] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:21:28 [PID:7568] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:21:28 [PID:7568] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:21:28 [PID:7568] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:21:28 [PID:7568] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:21:29 [PID:7568] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:21:30 [PID:7568] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:21:31 [PID:7568] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 32 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:23:37 [PID:7770] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:23:43 [PID:7770] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:23:43 [PID:7770] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:23:44 [PID:7770] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:23:45 [PID:7770] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:23:46 [PID:7770] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 13:23:46 [PID:7770] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 13:23:46 [PID:7770] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+2025-05-16 13:23:46 [PID:7770] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:23:47 [PID:7770] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 13:23:47 [PID:7770] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 13:23:47 [PID:7770] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 13:23:47 [PID:7770] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:23:47 [PID:7770] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+2025-05-16 13:23:47 [PID:7770] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 33 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:25:55 [PID:7970] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+2025-05-16 13:26:04 [PID:7970] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEGA.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INDF.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+2025-05-16 13:26:05 [PID:7970] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:26:06 [PID:7970] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:26:06 [PID:7970] [TID:ThreadPoolExecutor-0_33] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EMTK.csv"
+2025-05-16 13:26:06 [PID:7970] [TID:ThreadPoolExecutor-0_4] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DSSA.csv"
+2025-05-16 13:26:06 [PID:7970] [TID:ThreadPoolExecutor-0_7] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBNI.csv"
+2025-05-16 13:26:06 [PID:7970] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_25] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/GEMS.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_3] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBRI.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_6] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_15] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/KLBF.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_10] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRIS.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_32] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/EXCL.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_39] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PTRO.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_31] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BUMI.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_27] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CASA.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_22] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MASA.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_14] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/CPIN.csv"
+2025-05-16 13:26:07 [PID:7970] [TID:ThreadPoolExecutor-0_37] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INKP.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_12] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/FILM.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/INCO.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/NISP.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_17] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BINA.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AKRA.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ARTO.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_30] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MEDC.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TCPI.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ITMG.csv"
+2025-05-16 13:26:08 [PID:7970] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MSIN.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+------------------ [ Iteration - 34 ] ---------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-16 13:28:28 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] "indonesia_stocks/infographic_stocks.csv" already exists.
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MDKA.csv"
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MLPT.csv"
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SMMA.csv"
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_19] [ERROR] [Data Preparation Service] No objects to concatenate KLBF.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_23] [ERROR] [Data Preparation Service] No objects to concatenate ADRO.JK
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_34] [ERROR] [Data Preparation Service] No objects to concatenate SRAJ.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNVR.csv"
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ICBP.csv"
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_2] [ERROR] [Data Preparation Service] No objects to concatenate BYAN.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SILO.csv"
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_8] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/DNET.csv"
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_28] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TBIG.csv"
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_6] [ERROR] [Data Preparation Service] No objects to concatenate ASII.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_36] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PNBN.csv"
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_0] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BBCA.csv"
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_24] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRMS.csv"
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_35] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/MIKA.csv"
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_26] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SUPR.csv"
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_15] [ERROR] [Data Preparation Service] No objects to concatenate UNTR.JK
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_13] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BNLI.csv"
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_12] [ERROR] [Data Preparation Service] No objects to concatenate AMRT.JK
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_3] [ERROR] [Data Preparation Service] No objects to concatenate BBRI.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_5] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/PANI.csv"
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_37] [ERROR] [Data Preparation Service] No objects to concatenate INKP.JK
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_31] [ERROR] [Data Preparation Service] No objects to concatenate BUMI.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_16] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BRPT.csv"
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_10] [ERROR] [Data Preparation Service] No objects to concatenate BRIS.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_7] [ERROR] [Data Preparation Service] No objects to concatenate BBNI.JK
+
+1 Failed download:
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_25] [ERROR] [Data Preparation Service] No objects to concatenate GEMS.JK
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_20] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ANTM.csv"
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_39] [ERROR] [Data Preparation Service] No objects to concatenate PTRO.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_32] [ERROR] [Data Preparation Service] No objects to concatenate EXCL.JK
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_22] [ERROR] [Data Preparation Service] No objects to concatenate MASA.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_1] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/TPIA.csv"
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_33] [ERROR] [Data Preparation Service] No objects to concatenate EMTK.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_4] [ERROR] [Data Preparation Service] No objects to concatenate DSSA.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_17] [ERROR] [Data Preparation Service] No objects to concatenate INDF.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_30] [ERROR] [Data Preparation Service] No objects to concatenate MEGA.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_27] [ERROR] [Data Preparation Service] No objects to concatenate CASA.JK
+2025-05-16 13:28:37 [PID:8150] [TID:ThreadPoolExecutor-0_14] [ERROR] [Data Preparation Service] No objects to concatenate CPIN.JK
+
+3 Failed downloads:
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+3 Failed downloads:
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+3 Failed downloads:
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+3 Failed downloads:
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+3 Failed downloads:
+
+3 Failed downloads:
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+
+3 Failed downloads:
+
+3 Failed downloads:
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:29:14 [PID:8150] [TID:ThreadPoolExecutor-0_29] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: INCO.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:14 [PID:8150] [TID:ThreadPoolExecutor-0_29] [ERROR] [Data Preparation Service] 'Date' INCO.JK
+
+3 Failed downloads:
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:29:14 [PID:8150] [TID:ThreadPoolExecutor-0_19] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: MSIN.JK] Number Of Columns Does'nt match
+
+3 Failed downloads:
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:29:14 [PID:8150] [TID:ThreadPoolExecutor-0_21] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: NISP.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_11] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: TCPI.JK] Number Of Columns Does'nt match
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_19] [ERROR] [Data Preparation Service] 'Date' MSIN.JK
+['BBCA.JK', 'BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_34] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: FILM.JK] Number Of Columns Does'nt match
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_21] [ERROR] [Data Preparation Service] 'Date' NISP.JK
+['BBRI.JK']: HTTPError('Failed to perform, curl: (16) . See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_18] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: ARTO.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_11] [ERROR] [Data Preparation Service] 'Date' TCPI.JK
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_34] [ERROR] [Data Preparation Service] 'Date' FILM.JK
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_23] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: MEDC.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_18] [ERROR] [Data Preparation Service] 'Date' ARTO.JK
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_23] [ERROR] [Data Preparation Service] 'Date' MEDC.JK
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_9] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: BINA.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_9] [ERROR] [Data Preparation Service] 'Date' BINA.JK
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_38] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: ITMG.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_38] [ERROR] [Data Preparation Service] 'Date' ITMG.JK
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_2] [INFO] [Data Preparation Service] [Shape: 19] [Symbol: AKRA.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:15 [PID:8150] [TID:ThreadPoolExecutor-0_2] [ERROR] [Data Preparation Service] 'Date' AKRA.JK
+2025-05-16 13:29:15 [PID:8150] [TID:MainThread] [WARNING] [Data Preparation Service] [ RETRY MECHANISM ] retry count: 1
+2025-05-16 13:29:16 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] [Shape: 11] [Symbol: KLBF.JK] Number Of Columns Does'nt match
+2025-05-16 13:29:16 [PID:8150] [TID:MainThread] [ERROR] [Data Preparation Service] 'Date' KLBF.JK
+2025-05-16 13:29:18 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ADRO.csv"
+2025-05-16 13:29:18 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/SRAJ.csv"
+2025-05-16 13:29:19 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/BYAN.csv"
+2025-05-16 13:29:23 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/ASII.csv"
+2025-05-16 13:29:25 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/UNTR.csv"
+2025-05-16 13:29:28 [PID:8150] [TID:MainThread] [INFO] [Data Preparation Service] Datasets Are Stored on "indonesia_stocks/historicals/AMRT.csv"
