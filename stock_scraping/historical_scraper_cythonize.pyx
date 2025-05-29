@@ -29,8 +29,11 @@ filterwarnings("ignore")
 
 """
 
+LOCATION_RULES: LocationRules = LocationRules()
+SCRAPER_RULES:  ScraperRules  = ScraperRules()
 
-class HistoricalScraper(ScraperRules, LocationRules):
+
+cdef class HistoricalScraper:
   """ 
     [ name ]:
       __csv_store_validation (return dtype: bool)
@@ -41,7 +44,7 @@ class HistoricalScraper(ScraperRules, LocationRules):
     [ description ]:
       To validate CSV
   """
-  def __csv_store_validation(self, file_path: str) -> bool:
+  cpdef bint __csv_store_validation(self, str file_path):
     try:
       dataframe: DataFrame = read_csv(file_path)
 
@@ -52,7 +55,7 @@ class HistoricalScraper(ScraperRules, LocationRules):
       if len(dataframe) == 0: return False
 
       return True
-      
+        
     except Exception as error_message:
       logger.error(error_message)
       return False
@@ -60,7 +63,7 @@ class HistoricalScraper(ScraperRules, LocationRules):
 
   """
     [ name ]:
-       __get_historical (return dtype: str or None)
+      __get_historical (return dtype: str)
 
     [ parameters ]
       - symbol (dtype: str)
@@ -68,10 +71,10 @@ class HistoricalScraper(ScraperRules, LocationRules):
     [ description ]
       Get Historical Data
   """
-  def __get_historical(self, symbol: str) -> str or None:
+  cpdef str __get_historical(self, str symbol):
     try:
-      if not file_is_exists(self.DATASET_HISTORICAL_CSV_PATH):
-        makedirs(self.DATASET_HISTORICAL_CSV_PATH)
+      if not file_is_exists(LOCATION_RULES.DATASET_HISTORICAL_CSV_PATH):
+        makedirs(LOCATION_RULES.DATASET_HISTORICAL_CSV_PATH)
 
       start_date: str = '2023-01-01'
       # end_date: str = datetime.now().strftime('%Y-%m-%d')
@@ -86,11 +89,11 @@ class HistoricalScraper(ScraperRules, LocationRules):
       )
 
       symbol: str = symbol[:len(symbol) - 3]
-      csv_filename: str = f"{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv"
+      csv_filename: str = f"{LOCATION_RULES.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv"
       historical.to_csv(path_or_buf = csv_filename)
 
       return csv_filename
-    
+      
     except Exception as error_message:
       logger.error(f'{error_message} {symbol}')
       return None
@@ -106,11 +109,11 @@ class HistoricalScraper(ScraperRules, LocationRules):
     [ description ]
       Get historical data by symbol
   """
-  def get_by_symbol(self, symbol: str) -> Tuple[bool, str, str]:
+  cpdef Tuple[bool, str, str] get_by_symbol(self, str symbol):
     try:
       sleep(uniform(0.3, 0.5))
-      csv_filename: str or None = self.__get_historical(symbol)
-      if csv_filename is None: return False, symbol, csv_filename
+      csv_filename: str = self.__get_historical(symbol)
+      if csv_filename is 'None': return False, symbol, csv_filename
 
       dataframe = read_csv(csv_filename, header = None)
       dataframe = dataframe.drop([0, 1, 2])
@@ -145,10 +148,10 @@ class HistoricalScraper(ScraperRules, LocationRules):
       Retry mechanism with throttling and exponential back-off,
       to prevent scraping failure
   """
-  def __retry_mechanism(self, failed_symbols: List[str]) -> None:
+  cpdef void __retry_mechanism(self, List[str] failed_symbols):
     try:
       retry_count: int = 0
-      max_retries: int = self.SCRAPER_MAXIMUM_RETRY
+      max_retries: int = SCRAPER_RULES.SCRAPER_MAXIMUM_RETRY
       exponential_backoff: int = 3
 
       while failed_symbols and retry_count < max_retries:
@@ -169,7 +172,9 @@ class HistoricalScraper(ScraperRules, LocationRules):
         if failed_symbols:
           logger.info(f'[ RETRY MECHANISM ] Waiting {exponential_backoff} seconds before next retry...')
           sleep(exponential_backoff)
-          exponential_backoff += (self.SCRAPER_EXPONENTIAL_RETRY + uniform(0.1, 0.4))
+          exponential_backoff += (
+            SCRAPER_RULES.SCRAPER_EXPONENTIAL_RETRY + uniform(0.1, 0.4)
+          )
 
       if failed_symbols:
           logger.warning(f"Symbols failed after {max_retries} retries: {failed_symbols}")
@@ -188,7 +193,7 @@ class HistoricalScraper(ScraperRules, LocationRules):
     [ description ]
       Get historical data by DataFrame (Synchronous Process)
   """
-  def get_by_dataframe_sync(self, dataframe: DataFrame) -> None:
+  cpdef void get_by_dataframe_sync(self, object dataframe):
     try:
       failed_symbols: List[str] = []
 
@@ -218,13 +223,13 @@ class HistoricalScraper(ScraperRules, LocationRules):
     [ description ]
       Get historical data by DataFrame (Asynchronous Process)
   """
-  def get_by_dataframe_async(self, dataframe: DataFrame) -> None:
+  cpdef void get_by_dataframe_async(self, object dataframe):
     try:
       # for symbol in dataframe['symbol'].tolist():
       #   self.get_by_symbol(symbol)
       failed_symbols: List[str] = []
 
-      with ThreadPoolExecutor(max_workers = self.SCRAPER_THREAD_WORKER) as executor:
+      with ThreadPoolExecutor(max_workers = SCRAPER_RULES.SCRAPER_THREAD_WORKER) as executor:
         future_to_get_by_dataframe = {
           executor.submit(self.get_by_symbol, symbol):
             symbol for symbol in dataframe['symbol'].tolist()
@@ -256,7 +261,7 @@ class HistoricalScraper(ScraperRules, LocationRules):
     [ description ]
       Get historical data by symbols (Synchronous Process)
   """
-  def get_by_symbols_sync(self, symbols: List[str]) -> None:
+  cpdef void get_by_symbols_sync(self, List[str] symbols):
     try:
       failed_symbols: List[str] = []
       for symbol in symbols:
@@ -285,12 +290,12 @@ class HistoricalScraper(ScraperRules, LocationRules):
     [ description ]
       Get historical data by symbols (Asynchronous Process)
   """
-  def get_by_symbols_async(self, symbols: List[str]) -> None:
+  cpdef void get_by_symbols_async(self, List[str] symbols):
     try:
       # for symbol in symbols:
       #   self.get_by_symbol(symbol)
       failed_symbols: List[str] = []
-      with ThreadPoolExecutor(max_workers = self.SCRAPER_THREAD_WORKER) as executor:
+      with ThreadPoolExecutor(max_workers = SCRAPER_RULES.SCRAPER_THREAD_WORKER) as executor:
         future_to_get_by_symbols = {
           executor.submit(self.get_by_symbol, symbol):
             symbol for symbol in symbols

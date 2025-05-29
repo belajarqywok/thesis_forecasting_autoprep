@@ -4,7 +4,7 @@ import numpy
 
 setup(
   name        = 'thesis_forecasting_dataprep',
-  packages    = ['stock_indicator', 'stock_scraping'],
+  packages    = ['stock_indicator', 'stock_scraping', 'stock_sorting'],
   package_dir = {'': '.'},
 
   ext_modules = cythonize([
@@ -26,9 +26,14 @@ setup(
       'stock_scraping.infographic_scraper_cythonize',
       ['stock_scraping/infographic_scraper_cythonize.pyx'],
       include_dirs = [ numpy.get_include() ]
-    )
+    ),
 
     # stock sorting extension
+    Extension(
+      'stock_sorting.sorter_cythonize',
+      [ 'stock_sorting/sorter_cythonize.pyx' ],
+      include_dirs = [ numpy.get_include() ]
+    )
   ]),
   zip_safe = False,
 )

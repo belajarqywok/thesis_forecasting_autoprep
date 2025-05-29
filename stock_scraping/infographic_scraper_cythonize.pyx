@@ -30,13 +30,16 @@ filterwarnings("ignore")
 
 """
 
+LOCATION_RULES: LocationRules = LocationRules()
+SCRAPER_RULES:  ScraperRules  = ScraperRules()
 
-class InfographicScraper(ScraperRules, LocationRules):
+
+cdef class InfographicScraper:
   # Browser Sessions
   # __BROWSER_SESSION: Session = Session(impersonate = 'chrome')
   __BROWSER_SESSIONS: List[Session] = [
     Session(impersonate = browser_agent) \
-      for browser_agent in ScraperRules().SCRAPER_BROWSER_AGENTS
+      for browser_agent in SCRAPER_RULES.SCRAPER_BROWSER_AGENTS
   ]
 
 
@@ -50,9 +53,7 @@ class InfographicScraper(ScraperRules, LocationRules):
     [ description ]
       Validation: Is Valid Stock ?.
   """
-  def __is_valid_stock(
-    self, stock_info: Dict[str, Any]
-  ) -> bool:
+  cpdef bint __is_valid_stock(self, Dict[str, Any] stock_info):
     try:
       # Mandatory Fields Validation
       mandatory_fields: List[str] = [
@@ -88,11 +89,7 @@ class InfographicScraper(ScraperRules, LocationRules):
     [ description ]
       Fetch Stock Info
   """
-  def __fetch_stock_info(
-    self,
-    symbol:  str,
-    process: str
-  ) -> Optional[Dict[str, Any]]:
+  def __fetch_stock_info(self, str symbol, str process) -> Optional[Dict[str, Any]]:
     try:
       ticker: Ticker = Ticker(
         ticker  = symbol, 
@@ -128,7 +125,7 @@ class InfographicScraper(ScraperRules, LocationRules):
     [ description ]
       Get Stock Symbol
   """
-  def get_stocks_symbol(self) -> List[str]:
+  cpdef List[str] get_stocks_symbol(self):
     try:
       country_stocks = investpy_get_stocks(country = "Indonesia")
       return [f"{row['symbol']}.JK" for _, row in country_stocks.iterrows()]
@@ -166,7 +163,7 @@ class InfographicScraper(ScraperRules, LocationRules):
           )
 
         iteration += 1
-        sleep(self.SCRAPER_RATE_LIMIT_HANDLE)
+        sleep(SCRAPER_RULES.SCRAPER_RATE_LIMIT_HANDLE)
 
       return stock_datas
       
@@ -192,7 +189,7 @@ class InfographicScraper(ScraperRules, LocationRules):
       failed_symbols: List[str] = []
       stock_datas:    List[Dict[str, Any]] = []
 
-      with ThreadPoolExecutor(max_workers = self.SCRAPER_THREAD_WORKER) as executor:
+      with ThreadPoolExecutor(max_workers = SCRAPER_RULES.SCRAPER_THREAD_WORKER) as executor:
         future_to_fetch_stock_info = {
           executor.submit(self.__fetch_stock_info, stock_symbol, PROCESS):
             stock_symbol for stock_symbol in self.get_stocks_symbol()
@@ -212,7 +209,7 @@ class InfographicScraper(ScraperRules, LocationRules):
       # Retry mechanism with exponential back-off
       # to prevent scraping failure
       retry_count: int = 0
-      max_retries: int = self.SCRAPER_MAXIMUM_RETRY
+      max_retries: int = SCRAPER_RULES.SCRAPER_MAXIMUM_RETRY
       exponential_backoff: int = 3
 
       while failed_symbols and retry_count < max_retries:
@@ -236,7 +233,7 @@ class InfographicScraper(ScraperRules, LocationRules):
         if failed_symbols:
           logger.info(f'[ RETRY MECHANISM ] Waiting {exponential_backoff} seconds before next retry...')
           sleep(exponential_backoff)
-          exponential_backoff += self.SCRAPER_EXPONENTIAL_RETRY
+          exponential_backoff += SCRAPER_RULES.SCRAPER_EXPONENTIAL_RETRY
 
       if failed_symbols:
         logger.warning(f"Symbols failed after {max_retries} retries: {failed_symbols}")
@@ -264,7 +261,7 @@ class InfographicScraper(ScraperRules, LocationRules):
     get_stocks_process:      str  = 'SYNC' # SYNC, ASYNC
   ) -> Optional[DataFrame]:
     try:
-      if not file_is_exists(self.DATASET_INFOGRAPHIC_CSV_PATH) or generate_new_data:
+      if not file_is_exists(LOCATION_RULES.DATASET_INFOGRAPHIC_CSV_PATH) or generate_new_data:
         stocks_data: Optional[Dict[str, Any]] = \
           self.__get_stocks_data_async() if get_stocks_process is 'ASYNC' \
             else self.__get_stocks_data_sync()
@@ -272,15 +269,15 @@ class InfographicScraper(ScraperRules, LocationRules):
         indonesia_stocks_dataframe: DataFrame = DataFrame(stocks_data)
         indonesia_stocks_dataframe.to_csv(
           index       = False,
-          path_or_buf = self.DATASET_INFOGRAPHIC_CSV_PATH
+          path_or_buf = LOCATION_RULES.DATASET_INFOGRAPHIC_CSV_PATH
         )
         
-        logger.info(f'Stocks infographic saved on {self.DATASET_INFOGRAPHIC_CSV_PATH}')
+        logger.info(f'Stocks infographic saved on {LOCATION_RULES.DATASET_INFOGRAPHIC_CSV_PATH}')
         
       else:
         indonesia_stocks_dataframe: DataFrame = \
-          read_csv(filepath_or_buffer = self.DATASET_INFOGRAPHIC_CSV_PATH)
-        logger.info(f'"{self.DATASET_INFOGRAPHIC_CSV_PATH}" already exists.')
+          read_csv(filepath_or_buffer = LOCATION_RULES.DATASET_INFOGRAPHIC_CSV_PATH)
+        logger.info(f'"{LOCATION_RULES.DATASET_INFOGRAPHIC_CSV_PATH}" already exists.')
 
       return indonesia_stocks_dataframe
 

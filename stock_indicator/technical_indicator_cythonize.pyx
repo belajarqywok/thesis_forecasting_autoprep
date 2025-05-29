@@ -25,8 +25,11 @@ filterwarnings("ignore")
 
 """
 
+LOCATION_RULES: LocationRules = LocationRules()
+SCRAPER_RULES:  ScraperRules  = ScraperRules()
 
-class TechnicalIndicator(ScraperRules, LocationRules):
+
+cdef class TechnicalIndicator:
   """
     [ name ]:
       __simple_moving_average (return dtype: Series)
@@ -39,11 +42,11 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     [ description ]
       Simple moving average
   """
-  def __simple_moving_average(
-    self, dataframe: DataFrame,
-    column_name:     str = 'Close',
-    window_size:     int = 20
-  ) -> Series:
+  cpdef object __simple_moving_average(self,
+    object dataframe,
+    str column_name = 'Close',
+    int window_size = 20
+  ):
     try:
       if column_name not in dataframe.columns:
         # raise KeyError(f'Column name "{column_name}" do not exist')
@@ -81,11 +84,11 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     [ description ]
       Exponential moving average
   """
-  def __exponential_moving_average(
-    self, dataframe: DataFrame,
-    column_name:     str = 'Close',
-    window_size:     int = 20
-  ) -> Series or np.ndarray:
+  cpdef object __exponential_moving_average(self,
+    object dataframe,
+    str column_name = 'Close',
+    int window_size = 20
+  ):
     try:
       if column_name not in dataframe.columns:
         # raise KeyError(f'Column name "{column_name}" do not exist')
@@ -128,12 +131,13 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     [ description ]
       Relative Strength Index
   """
-  def __relative_strength_index(
-    self, dataframe: DataFrame,
-    column_name: str = 'Close',
-    window_size: int = 14
-  ) -> Series:
-    __INDICATOR__ = 'RSI'
+  cpdef object __relative_strength_index(self,
+    # dtype: DataFrame
+    object dataframe,
+    str column_name = 'Close',
+    int window_size = 14
+  ):
+    cdef str __INDICATOR__ = 'RSI'
     try:
       if column_name not in dataframe.columns:
         # raise KeyError(f'Column name "{column_name}" do not exist')
@@ -188,9 +192,9 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     [ description ]
       Money Flow Index
   """
-  def __money_flow_index(
-    self, dataframe: DataFrame,
-    window_size: int = 14
+  def __money_flow_index(self,
+    object dataframe,
+    int window_size = 14
   ) -> Series:
     try:
       required_cols = ['High', 'Low', 'Close', 'Volume']
@@ -259,13 +263,13 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     [ description ]
       Moving Average Convergence Divergence
   """
-  def __moving_average_convergence_divergence(
-    self, dataframe: DataFrame,
-    column_name:        str = "Close",
-    fast_window_size:   int = 12,
-    slow_window_size:   int = 26,
-    signal_window_size: int = 9
-  ) -> Dict[str, Series]:
+  cpdef Dict[str, Series] __moving_average_convergence_divergence(self,
+    object dataframe,
+    str column_name = 'Close',
+    int fast_window_size   = 12,
+    int slow_window_size   = 26,
+    int signal_window_size = 9
+  ):
     try:
       if column_name not in dataframe.columns:
         # raise KeyError(f'Column name "{column_name}" do not exist')
@@ -309,7 +313,7 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     [ description ]:
       To validate CSV
   """
-  def __csv_store_validation(self, file_path: str) -> bool:
+  cpdef bint __csv_store_validation(self, str file_path):
     try:
       dataframe = read_csv(file_path)
 
@@ -365,10 +369,10 @@ class TechnicalIndicator(ScraperRules, LocationRules):
       Retry mechanism with throttling and exponential back-off,
       to prevent scraping failure
   """
-  def __retry_mechanism(self, failed_symbols: List[str]) -> None:
+  cpdef void __retry_mechanism(self, List[str] failed_symbols):
     try:
       retry_count: int = 0
-      max_retries: int = self.SCRAPER_MAXIMUM_RETRY
+      max_retries: int = SCRAPER_RULES.SCRAPER_MAXIMUM_RETRY
       exponential_backoff: int = 0
 
       while failed_symbols and retry_count < max_retries:
@@ -378,12 +382,12 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           
         for symbol in stock_failed:
           # json path
-          min_max_json_path:   str = f'{self.DATASET_MINMAX_CSV_PATH}/{symbol}.json'
+          min_max_json_path:   str = f'{LOCATION_RULES.DATASET_MINMAX_CSV_PATH}/{symbol}.json'
 
           # csv path
-          historical_csv_path: str = f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv'
-          indicator_csv_path:  str = f'{self.DATASET_INDICATOR_CSV_PATH}/{symbol}.csv'
-          modeling_csv_path:   str = f'{self.DATASET_MODELING_CSV_PATH}/{symbol}.csv'
+          historical_csv_path: str = f'{LOCATION_RULES.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv'
+          indicator_csv_path:  str = f'{LOCATION_RULES.DATASET_INDICATOR_CSV_PATH}/{symbol}.csv'
+          modeling_csv_path:   str = f'{LOCATION_RULES.DATASET_MODELING_CSV_PATH}/{symbol}.csv'
           
           dataframe: DataFrame = read_csv(historical_csv_path, index_col = 'Date')
           dataframe.dropna(inplace = True)
@@ -439,28 +443,28 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     [ description ]:
       Generate indicator by dataframe (Synchronous Process)
   """
-  def generate_indicator_by_dataframe_sync(self, dataframe: DataFrame) -> None:
+  cpdef void generate_indicator_by_dataframe_sync(self, object dataframe):
     try:
-      if not file_is_exists(self.DATASET_INDICATOR_CSV_PATH):
-        makedirs(self.DATASET_INDICATOR_CSV_PATH)
+      if not file_is_exists(LOCATION_RULES.DATASET_INDICATOR_CSV_PATH):
+        makedirs(LOCATION_RULES.DATASET_INDICATOR_CSV_PATH)
 
-      if not file_is_exists(self.DATASET_MODELING_CSV_PATH):
-        makedirs(self.DATASET_MODELING_CSV_PATH)
+      if not file_is_exists(LOCATION_RULES.DATASET_MODELING_CSV_PATH):
+        makedirs(LOCATION_RULES.DATASET_MODELING_CSV_PATH)
 
-      if not file_is_exists(self.DATASET_MINMAX_CSV_PATH):
-        makedirs(self.DATASET_MINMAX_CSV_PATH)
+      if not file_is_exists(LOCATION_RULES.DATASET_MINMAX_CSV_PATH):
+        makedirs(LOCATION_RULES.DATASET_MINMAX_CSV_PATH)
       
       failed_symbols: List[str] = []
 
       for symbol in dataframe['symbol'].tolist():
         symbol: str = symbol[:len(symbol) - 3]
         # json path
-        min_max_json_path:   str = f'{self.DATASET_MINMAX_CSV_PATH}/{symbol}.json'
+        min_max_json_path:   str = f'{LOCATION_RULES.DATASET_MINMAX_CSV_PATH}/{symbol}.json'
 
         # csv path
-        historical_csv_path: str = f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv'
-        indicator_csv_path:  str = f'{self.DATASET_INDICATOR_CSV_PATH}/{symbol}.csv'
-        modeling_csv_path:   str = f'{self.DATASET_MODELING_CSV_PATH}/{symbol}.csv'
+        historical_csv_path: str = f'{LOCATION_RULES.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv'
+        indicator_csv_path:  str = f'{LOCATION_RULES.DATASET_INDICATOR_CSV_PATH}/{symbol}.csv'
+        modeling_csv_path:   str = f'{LOCATION_RULES.DATASET_MODELING_CSV_PATH}/{symbol}.csv'
         
         dataframe: DataFrame = read_csv(historical_csv_path, index_col = 'Date')
         dataframe.dropna(inplace = True)
