@@ -1,5 +1,6 @@
+import re
 from time import sleep
-from random import choice
+from random import choice, uniform
 from typing import List, Dict, Any, Optional
 
 from curl_cffi.requests import Session 
@@ -37,6 +38,7 @@ class InfographicScraper(ScraperRules, LocationRules):
     Session(impersonate = browser_agent) \
       for browser_agent in ScraperRules().SCRAPER_BROWSER_AGENTS
   ]
+
 
   """
     [ name ]:
@@ -87,22 +89,36 @@ class InfographicScraper(ScraperRules, LocationRules):
       Fetch Stock Info
   """
   def __fetch_stock_info(
-    self, symbol: str
+    self,
+    symbol:  str,
+    process: str
   ) -> Optional[Dict[str, Any]]:
     try:
-      ticker: Ticker = Ticker(symbol, 
-        session = choice(self.__BROWSER_SESSIONS))
+      ticker: Ticker = Ticker(
+        ticker  = symbol, 
+        session = choice(self.__BROWSER_SESSIONS)
+      )
+
       stock_info: Dict[str, Any] = ticker.info
       stock_info['symbol']       = symbol
 
       # Validation: Is Valid Stock ?.
-      if not self.__is_valid_stock(stock_info): return None
+      is_valid: bool = self.__is_valid_stock(stock_info)
+      if process == 'ASYNC':
+        return stock_info, 'VALIDATION_STEP' if (is_valid == True) \
+          else None, 'VALIDATION_STEP' 
 
-      return stock_info
+      elif process == 'SYNC':
+        return stock_info if (is_valid == True) else None
 
     except Exception as error_message:
       logger.error(f"{symbol} {error_message}")
-      return None
+      if process == 'ASYNC':
+        if re.search(r'http.*404', error_message, re.IGNORECASE):
+          return None, 'NOT_FOUND'
+        else:
+          return None, 'EXCEPTION_STEP'
+      else: return None
   
 
   """
@@ -130,13 +146,17 @@ class InfographicScraper(ScraperRules, LocationRules):
       Get Stocks Data (Synchronous Process)
   """
   def __get_stocks_data_sync(self) -> Optional[Dict[str, Any]]:
+    PROCESS: str = 'SYNC'
     try:
       stock_datas: List[Dict[str, Any]] = []
       iteration:   int = 1
 
       for stock_symbol in self.get_stocks_symbol():
         stock_info: Optional[Dict[str, Any]] = \
-          self.__fetch_stock_info(stock_symbol)
+          self.__fetch_stock_info(
+            symbol  = stock_symbol,
+            process = PROCESS
+          )
 
         if stock_info:
           stock_datas.append(stock_info)
@@ -160,26 +180,33 @@ class InfographicScraper(ScraperRules, LocationRules):
       __get_stocks_data_async (return dtype: Optional[Dict[str, Any]])
 
     [ description ]
-      Get Stocks Data (Asynchronous Process)
+      Get Stocks Data (Asynchronous Process) [ -- ON DEVELOPMENT -- ]
+
+    def __fetch_with_throttle(self, symbol: str):
+      sleep(uniform(0.3, 0.8))
+      return self.__fetch_stock_info(symbol, 'ASYNC')
   """
   def __get_stocks_data_async(self) -> Optional[Dict[str, Any]]:
+    PROCESS: str = 'ASYNC'
     try:
       failed_symbols: List[str] = []
       stock_datas:    List[Dict[str, Any]] = []
 
       with ThreadPoolExecutor(max_workers = self.SCRAPER_THREAD_WORKER) as executor:
         future_to_fetch_stock_info = {
-          executor.submit(self.__fetch_stock_info, stock_symbol):
+          executor.submit(self.__fetch_stock_info, stock_symbol, PROCESS):
             stock_symbol for stock_symbol in self.get_stocks_symbol()
         }
 
         for future in as_completed(future_to_fetch_stock_info):
-          stock_info: Optional[Dict[str, Any]] = future.result()
-          if stock_info:
+          stock_info, step = future.result()
+          if (stock_info) and (step == 'VALIDATION_STEP'):
             stock_symbol: str = stock_info.get('symbol')
             stock_datas.append(stock_info)
             logger.info(f"[stocks: {len(stock_datas)}] [{stock_symbol} | {stock_info.get('longName')}]")
 
+          elif (not stock_info) and (step == 'VALIDATION_STEP'): pass
+          elif (not stock_info) and (step == 'NOT_FOUND'): pass
           else: failed_symbols.append(stock_symbol)
 
       # Retry mechanism with exponential back-off
@@ -194,10 +221,16 @@ class InfographicScraper(ScraperRules, LocationRules):
         failed_symbols.clear()
           
         for symbol in stock_failed:
+          # throttling mechanism
+          sleep(uniform(0.3, 0.8))
           stock_info: Optional[Dict[str, Any]] = \
-            self.__fetch_stock_info(stock_symbol)
+            self.__fetch_stock_info(symbol, process = PROCESS)
             
-          if stock_info: failed_symbols.append(symbol)
+          if stock_info:
+            stock_symbol: str = stock_info.get('symbol')
+            stock_datas.append(stock_info)
+            logger.info(f"[stocks: {len(stock_datas)}] [{stock_symbol} | {stock_info.get('longName')}]")
+          else: failed_symbols.append(symbol)
           
         retry_count += 1
         if failed_symbols:
@@ -206,8 +239,8 @@ class InfographicScraper(ScraperRules, LocationRules):
           exponential_backoff += self.SCRAPER_EXPONENTIAL_RETRY
 
       if failed_symbols:
-          logger.warning(f"Symbols failed after {max_retries} retries: {failed_symbols}")
-          return None
+        logger.warning(f"Symbols failed after {max_retries} retries: {failed_symbols}")
+        return None
       
       return stock_datas
       

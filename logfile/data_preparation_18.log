@@ -1,0 +1,276 @@
+---------------------------------------------------------
+------------------ [ Iteration - 1 ] ------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-05-28 23:33:08 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] main.py:33 - run_pipeline() - "indonesia_stocks/infographic_stocks.csv" already exists.
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:11 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:12 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:14 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:16 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:17 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:20 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:21 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:22 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:24 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:25 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:26 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:28 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:30 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:31 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:33 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:34 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:36 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:39 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:41 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:42 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:44 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:50 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MLPT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:52 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MASA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:53 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ADRO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:54 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRMS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:56 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/GEMS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:57 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SUPR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:58 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CASA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:33:59 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TBIG.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:01 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MDKA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:02 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEGA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:03 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BUMI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:05 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EXCL.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:07 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EMTK.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:08 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SRAJ.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:15 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MIKA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:15 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PNBN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:17 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INKP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:19 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SILO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:21 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PTRO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:22 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INCO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:23 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/NISP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:24 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TCPI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:25 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MSIN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:26 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEDC.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:27 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/FILM.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:29 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ARTO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:31 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BINA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:32 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AKRA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-05-28 23:34:34 [PID:585] [TID:MainThread] [INFO] [Data Preparation Service] historical_scraper.py:129 - get_by_symbol() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ITMG.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+-------------------- [ Historicals ] --------------------
+---------------------------------------------------------
+total 2116
+drwxrwxrwx 1 hanxzo hanxzo  4096 May 16 03:19 .
+drwxrwxrwx 1 hanxzo hanxzo  4096 May 20 22:53 ..
+-rwxrwxrwx 1 hanxzo hanxzo 49181 May 28 23:33 ADRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 52777 May 28 23:34 AKRA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41879 May 28 23:33 AMRT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42119 May 28 23:33 ANTM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 27032 May 28 23:34 ARTO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50300 May 28 23:33 ASII.csv
+-rwxrwxrwx 1 hanxzo hanxzo 48004 May 28 23:33 BBCA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50069 May 28 23:33 BBNI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50094 May 28 23:33 BBRI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25770 May 28 23:34 BINA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49496 May 28 23:33 BNLI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 52703 May 28 23:33 BRIS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25484 May 28 23:33 BRMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42341 May 28 23:33 BRPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 24864 May 28 23:34 BUMI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41505 May 28 23:33 BYAN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 24386 May 28 23:33 CASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 40444 May 28 23:33 CPIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25229 May 28 23:33 DNET.csv
+-rwxrwxrwx 1 hanxzo hanxzo 26516 May 28 23:33 DSSA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51602 May 28 23:34 EMTK.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51118 May 28 23:34 EXCL.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42186 May 28 23:34 FILM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49108 May 28 23:33 GEMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42544 May 28 23:33 ICBP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50824 May 28 23:34 INCO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41311 May 28 23:33 INDF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 40842 May 28 23:34 INKP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49396 May 28 23:34 ITMG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 40395 May 28 23:33 KLBF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 37926 May 28 23:33 MASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 27304 May 28 23:34 MDKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 46561 May 28 23:34 MEDC.csv
+-rwxrwxrwx 1 hanxzo hanxzo 47078 May 28 23:34 MEGA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41874 May 28 23:34 MIKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49991 May 28 23:33 MLPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 24635 May 28 23:34 MSIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49096 May 28 23:34 NISP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51188 May 28 23:33 PANI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 26725 May 28 23:34 PNBN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51720 May 28 23:34 PTRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41581 May 28 23:34 SILO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 26673 May 28 23:33 SMMA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 24834 May 28 23:34 SRAJ.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25579 May 28 23:33 SUPR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 47615 May 28 23:33 TBIG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 40922 May 28 23:34 TCPI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41052 May 28 23:33 TPIA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49882 May 28 23:33 UNTR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 47168 May 28 23:33 UNVR.csv
+---------------------------------------------------------
+--------------------- [ Indicators ] --------------------
+---------------------------------------------------------
+total 1800
+drwxrwxrwx 1 hanxzo hanxzo  4096 May 20 17:01 .
+drwxrwxrwx 1 hanxzo hanxzo  4096 May 20 22:53 ..
+-rwxrwxrwx 1 hanxzo hanxzo 34973 May 28 23:34 ADRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35131 May 28 23:34 AKRA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35087 May 28 23:34 AMRT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35088 May 28 23:34 ANTM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35208 May 28 23:34 ARTO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35059 May 28 23:34 ASII.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35011 May 28 23:34 BBCA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35027 May 28 23:34 BBNI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34992 May 28 23:34 BBRI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35006 May 28 23:34 BINA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35072 May 28 23:34 BNLI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34895 May 28 23:34 BRIS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35075 May 28 23:34 BRMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35111 May 28 23:34 BRPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35199 May 28 23:34 BUMI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35058 May 28 23:34 BYAN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35085 May 28 23:34 CASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35115 May 28 23:34 CPIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34949 May 28 23:34 DNET.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34859 May 28 23:34 DSSA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35192 May 28 23:34 EMTK.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35017 May 28 23:34 EXCL.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35063 May 28 23:34 FILM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35028 May 28 23:34 GEMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35092 May 28 23:34 ICBP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35301 May 28 23:34 INCO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35074 May 28 23:34 INDF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35218 May 28 23:34 INKP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35008 May 28 23:34 ITMG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35304 May 28 23:34 KLBF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35120 May 28 23:34 MASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35221 May 28 23:34 MDKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35108 May 28 23:34 MEDC.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35160 May 28 23:34 MEGA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35113 May 28 23:34 MIKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35091 May 28 23:34 MLPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35322 May 28 23:34 MSIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34975 May 28 23:34 NISP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34854 May 28 23:34 PANI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35126 May 28 23:34 PNBN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34980 May 28 23:34 PTRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34938 May 28 23:34 SILO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34958 May 28 23:34 SMMA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34942 May 28 23:34 SRAJ.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34239 May 28 23:34 SUPR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35136 May 28 23:34 TBIG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35198 May 28 23:34 TCPI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35011 May 28 23:34 TPIA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35057 May 28 23:34 UNTR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35321 May 28 23:34 UNVR.csv
+---------------------------------------------------------
+--------------------- [ Min-Max ] --------------------
+---------------------------------------------------------
+total 0
+drwxrwxrwx 1 hanxzo hanxzo 4096 May 21 00:05 .
+drwxrwxrwx 1 hanxzo hanxzo 4096 May 20 22:53 ..
+-rwxrwxrwx 1 hanxzo hanxzo  292 May 28 23:34 ADRO.json
+-rwxrwxrwx 1 hanxzo hanxzo  284 May 28 23:34 AKRA.json
+-rwxrwxrwx 1 hanxzo hanxzo  268 May 28 23:34 AMRT.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 May 28 23:34 ANTM.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 May 28 23:34 ARTO.json
+-rwxrwxrwx 1 hanxzo hanxzo  287 May 28 23:34 ASII.json
+-rwxrwxrwx 1 hanxzo hanxzo  286 May 28 23:34 BBCA.json
+-rwxrwxrwx 1 hanxzo hanxzo  292 May 28 23:34 BBNI.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 May 28 23:34 BBRI.json
+-rwxrwxrwx 1 hanxzo hanxzo  261 May 28 23:34 BINA.json
+-rwxrwxrwx 1 hanxzo hanxzo  286 May 28 23:34 BNLI.json
+-rwxrwxrwx 1 hanxzo hanxzo  290 May 28 23:34 BRIS.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 May 28 23:34 BRMS.json
+-rwxrwxrwx 1 hanxzo hanxzo  278 May 28 23:34 BRPT.json
+-rwxrwxrwx 1 hanxzo hanxzo  266 May 28 23:34 BUMI.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 May 28 23:34 BYAN.json
+-rwxrwxrwx 1 hanxzo hanxzo  259 May 28 23:34 CASA.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 May 28 23:34 CPIN.json
+-rwxrwxrwx 1 hanxzo hanxzo  262 May 28 23:34 DNET.json
+-rwxrwxrwx 1 hanxzo hanxzo  264 May 28 23:34 DSSA.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 May 28 23:34 EMTK.json
+-rwxrwxrwx 1 hanxzo hanxzo  288 May 28 23:34 EXCL.json
+-rwxrwxrwx 1 hanxzo hanxzo  285 May 28 23:34 FILM.json
+-rwxrwxrwx 1 hanxzo hanxzo  277 May 28 23:34 GEMS.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 May 28 23:34 ICBP.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 May 28 23:34 INCO.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 May 28 23:34 INDF.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 May 28 23:34 INKP.json
+-rwxrwxrwx 1 hanxzo hanxzo  278 May 28 23:34 ITMG.json
+-rwxrwxrwx 1 hanxzo hanxzo  279 May 28 23:34 KLBF.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 May 28 23:34 MASA.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 May 28 23:34 MDKA.json
+-rwxrwxrwx 1 hanxzo hanxzo  290 May 28 23:34 MEDC.json
+-rwxrwxrwx 1 hanxzo hanxzo  280 May 28 23:34 MEGA.json
+-rwxrwxrwx 1 hanxzo hanxzo  269 May 28 23:34 MIKA.json
+-rwxrwxrwx 1 hanxzo hanxzo  279 May 28 23:34 MLPT.json
+-rwxrwxrwx 1 hanxzo hanxzo  263 May 28 23:34 MSIN.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 May 28 23:34 NISP.json
+-rwxrwxrwx 1 hanxzo hanxzo  288 May 28 23:34 PANI.json
+-rwxrwxrwx 1 hanxzo hanxzo  268 May 28 23:34 PNBN.json
+-rwxrwxrwx 1 hanxzo hanxzo  287 May 28 23:34 PTRO.json
+-rwxrwxrwx 1 hanxzo hanxzo  280 May 28 23:34 SILO.json
+-rwxrwxrwx 1 hanxzo hanxzo  263 May 28 23:34 SMMA.json
+-rwxrwxrwx 1 hanxzo hanxzo  261 May 28 23:34 SRAJ.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 May 28 23:34 SUPR.json
+-rwxrwxrwx 1 hanxzo hanxzo  274 May 28 23:34 TBIG.json
+-rwxrwxrwx 1 hanxzo hanxzo  275 May 28 23:34 TCPI.json
+-rwxrwxrwx 1 hanxzo hanxzo  275 May 28 23:34 TPIA.json
+-rwxrwxrwx 1 hanxzo hanxzo  285 May 28 23:34 UNTR.json
+-rwxrwxrwx 1 hanxzo hanxzo  268 May 28 23:34 UNVR.json
