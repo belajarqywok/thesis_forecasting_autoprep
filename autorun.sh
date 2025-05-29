@@ -18,7 +18,7 @@ get_logfile() {
 date_now=$(date +%d)
 date_now=$((10#$date_now + 1))
 
-if [ "$date_now" -eq 30 ]; then
+if [ "$date_now" -eq 28 ]; then
   GEN_NEW_DATA="True"
 else
   GEN_NEW_DATA="False"

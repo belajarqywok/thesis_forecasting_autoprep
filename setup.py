@@ -4,10 +4,29 @@ import numpy
 
 setup(
   name        = 'thesis_forecasting_dataprep',
-  packages    = ['stock_indicator', 'stock_scraping', 'stock_sorting'],
+  packages    = ['settings', 'stock_indicator', 'stock_scraping', 'stock_sorting'],
   package_dir = {'': '.'},
 
   ext_modules = cythonize([
+    # settings
+    Extension(
+      'settings.location_rules_cythonize',
+      ['settings/location_rules_cythonize.pyx'],
+      include_dirs = [ numpy.get_include() ]
+    ),
+
+    Extension(
+      'settings.logging_rules_cythonize',
+      ['settings/logging_rules_cythonize.pyx'],
+      include_dirs = [ numpy.get_include() ]
+    ),
+
+    Extension(
+      'settings.scraper_rules_cythonize',
+      ['settings/scraper_rules_cythonize.pyx'],
+      include_dirs = [ numpy.get_include() ]
+    ),
+
     # stock indicator extension
     Extension(
       'stock_indicator.technical_indicator_cythonize',
@@ -34,6 +53,5 @@ setup(
       [ 'stock_sorting/sorter_cythonize.pyx' ],
       include_dirs = [ numpy.get_include() ]
     )
-  ]),
-  zip_safe = False,
+  ]), zip_safe = False,
 )

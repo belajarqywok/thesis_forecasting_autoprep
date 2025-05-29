@@ -10,9 +10,9 @@ from os import makedirs
 from os.path import exists as file_is_exists
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from settings.logging_rules import logger
-from settings.scraper_rules import ScraperRules
-from settings.location_rules import LocationRules
+from settings.logging_rules_cythonize import logger
+from settings.scraper_rules_cythonize import ScraperRules
+from settings.location_rules_cythonize import LocationRules
 
 from warnings import filterwarnings
 filterwarnings("ignore")

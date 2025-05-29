@@ -11,9 +11,9 @@ from yfinance.ticker import Ticker
 from pandas import DataFrame, read_csv
 from investpy.stocks import get_stocks as investpy_get_stocks
 
-from settings.logging_rules import logger
-from settings.scraper_rules import ScraperRules
-from settings.location_rules import LocationRules
+from settings.logging_rules_cythonize import logger
+from settings.scraper_rules_cythonize import ScraperRules
+from settings.location_rules_cythonize import LocationRules
 
 from warnings import filterwarnings
 filterwarnings("ignore")

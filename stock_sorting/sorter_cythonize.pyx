@@ -1,8 +1,8 @@
 from pandas import DataFrame
 from typing import List, Dict
 
-from settings.logging_rules import logger
-from settings.location_rules import LocationRules
+from settings.logging_rules_cythonize import logger
+from settings.location_rules_cythonize import LocationRules
 
 from warnings import filterwarnings
 filterwarnings("ignore")
