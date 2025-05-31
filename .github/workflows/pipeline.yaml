@@ -27,7 +27,7 @@ jobs:
       HF_USERNAME: qywok
 
     steps:
-      - name: Set global directory
+      - name: Set Global Directory
         run: git config --global --add safe.directory /github/workspace
 
       - uses: actions/checkout@v3     
@@ -41,9 +41,17 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Cloning datasets from hugging face
+      - name: Cloning Datasets From Hugging Face
         id: cloning_dataset
         run: git clone https://huggingface.co/datasets/$HF_USERNAME/$DATASET_NAME
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements/linux/ubuntu.production.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Requirements Install
         id: requirements_install
@@ -70,7 +78,7 @@ jobs:
             --gen_new_data=$GEN_NEW_DATA --process=SYNC \
             --ranking_by=HEAD_RANK --ranking_number=50
 
-      - name: ingest to hugging face
+      - name: Ingest to Hugging Face
         run: |
           cd indonesia_stocks
           git config --local user.email "alfariqyraihan@gmail.com"
