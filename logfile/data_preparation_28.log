@@ -1,0 +1,276 @@
+---------------------------------------------------------
+------------------ [ Iteration - 1 ] ------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2025-06-10 15:39:32 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:283 - get_stocks_infographic() - "indonesia_stocks/infographic_stocks.csv" already exists.
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:37 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:37 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:38 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:39 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:40 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:41 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:42 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:43 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:44 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:45 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:46 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:47 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:48 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:49 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:50 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:51 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:52 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:53 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:54 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:55 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:56 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:57 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MLPT.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:57 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MASA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:58 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ADRO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:39:59 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRMS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:00 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/GEMS.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:01 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SUPR.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:02 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CASA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:03 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TBIG.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:04 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MDKA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:05 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEGA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:06 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BUMI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:07 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EXCL.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:07 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EMTK.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:08 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SRAJ.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:09 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MIKA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:10 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PNBN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:11 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INKP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:11 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SILO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:13 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PTRO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:13 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INCO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:14 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/NISP.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:15 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TCPI.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:16 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MSIN.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:17 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEDC.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:18 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/FILM.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:19 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ARTO.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:20 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BINA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:20 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AKRA.csv"
+[*********************100%***********************]  1 of 1 completed
+2025-06-10 15:40:21 [PID:16530] [TID:MainThread] [INFO] [Data Preparation Service] main.py:49 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ITMG.csv"
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+-------------------- [ Historicals ] --------------------
+---------------------------------------------------------
+total 2172
+drwxrwxrwx 1 hanxzo hanxzo  4096 May 16 03:19 .
+drwxrwxrwx 1 hanxzo hanxzo  4096 Jun 10 15:38 ..
+-rwxrwxrwx 1 hanxzo hanxzo 49354 Jun 10 15:39 ADRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 52837 Jun 10 15:40 AKRA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 52659 Jun 10 15:39 AMRT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42389 Jun 10 15:39 ANTM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 27271 Jun 10 15:40 ARTO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50543 Jun 10 15:39 ASII.csv
+-rwxrwxrwx 1 hanxzo hanxzo 48244 Jun 10 15:39 BBCA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50258 Jun 10 15:39 BBNI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50298 Jun 10 15:39 BBRI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25994 Jun 10 15:40 BINA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49726 Jun 10 15:39 BNLI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 52935 Jun 10 15:39 BRIS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25712 Jun 10 15:39 BRMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42589 Jun 10 15:39 BRPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25094 Jun 10 15:40 BUMI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41752 Jun 10 15:39 BYAN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 24601 Jun 10 15:40 CASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50076 Jun 10 15:39 CPIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25453 Jun 10 15:39 DNET.csv
+-rwxrwxrwx 1 hanxzo hanxzo 26771 Jun 10 15:39 DSSA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51768 Jun 10 15:40 EMTK.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51351 Jun 10 15:40 EXCL.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42421 Jun 10 15:40 FILM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49367 Jun 10 15:40 GEMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42800 Jun 10 15:39 ICBP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51064 Jun 10 15:40 INCO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41548 Jun 10 15:39 INDF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41102 Jun 10 15:40 INKP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49511 Jun 10 15:40 ITMG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 53442 Jun 10 15:39 KLBF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 38131 Jun 10 15:39 MASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 27546 Jun 10 15:40 MDKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 46748 Jun 10 15:40 MEDC.csv
+-rwxrwxrwx 1 hanxzo hanxzo 47250 Jun 10 15:40 MEGA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 42112 Jun 10 15:40 MIKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50232 Jun 10 15:39 MLPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 24858 Jun 10 15:40 MSIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 49351 Jun 10 15:40 NISP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51515 Jun 10 15:39 PANI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 26966 Jun 10 15:40 PNBN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 51960 Jun 10 15:40 PTRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41824 Jun 10 15:40 SILO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 26912 Jun 10 15:39 SMMA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25067 Jun 10 15:40 SRAJ.csv
+-rwxrwxrwx 1 hanxzo hanxzo 25804 Jun 10 15:40 SUPR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 47780 Jun 10 15:40 TBIG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41165 Jun 10 15:40 TCPI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 41349 Jun 10 15:39 TPIA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 50140 Jun 10 15:39 UNTR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 47491 Jun 10 15:39 UNVR.csv
+---------------------------------------------------------
+--------------------- [ Indicators ] --------------------
+---------------------------------------------------------
+total 1800
+drwxrwxrwx 1 hanxzo hanxzo  4096 May 20 17:01 .
+drwxrwxrwx 1 hanxzo hanxzo  4096 Jun 10 15:38 ..
+-rwxrwxrwx 1 hanxzo hanxzo 35286 Jun 10 15:40 ADRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35413 Jun 10 15:40 AKRA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35391 Jun 10 15:40 AMRT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35438 Jun 10 15:40 ANTM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35546 Jun 10 15:40 ARTO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35463 Jun 10 15:40 ASII.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35336 Jun 10 15:40 BBCA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35356 Jun 10 15:40 BBNI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35375 Jun 10 15:40 BBRI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35331 Jun 10 15:40 BINA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35399 Jun 10 15:40 BNLI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35252 Jun 10 15:40 BRIS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35398 Jun 10 15:40 BRMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35438 Jun 10 15:40 BRPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35526 Jun 10 15:40 BUMI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35403 Jun 10 15:40 BYAN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35413 Jun 10 15:40 CASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35454 Jun 10 15:40 CPIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35280 Jun 10 15:40 DNET.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35185 Jun 10 15:40 DSSA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35518 Jun 10 15:40 EMTK.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35334 Jun 10 15:40 EXCL.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35396 Jun 10 15:40 FILM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35373 Jun 10 15:40 GEMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35424 Jun 10 15:40 ICBP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35629 Jun 10 15:40 INCO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35404 Jun 10 15:40 INDF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35553 Jun 10 15:40 INKP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35332 Jun 10 15:40 ITMG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35565 Jun 10 15:40 KLBF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35465 Jun 10 15:40 MASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35550 Jun 10 15:40 MDKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35460 Jun 10 15:40 MEDC.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35477 Jun 10 15:40 MEGA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35440 Jun 10 15:40 MIKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35421 Jun 10 15:40 MLPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35654 Jun 10 15:40 MSIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35338 Jun 10 15:40 NISP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35179 Jun 10 15:40 PANI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35459 Jun 10 15:40 PNBN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35306 Jun 10 15:40 PTRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35249 Jun 10 15:40 SILO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35290 Jun 10 15:40 SMMA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35269 Jun 10 15:40 SRAJ.csv
+-rwxrwxrwx 1 hanxzo hanxzo 34614 Jun 10 15:40 SUPR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35486 Jun 10 15:40 TBIG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35509 Jun 10 15:40 TCPI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35315 Jun 10 15:40 TPIA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35310 Jun 10 15:40 UNTR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 35613 Jun 10 15:40 UNVR.csv
+---------------------------------------------------------
+--------------------- [ Min-Max ] --------------------
+---------------------------------------------------------
+total 0
+drwxrwxrwx 1 hanxzo hanxzo 4096 May 21 00:05 .
+drwxrwxrwx 1 hanxzo hanxzo 4096 Jun 10 15:38 ..
+-rwxrwxrwx 1 hanxzo hanxzo  292 Jun 10 15:40 ADRO.json
+-rwxrwxrwx 1 hanxzo hanxzo  284 Jun 10 15:40 AKRA.json
+-rwxrwxrwx 1 hanxzo hanxzo  293 Jun 10 15:40 AMRT.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 Jun 10 15:40 ANTM.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 Jun 10 15:40 ARTO.json
+-rwxrwxrwx 1 hanxzo hanxzo  284 Jun 10 15:40 ASII.json
+-rwxrwxrwx 1 hanxzo hanxzo  288 Jun 10 15:40 BBCA.json
+-rwxrwxrwx 1 hanxzo hanxzo  292 Jun 10 15:40 BBNI.json
+-rwxrwxrwx 1 hanxzo hanxzo  290 Jun 10 15:40 BBRI.json
+-rwxrwxrwx 1 hanxzo hanxzo  261 Jun 10 15:40 BINA.json
+-rwxrwxrwx 1 hanxzo hanxzo  286 Jun 10 15:40 BNLI.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 Jun 10 15:40 BRIS.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 Jun 10 15:40 BRMS.json
+-rwxrwxrwx 1 hanxzo hanxzo  278 Jun 10 15:40 BRPT.json
+-rwxrwxrwx 1 hanxzo hanxzo  266 Jun 10 15:40 BUMI.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Jun 10 15:40 BYAN.json
+-rwxrwxrwx 1 hanxzo hanxzo  259 Jun 10 15:40 CASA.json
+-rwxrwxrwx 1 hanxzo hanxzo  282 Jun 10 15:40 CPIN.json
+-rwxrwxrwx 1 hanxzo hanxzo  262 Jun 10 15:40 DNET.json
+-rwxrwxrwx 1 hanxzo hanxzo  264 Jun 10 15:40 DSSA.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 Jun 10 15:40 EMTK.json
+-rwxrwxrwx 1 hanxzo hanxzo  290 Jun 10 15:40 EXCL.json
+-rwxrwxrwx 1 hanxzo hanxzo  285 Jun 10 15:40 FILM.json
+-rwxrwxrwx 1 hanxzo hanxzo  277 Jun 10 15:40 GEMS.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Jun 10 15:40 ICBP.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 Jun 10 15:40 INCO.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Jun 10 15:40 INDF.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 Jun 10 15:40 INKP.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Jun 10 15:40 ITMG.json
+-rwxrwxrwx 1 hanxzo hanxzo  287 Jun 10 15:40 KLBF.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 Jun 10 15:40 MASA.json
+-rwxrwxrwx 1 hanxzo hanxzo  269 Jun 10 15:40 MDKA.json
+-rwxrwxrwx 1 hanxzo hanxzo  292 Jun 10 15:40 MEDC.json
+-rwxrwxrwx 1 hanxzo hanxzo  280 Jun 10 15:40 MEGA.json
+-rwxrwxrwx 1 hanxzo hanxzo  269 Jun 10 15:40 MIKA.json
+-rwxrwxrwx 1 hanxzo hanxzo  279 Jun 10 15:40 MLPT.json
+-rwxrwxrwx 1 hanxzo hanxzo  263 Jun 10 15:40 MSIN.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Jun 10 15:40 NISP.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 Jun 10 15:40 PANI.json
+-rwxrwxrwx 1 hanxzo hanxzo  268 Jun 10 15:40 PNBN.json
+-rwxrwxrwx 1 hanxzo hanxzo  287 Jun 10 15:40 PTRO.json
+-rwxrwxrwx 1 hanxzo hanxzo  280 Jun 10 15:40 SILO.json
+-rwxrwxrwx 1 hanxzo hanxzo  263 Jun 10 15:40 SMMA.json
+-rwxrwxrwx 1 hanxzo hanxzo  261 Jun 10 15:40 SRAJ.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 Jun 10 15:40 SUPR.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Jun 10 15:40 TBIG.json
+-rwxrwxrwx 1 hanxzo hanxzo  275 Jun 10 15:40 TCPI.json
+-rwxrwxrwx 1 hanxzo hanxzo  274 Jun 10 15:40 TPIA.json
+-rwxrwxrwx 1 hanxzo hanxzo  285 Jun 10 15:40 UNTR.json
+-rwxrwxrwx 1 hanxzo hanxzo  272 Jun 10 15:40 UNVR.json

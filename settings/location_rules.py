@@ -17,4 +17,7 @@ class LocationRules:
 
   # Min-Max Location
   DATASET_MINMAX_CSV_PATH:      str = f'{DATASET_MAIN_PATH}/min_max'
+
+  # Workloads
+  DATASET_WOKLOADS_JSON_PATH:   str = f'{DATASET_MAIN_PATH}/workloads'
   

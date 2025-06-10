@@ -2,8 +2,9 @@ from pandas import DataFrame
 from argparse import ArgumentParser, Namespace
 
 from stock_sorting.sorter import Sorter
-from stock_scraping.historical_scraper_cythonize import HistoricalScraper
 from stock_scraping.infographic_scraper import InfographicScraper
+from stock_workflow.workloads_per_workflow import WorkloadsPerWorkflow
+from stock_scraping.historical_scraper_cythonize import HistoricalScraper
 from stock_indicator.technical_indicator_cythonize import TechnicalIndicator
 
 from settings.logging_rules import logger
@@ -49,6 +50,9 @@ def run_pipeline(arguments: Namespace) -> None:
 
     technical: TechnicalIndicator = TechnicalIndicator()
     technical.generate_indicator_by_dataframe_sync(dataframe = sorting_by_infographic)
+
+    workloads_per_workflow: WorkloadsPerWorkflow = WorkloadsPerWorkflow()
+    workloads_per_workflow.generate_workloads()
 
   except Exception as error_message:
     logger.error(error_message)

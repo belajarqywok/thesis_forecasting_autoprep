@@ -84,7 +84,7 @@ jobs:
           git config --local user.email "alfariqyraihan@gmail.com"
           git config --local user.name "qywok"
           git add -A 
-          git diff-index --quiet HEAD || git commit -m "[Ingest Date ]: $FULL_DATE"
+          git diff-index --quiet HEAD || git commit -m "[ Ingest Date ]: $FULL_DATE"
           git push https://$HF_USERNAME:$HF_TOKEN@huggingface.co/datasets/$HF_USERNAME/$DATASET_NAME main --force
 
 

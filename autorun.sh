@@ -46,7 +46,11 @@ echo "---------------------------------------------------------" | tee -a "$LOGF
 ls -al indonesia_stocks/indicators | tee -a "$LOGFILE"
 
 echo "---------------------------------------------------------" | tee -a "$LOGFILE"
-echo "--------------------- [ Min-Max ] --------------------" | tee -a "$LOGFILE"
+echo "----------------------- [ Min-Max ] ---------------------" | tee -a "$LOGFILE"
 echo "---------------------------------------------------------" | tee -a "$LOGFILE"
 ls -al indonesia_stocks/min_max | tee -a "$LOGFILE"
 
+echo "---------------------------------------------------------" | tee -a "$LOGFILE"
+echo "--------------------- [ Workloads ] ---------------------" | tee -a "$LOGFILE"
+echo "---------------------------------------------------------" | tee -a "$LOGFILE"
+ls -al indonesia_stocks/workloads | tee -a "$LOGFILE"
