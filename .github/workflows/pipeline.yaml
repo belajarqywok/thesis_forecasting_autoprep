@@ -105,7 +105,7 @@ jobs:
           git config --local user.email "belajarqywok@gmail.com"
           git config --local user.name "belajarqywok"
           git add -A
-          git commit -m "[ DATA PREP TRIGGER (GMT +0) ]: $FULL_DATE"
+          git commit -m "[ DATA PREP TRIGGER (GMT +0) ]: $FULL_DATE" || true
 
       - name: Push Changes
         id: push_changes
