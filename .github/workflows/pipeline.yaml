@@ -96,8 +96,12 @@ jobs:
       - name: Trigger 'thesis_forecasting_autotraining' Repo
         id: trigger_repo_actions
         if: env.CURRENT_DATE == '20' || env.CURRENT_DATE == '28'
+        env:
+          FULL_DATE: ${{ env.FULL_CURRENT_DATE }}
+          CURRENT_DATE: ${{ env.CURRENT_DATE }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git clone https://x-access-token:${secrets.GH_TOKEN}@github.com/belajarqywok/thesis_forecasting_autotraining.git
+          git clone https://x-access-token:${GH_TOKEN}@github.com/belajarqywok/thesis_forecasting_autotraining.git
           cd thesis_forecasting_autotraining
 
           echo "TRAIN_ON" > schedules/training.schedule
@@ -108,4 +112,5 @@ jobs:
           git add -A
           git commit -m "[ DATA PREP TRIGGER (GMT +0) ]: $FULL_DATE" || true
           git push -u origin main --force
+
 
