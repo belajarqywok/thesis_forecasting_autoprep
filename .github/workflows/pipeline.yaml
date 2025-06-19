@@ -7,9 +7,9 @@ on:
     tags:
       - '*'   
   schedule:
-    - cron: "0 20 * * *"
-    # 3 - 7 = [ -4 ]
-    # karena minus, jadi 24 - 4 = [ 20 ]
+    - cron: "0 19 * * *"
+    # 2 - 7 = [ -5 ]
+    # karena minus, jadi 24 - 5 = [ 19 ]
 
 jobs:
   data_preparation_job:
