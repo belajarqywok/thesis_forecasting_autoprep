@@ -95,7 +95,7 @@ jobs:
 
       - name: Trigger 'thesis_forecasting_autotraining' Repo
         id: trigger_repo_actions
-        if: env.CURRENT_DATE == '20' || env.CURRENT_DATE == '28'
+        if: env.CURRENT_DATE == '14' || env.CURRENT_DATE == '28'
         env:
           FULL_DATE: ${{ env.FULL_CURRENT_DATE }}
           CURRENT_DATE: ${{ env.CURRENT_DATE }}
