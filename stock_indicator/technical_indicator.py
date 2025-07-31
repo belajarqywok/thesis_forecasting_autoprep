@@ -435,11 +435,11 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           
           dataframe: DataFrame = read_csv(historical_csv_path, index_col = 'Date')
           dataframe.dropna(inplace = True)
-          # dataframe['MFI'] = self.__money_flow_index(dataframe)
-          dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
+          dataframe['MFI'] = self.__money_flow_index(dataframe)
+          # dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
 
-          # dataframe: DataFrame = dataframe[['Close', 'Volume', 'MFI']]
-          dataframe: DataFrame = dataframe[['Close', 'Volume', 'VFI']]
+          dataframe: DataFrame = dataframe[['Close', 'Volume', 'MFI']]
+          # dataframe: DataFrame = dataframe[['Close', 'Volume', 'VFI']]
           relative_strength_index: Series = \
             self.__relative_strength_index(dataframe)
           dataframe['RSI'] = relative_strength_index
@@ -451,8 +451,8 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           dataframe.dropna(inplace = True)
 
           dataframe_indicator: DataFrame = dataframe.copy()
-          # dataframe_indicator: DataFrame = dataframe_indicator[['MFI', 'RSI', 'MACD']]
-          dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
+          dataframe_indicator: DataFrame = dataframe_indicator[['MFI', 'RSI', 'MACD']]
+          # dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
           dataframe_indicator.to_csv(path_or_buf = indicator_csv_path)
 
           dataframe_norm, dataframe_min_max = \
@@ -514,11 +514,11 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         modeling_csv_path:   str = f'{self.DATASET_MODELING_CSV_PATH}/{symbol}.csv'
         
         dataframe: DataFrame = read_csv(historical_csv_path, index_col = 'Date')
-        # dataframe['MFI'] = self.__money_flow_index(dataframe)
-        dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
+        dataframe['MFI'] = self.__money_flow_index(dataframe)
+        # dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
 
-        # dataframe: DataFrame = dataframe[['Close', 'Volume', 'MFI']]
-        dataframe: DataFrame = dataframe[['Close', 'Volume', 'VFI']]
+        dataframe: DataFrame = dataframe[['Close', 'Volume', 'MFI']]
+        # dataframe: DataFrame = dataframe[['Close', 'Volume', 'VFI']]
         relative_strength_index: Series = \
           self.__relative_strength_index(dataframe)
         dataframe['RSI'] = relative_strength_index
@@ -530,8 +530,8 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         dataframe.dropna(inplace = True)
 
         dataframe_indicator: DataFrame = dataframe.copy()
-        # dataframe_indicator: DataFrame = dataframe_indicator[['MFI', 'RSI', 'MACD']]
-        dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
+        dataframe_indicator: DataFrame = dataframe_indicator[['MFI', 'RSI', 'MACD']]
+        # dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
         dataframe_indicator.to_csv(path_or_buf = indicator_csv_path)
 
         dataframe_norm, dataframe_min_max = \
