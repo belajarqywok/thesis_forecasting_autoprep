@@ -1,173 +1,0 @@
----------------------------------------------------------
------------------- [ Iteration - 1 ] ------------------
----------------------------------------------------------
-/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
-This warnings indicates broken support for the dtype!
-  machar = _get_machar(dtype)
-2025-08-07 20:29:13 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:319 - get_stocks_infographic() - "indonesia_stocks/infographic_stocks.csv" already exists.
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BBCA.JK']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10000 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:29:51 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
-2025-08-07 20:29:51 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BBCA.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:30:01 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
-2025-08-07 20:30:01 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "TPIA.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BYAN.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:30:18 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
-2025-08-07 20:30:18 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BYAN.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BBRI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:30:28 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
-2025-08-07 20:30:28 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BBRI.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['DSSA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:30:34 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
-2025-08-07 20:30:34 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "DSSA.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['PANI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:30:34 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
-2025-08-07 20:30:34 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "PANI.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['ASII.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:30:34 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
-2025-08-07 20:30:34 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ASII.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BBNI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:30:45 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
-2025-08-07 20:30:45 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BBNI.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['DNET.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:31:11 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
-2025-08-07 20:31:11 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "DNET.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 20:31:24 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BRIS.JK']: Timeout('Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:31:35 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
-2025-08-07 20:31:35 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BRIS.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 20:31:45 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 20:31:53 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BNLI.JK']: Timeout('Failed to perform, curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:32:23 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
-2025-08-07 20:32:23 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BNLI.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 20:32:27 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 20:32:36 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BRPT.JK']: ConnectionError("Failed to perform, curl: (7) Failed to connect to fc.yahoo.com port 443 after 15022 ms: Couldn't connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.")
-2025-08-07 20:32:51 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
-2025-08-07 20:32:51 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BRPT.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['INDF.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:33:02 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
-2025-08-07 20:33:02 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "INDF.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['UNVR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:33:12 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
-2025-08-07 20:33:12 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "UNVR.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['KLBF.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:33:23 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
-2025-08-07 20:33:23 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "KLBF.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['ANTM.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:33:33 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
-2025-08-07 20:33:33 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ANTM.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['MLPT.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:33:44 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MLPT.csv"
-2025-08-07 20:33:44 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MLPT.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['MASA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:33:54 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MASA.csv"
-2025-08-07 20:33:54 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MASA.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['ADRO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:34:04 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ADRO.csv"
-2025-08-07 20:34:04 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ADRO.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['BRMS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:34:15 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRMS.csv"
-2025-08-07 20:34:15 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BRMS.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['GEMS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:34:25 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/GEMS.csv"
-2025-08-07 20:34:25 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "GEMS.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['SUPR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:34:36 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SUPR.csv"
-2025-08-07 20:34:36 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "SUPR.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['CASA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:34:46 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CASA.csv"
-2025-08-07 20:34:46 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "CASA.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['TBIG.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:34:57 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TBIG.csv"
-2025-08-07 20:34:57 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "TBIG.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['MDKA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:35:08 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MDKA.csv"
-2025-08-07 20:35:08 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MDKA.JK" to LIST -> failed_symbols: List[str]
-[*********************100%***********************]  1 of 1 completed
-
-1 Failed download:
-['MEGA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
-2025-08-07 20:35:18 [PID:606] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEGA.csv"
-2025-08-07 20:35:18 [PID:606] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MEGA.JK" to LIST -> failed_symbols: List[str]

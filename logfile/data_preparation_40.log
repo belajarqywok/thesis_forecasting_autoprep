@@ -1,49 +1,0 @@
----------------------------------------------------------
------------------- [ Iteration - 1 ] ------------------
----------------------------------------------------------
-/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
-This warnings indicates broken support for the dtype!
-  machar = _get_machar(dtype)
-2025-08-07 22:08:44 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:319 - get_stocks_infographic() - "indonesia_stocks/infographic_stocks.csv" already exists.
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:08:49 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:08:51 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:08:53 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:08:56 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:08:58 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:08:59 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:03 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:10 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:17 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:20 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:28 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:30 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:32 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:34 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:35 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:37 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:39 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:41 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:43 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:47 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
-[*********************100%***********************]  1 of 1 completed
-2025-08-07 22:09:49 [PID:1336] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
