@@ -264,12 +264,44 @@ class InfographicScraper(ScraperRules, LocationRules):
     get_stocks_process:      str  = 'SYNC' # SYNC, ASYNC
   ) -> Optional[DataFrame]:
     try:
+      sector_translation = {
+        "Financial Services":     "Jasa Keuangan",
+        "Consumer Cyclical":      "Barang Non-Primer",
+        "Consumer Defensive":     "Barang Primer",
+        "Communication Services": "Komunikasi",
+        "Healthcare":             "Kesehatan",
+        "Energy":                 "Energi",
+        "Industrials":            "Industri",
+        "Basic Materials":        "Bahan Baku",
+        "Real Estate":            "Properti",
+        "Technology":             "Teknologi",
+        "Utilities":              "Utilitas"
+      }
+
+      sector_fontawesome_icons = {
+        "Financial Services":     "fa-building-columns",
+        "Consumer Cyclical":      "fa-cart-shopping",
+        "Consumer Defensive":     "fa-apple-whole",
+        "Communication Services": "fa-tower-broadcast",
+        "Healthcare":             "fa-briefcase-medical",
+        "Energy":                 "fa-bolt",
+        "Industrials":            "fa-industry",
+        "Basic Materials":        "fa-boxes-stacked",
+        "Real Estate":            "fa-building-user",
+        "Technology":             "fa-microchip",
+        "Utilities":              "fa-lightbulb"
+      }
+
       if not file_is_exists(self.DATASET_INFOGRAPHIC_CSV_PATH) or generate_new_data:
         stocks_data: Optional[Dict[str, Any]] = \
           self.__get_stocks_data_async() if get_stocks_process is 'ASYNC' \
             else self.__get_stocks_data_sync()
 
         indonesia_stocks_dataframe: DataFrame = DataFrame(stocks_data)
+        indonesia_stocks_dataframe['sector_id'] = \
+          indonesia_stocks_dataframe['sector'].map(sector_translation)
+        indonesia_stocks_dataframe['fontawesome_icon'] = \
+          indonesia_stocks_dataframe['sector'].map(sector_fontawesome_icons)
         indonesia_stocks_dataframe.to_csv(
           index       = False,
           path_or_buf = self.DATASET_INFOGRAPHIC_CSV_PATH
@@ -280,6 +312,10 @@ class InfographicScraper(ScraperRules, LocationRules):
       else:
         indonesia_stocks_dataframe: DataFrame = \
           read_csv(filepath_or_buffer = self.DATASET_INFOGRAPHIC_CSV_PATH)
+        indonesia_stocks_dataframe['sector_id'] = \
+          indonesia_stocks_dataframe['sector'].map(sector_translation)
+        indonesia_stocks_dataframe['fontawesome_icon'] = \
+          indonesia_stocks_dataframe['sector'].map(sector_fontawesome_icons)
         logger.info(f'"{self.DATASET_INFOGRAPHIC_CSV_PATH}" already exists.')
 
       return indonesia_stocks_dataframe

@@ -1,4 +1,5 @@
-from pandas import DataFrame
+from json import dump
+from pandas import DataFrame, isna
 from typing import List, Dict
 
 from settings.logging_rules import logger
@@ -157,6 +158,25 @@ class Sorter(LocationRules):
         index       = False,
         path_or_buf = self.DATASET_RANKING_CSV_PATH
       )
+
+      infographic_json = [
+        {
+          "fontawesome_icon": row["fontawesome_icon"],
+          "symbol":           row["symbol"][:len(row["symbol"]) - 3], 
+          "sector_id":        row["sector_id"],
+          "shortName":        row["shortName"],
+          "beta":             '0.0' if isna(row["beta"]) else str(row["beta"]),
+          "dividendYield":    '0.0 %' if isna(row["dividendYield"]) else f'{row["dividendYield"]} %'
+        }
+        for _, row in infographic.iterrows()
+      ]
+
+      with open(self.DATASET_RANKING_JSON_PATH, "w") as infographic_json_value:
+        dump({"infographics": infographic_json}, infographic_json_value)
+
+      sectors_json = list(infographic['sector'].unique())
+      with open(self.DATASET_SECTOR_JSON_PATH, "w") as sectors_json_value:
+        dump({"sectors": sectors_json}, sectors_json_value)
 
       return infographic
     

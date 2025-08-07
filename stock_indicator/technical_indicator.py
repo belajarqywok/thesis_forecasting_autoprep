@@ -539,6 +539,7 @@ class TechnicalIndicator(ScraperRules, LocationRules):
 
         with open(min_max_json_path, "w") as min_max_value:
           dump(dataframe_min_max, min_max_value)
+          
         dataframe_norm.to_csv(path_or_buf = modeling_csv_path)
 
         csv_file_is_valid: bool = self.__csv_store_validation(modeling_csv_path)
