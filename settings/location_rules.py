@@ -1,12 +1,13 @@
 class LocationRules:
   # Dataset Main Location
-  DATASET_MAIN_PATH:            str = 'indonesia_stocks'
+  DATASET_MAIN_PATH:             str = 'indonesia_stocks'
 
   # Infographic Location
-  DATASET_SECTOR_JSON_PATH:     str = f'{DATASET_MAIN_PATH}/sectors.json'
-  DATASET_RANKING_CSV_PATH:     str = f'{DATASET_MAIN_PATH}/top_50_stocks.csv'
-  DATASET_RANKING_JSON_PATH:    str = f'{DATASET_MAIN_PATH}/top_50_stocks.json'
-  DATASET_INFOGRAPHIC_CSV_PATH: str = f'{DATASET_MAIN_PATH}/infographic_stocks.csv'
+  DATASET_SECTOR_JSON_PATH:      str = f'{DATASET_MAIN_PATH}/sectors.json'
+  DATASET_RANKING_CSV_PATH:      str = f'{DATASET_MAIN_PATH}/top_50_stocks.csv'
+  DATASET_RANKING_JSON_PATH:     str = f'{DATASET_MAIN_PATH}/top_50_stocks.json'
+  DATASET_INFOGRAPHIC_CSV_PATH:  str = f'{DATASET_MAIN_PATH}/infographic_stocks.csv'
+  DATASET_FUNDAMENTAL_JSON_PATH: str = f'{DATASET_MAIN_PATH}/fundamentals'
 
   # Historical Location
   DATASET_HISTORICAL_CSV_PATH:  str = f'{DATASET_MAIN_PATH}/historicals'

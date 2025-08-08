@@ -7,8 +7,8 @@ from stock_workflow.workloads_per_workflow import WorkloadsPerWorkflow
 
 # from stock_scraping.historical_scraper import HistoricalScraper
 from stock_scraping.historical_scraper_cythonize import HistoricalScraper
-# from stock_indicator.technical_indicator import TechnicalIndicator
-from stock_indicator.technical_indicator_cythonize import TechnicalIndicator
+from stock_indicator.technical_indicator import TechnicalIndicator
+# from stock_indicator.technical_indicator_cythonize import TechnicalIndicator
 
 from settings.logging_rules import logger
 

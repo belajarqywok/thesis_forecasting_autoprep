@@ -1,7 +1,7 @@
 import numpy as np
 from json import dump
 from typing import List, Dict, Tuple
-from pandas import Series, DataFrame, read_csv
+from pandas import Series, DataFrame, read_csv, to_datetime, isnull
 
 from os import makedirs
 from os.path import exists as file_is_exists
@@ -514,8 +514,51 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         modeling_csv_path:   str = f'{self.DATASET_MODELING_CSV_PATH}/{symbol}.csv'
         
         dataframe: DataFrame = read_csv(historical_csv_path, index_col = 'Date')
-        dataframe['MFI'] = self.__money_flow_index(dataframe)
+        dataframe.index = to_datetime(dataframe.index, errors='coerce')
+        
+        # day maping
+        day_name_maping = {
+            'Monday':    'Senin',
+            'Tuesday':   'Selasa',
+            'Wednesday': 'Rabu',
+            'Thursday':  'Kamis',
+            'Friday':    'Jumat',
+            'Saturday':  'Sabtu',
+            'Sunday':    'Minggu',
+        }
+
+        # month maping
+        month_name_maping = {
+            'January':   'Januari',
+            'February':  'Februari',
+            'March':     'Maret',
+            'April':     'April',
+            'May':       'Mei',
+            'June':      'Juni',
+            'July':      'Juli',
+            'August':    'Agustus',
+            'September': 'September',
+            'October':   'Oktober',
+            'November':  'November',
+            'December':  'Desember',
+        }
+
+        historical_json: list[dict[str, str]] = []
+        for dt, row in dataframe.iterrows():
+          if isnull(dt):
+            continue
+          historical_json.append({
+            "date": dt.strftime("%Y-%m-%d"),
+            "full_date": f"{day_name_maping[dt.strftime('%A')]}, {dt.strftime('%d')} {month_name_maping[dt.strftime('%B')]} {dt.strftime('%Y')}",
+            "open": row["Open"],
+            "high": row["High"],
+            "low": row["Low"],
+            "close": row["Close"],
+            "volume": row["Volume"]
+          })
+
         # dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
+        dataframe['MFI'] = self.__money_flow_index(dataframe)
 
         dataframe: DataFrame = dataframe[['Close', 'Volume', 'MFI']]
         # dataframe: DataFrame = dataframe[['Close', 'Volume', 'VFI']]
@@ -534,6 +577,29 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         # dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
         dataframe_indicator.to_csv(path_or_buf = indicator_csv_path)
 
+        # indicator
+        dataframe_indicator.index = to_datetime(dataframe_indicator.index, errors='coerce')
+        indicator_json: list[dict[str, str]] = [
+          {
+            "date": dt.strftime("%Y-%m-%d"),
+            "full_date": f"{day_name_maping[dt.strftime('%A')]}, {dt.strftime('%d')} {month_name_maping[dt.strftime('%B')]} {dt.strftime('%Y')}",
+            "MFI": row["MFI"],
+            "RSI": row["RSI"],
+            "MACD": row["MACD"]
+          }
+          for dt, row in dataframe_indicator.iterrows()
+          if not isnull(dt)
+        ]
+
+        with open(f'{self.DATASET_INDICATOR_CSV_PATH}/{symbol}.json', "w") as f:
+                dump({'indicators': indicator_json}, f)
+
+        historical_json = historical_json[-len(indicator_json):]
+
+        with open(f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.json', "w") as f:
+                dump({'historicals': historical_json}, f)
+
+        # normalization
         dataframe_norm, dataframe_min_max = \
           self.__min_max_normalization(dataframe)
 
