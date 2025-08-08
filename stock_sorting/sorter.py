@@ -174,7 +174,7 @@ class Sorter(LocationRules):
       with open(self.DATASET_RANKING_JSON_PATH, "w") as infographic_json_value:
         dump({"infographics": infographic_json}, infographic_json_value)
 
-      sectors_json = list(infographic['sector'].unique())
+      sectors_json = list(infographic['sector_id'].unique())
       with open(self.DATASET_SECTOR_JSON_PATH, "w") as sectors_json_value:
         dump({"sectors": sectors_json}, sectors_json_value)
 

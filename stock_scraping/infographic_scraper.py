@@ -287,7 +287,7 @@ class InfographicScraper(ScraperRules, LocationRules):
         "Energy":                 "fa-bolt",
         "Industrials":            "fa-industry",
         "Basic Materials":        "fa-boxes-stacked",
-        "Real Estate":            "fa-building-user",
+        "Real Estate":            "fa-building",
         "Technology":             "fa-microchip",
         "Utilities":              "fa-lightbulb"
       }
