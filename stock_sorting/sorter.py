@@ -204,6 +204,7 @@ class Sorter(LocationRules):
         issuer_symbol: str = row['symbol'][:len(row['symbol']) - 3]
         fundamentals_json: dict[str, str] = {
           # header data
+          "fontawesome_icon": row["fontawesome_icon"],
           'symbol':       issuer_symbol,
           'sector_id':    row['sector_id'],
           'shortName':    row['shortName'],
