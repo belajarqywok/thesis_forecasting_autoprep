@@ -623,15 +623,15 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         # generate reports
         pdf_report: PdfReport = PdfReport()
 
-        # logger.info(f'[ PROCESSED ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
-        # pdf_report.generate_report_historicals(
-        #   symbol     = symbol,
-        #   short_name = short_name_company,
+        logger.info(f'[ PROCESSED ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
+        pdf_report.generate_report_historicals(
+          symbol     = symbol,
+          short_name = short_name_company,
           
-        #   # reverse indicator
-        #   historicals = historical_json[::-1]
-        # )
-        # logger.info(f'[ SUCCESS ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
+          # reverse indicator
+          historicals = historical_json[::-1]
+        )
+        logger.info(f'[ SUCCESS ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
 
 
         logger.info(f'[ PROCESSED ] [ INDICATOR/TECHNICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
