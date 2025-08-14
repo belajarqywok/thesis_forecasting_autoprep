@@ -1,6 +1,6 @@
 import numpy as np
-from json import dump
-from typing import List, Dict, Tuple
+from json import dump, load
+from typing import Any, List, Dict, Tuple
 from pandas import Series, DataFrame, read_csv, to_datetime, isnull
 
 from os import makedirs
@@ -9,6 +9,8 @@ from os.path import exists as file_is_exists
 from settings.logging_rules import logger
 from settings.scraper_rules import ScraperRules
 from settings.location_rules import LocationRules
+
+from stock_report.pdf_report import PdfReport
 
 from warnings import filterwarnings
 filterwarnings("ignore")
@@ -506,7 +508,8 @@ class TechnicalIndicator(ScraperRules, LocationRules):
       for symbol in dataframe['symbol'].tolist():
         symbol: str = symbol[:len(symbol) - 3]
         # json path
-        min_max_json_path:   str = f'{self.DATASET_MINMAX_CSV_PATH}/{symbol}.json'
+        min_max_json_path:     str = f'{self.DATASET_MINMAX_CSV_PATH}/{symbol}.json'
+        fundamental_json_path: str = f'{self.DATASET_FUNDAMENTAL_JSON_PATH}/{symbol}.json' 
 
         # csv path
         historical_csv_path: str = f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv'
@@ -514,34 +517,42 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         modeling_csv_path:   str = f'{self.DATASET_MODELING_CSV_PATH}/{symbol}.csv'
         
         dataframe: DataFrame = read_csv(historical_csv_path, index_col = 'Date')
-        dataframe.index = to_datetime(dataframe.index, errors='coerce')
+        dataframe.index = to_datetime(dataframe.index, errors = 'coerce')
+
+        with open(fundamental_json_path, 'r') as fundamental_json:
+          # hiraukan "Dict[Any, Any]", nanti saya refactor lagi :)
+          fundamental_json_data: Dict[Any, Any] = load(fundamental_json)
+          short_name_company: str = fundamental_json_data \
+            .get('fundamentals').get('shortName')
         
         # day maping
-        day_name_maping = {
-            'Monday':    'Senin',
-            'Tuesday':   'Selasa',
-            'Wednesday': 'Rabu',
-            'Thursday':  'Kamis',
-            'Friday':    'Jumat',
-            'Saturday':  'Sabtu',
-            'Sunday':    'Minggu',
+        day_name_maping: Dict[str, str] = {
+          'Monday':    'Senin',
+          'Tuesday':   'Selasa',
+          'Wednesday': 'Rabu',
+          'Thursday':  'Kamis',
+          'Friday':    'Jumat',
+          'Saturday':  'Sabtu',
+          'Sunday':    'Minggu',
         }
 
         # month maping
-        month_name_maping = {
-            'January':   'Januari',
-            'February':  'Februari',
-            'March':     'Maret',
-            'April':     'April',
-            'May':       'Mei',
-            'June':      'Juni',
-            'July':      'Juli',
-            'August':    'Agustus',
-            'September': 'September',
-            'October':   'Oktober',
-            'November':  'November',
-            'December':  'Desember',
+        month_name_maping: Dict[str, str] = {
+          'January':   'Januari',
+          'February':  'Februari',
+          'March':     'Maret',
+          'April':     'April',
+          'May':       'Mei',
+          'June':      'Juni',
+          'July':      'Juli',
+          'August':    'Agustus',
+          'September': 'September',
+          'October':   'Oktober',
+          'November':  'November',
+          'December':  'Desember',
         }
+
+        logger.info(f'[ PROCESSED ] [ HISTORICAL ] [ {symbol} ] Generate Data...')
 
         historical_json: list[dict[str, str]] = []
         for dt, row in dataframe.iterrows():
@@ -556,7 +567,11 @@ class TechnicalIndicator(ScraperRules, LocationRules):
             "close": row["Close"],
             "volume": row["Volume"]
           })
+        logger.info(f'[ SUCCESS ] [ HISTORICAL ] [ {symbol} ] Generate Data Success...')
 
+
+        # indicator / technical
+        logger.info(f'[ PROCESSED ] [ INDICATOR/TECHNICAL ] [ {symbol} ] Generate Data...')
         # dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
         dataframe['MFI'] = self.__money_flow_index(dataframe)
 
@@ -577,7 +592,6 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         # dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
         dataframe_indicator.to_csv(path_or_buf = indicator_csv_path)
 
-        # indicator
         dataframe_indicator.index = to_datetime(dataframe_indicator.index, errors='coerce')
         indicator_json: list[dict[str, str]] = [
           {
@@ -590,14 +604,46 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           for dt, row in dataframe_indicator.iterrows()
           if not isnull(dt)
         ]
+        logger.info(f'[ SUCCESS ] [ INDICATOR/TECHNICAL ] [ {symbol} ] Generate Data Success...')
 
-        with open(f'{self.DATASET_INDICATOR_CSV_PATH}/{symbol}.json', "w") as f:
-                dump({'indicators': indicator_json}, f)
+
+        # saved indicator/technical and historical to json file
+        indicator_json_path: str = f'{self.DATASET_INDICATOR_CSV_PATH}/{symbol}.json'
+        with open(indicator_json_path, "w") as indicator_json_file:
+          dump({'indicators': indicator_json}, indicator_json_file)
+          logger.info(f'[ SAVED ] [ HISTORICAL ] [ {symbol} ] Generate Data Saved on "{indicator_json_path}"...')
 
         historical_json = historical_json[-len(indicator_json):]
+        historical_json_path: str = f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.json'
+        with open(historical_json_path, "w") as historical_json_file:
+          dump({'historicals': historical_json}, historical_json_file)
+          logger.info(f'[ SAVED ] [ HISTORICAL ] [ {symbol} ] Generate Data Saved on "{historical_json_path}"...')
 
-        with open(f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.json', "w") as f:
-                dump({'historicals': historical_json}, f)
+
+        # generate reports
+        pdf_report: PdfReport = PdfReport()
+
+        logger.info(f'[ PROCESSED ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
+        pdf_report.generate_report_historicals(
+          symbol     = symbol,
+          short_name = short_name_company,
+          
+          # reverse indicator
+          historicals = historical_json[::-1]
+        )
+        logger.info(f'[ SUCCESS ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
+
+
+        logger.info(f'[ PROCESSED ] [ INDICATOR/TECHNICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
+        pdf_report.generate_report_indicators(
+          symbol     = symbol,
+          short_name = short_name_company,
+          
+          # reverse indicator
+          indicators = indicator_json[::-1]
+        )
+        logger.info(f'[ SUCCESS ] [ INDICATOR/TECHNICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
+
 
         # normalization
         dataframe_norm, dataframe_min_max = \

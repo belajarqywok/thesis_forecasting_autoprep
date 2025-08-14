@@ -9,6 +9,8 @@ from os.path import exists as file_is_exists
 from settings.logging_rules import logger
 from settings.location_rules import LocationRules
 
+from stock_report.pdf_report import PdfReport
+
 from warnings import filterwarnings
 filterwarnings("ignore")
 
@@ -185,16 +187,24 @@ class Sorter(LocationRules):
           "dividendYield":    '0.0 %' if isna(row["dividendYield"]) else f'{row["dividendYield"]} %'
         }
         for _, row in infographic.iterrows()
-      ]
+      ]      
 
       with open(self.DATASET_RANKING_JSON_PATH, "w") as infographic_json_value:
         dump({'infographics': infographic_json}, infographic_json_value)
+      
+
+      # generate reports
+      pdf_report: PdfReport = PdfReport()
+      logger.info(f'[ PROCESSED ] [ ISSUERS ] [ PDF REPORT ] Generate Report...')
+      pdf_report.generate_report_issuers(issuers = infographic_json)
+      logger.info(f'[ SUCCESS ] [ ISSUERS ] [ PDF REPORT ] Generate Report Success...')
 
 
       # sectors information
       sectors_json = list(infographic['sector_id'].unique())
       with open(self.DATASET_SECTOR_JSON_PATH, "w") as sectors_json_value:
         dump({'sectors': sectors_json}, sectors_json_value)
+        logger.info(f'[ SAVED ] [ SECTORS ] Generate Data Saved on "{self.DATASET_SECTOR_JSON_PATH}"...')
 
       # fundamental information
       if not file_is_exists(self.DATASET_FUNDAMENTAL_JSON_PATH):
@@ -202,6 +212,7 @@ class Sorter(LocationRules):
 
       for _, row in infographic.iterrows():
         issuer_symbol: str = row['symbol'][:len(row['symbol']) - 3]
+        logger.info(f'[ PROCESSED ] [ FUNDAMENTAL ] [ {issuer_symbol} ] Generate Data...')
         fundamentals_json: dict[str, str] = {
           # header data
           "fontawesome_icon": row["fontawesome_icon"],
@@ -238,8 +249,52 @@ class Sorter(LocationRules):
           'forwardEps':          '0.0' if isna(row["forwardEps"]) else str(row["forwardEps"])
         }
 
-        with open(f'{self.DATASET_FUNDAMENTAL_JSON_PATH}/{issuer_symbol}.json', 'w') as fundamentals_json_value:
+        logger.info(f'[ SUCCESS ] [ FUNDAMENTAL ] [ {issuer_symbol} ] Generate Data Success...')
+
+        fundamentals_json_path: str = f'{self.DATASET_FUNDAMENTAL_JSON_PATH}/{issuer_symbol}.json'
+        with open(fundamentals_json_path, 'w') as fundamentals_json_value:
           dump({'fundamentals': fundamentals_json}, fundamentals_json_value)
+          logger.info(f'[ SAVED ] [ FUNDAMENTAL ] [ {issuer_symbol} ] Generate Data Saved on "{fundamentals_json_path}"...')
+
+        # fundamental labels
+        fundamental_labels: List[str] = {
+          'shortName':            'Nama Emiten (Issuer Name)', 
+          'symbol':               'Simbol (Symbol)', 
+          'sector_id':            'Sektor (Sector)', 
+          'address':              'Alamat (Address)', 
+          'phone':                'Nomor Telepon (Phone Number)', 
+          'website':              'Situs Web (Website)', 
+          'marketCap':            'Kapitalisasi Pasar (Market Cap)', 
+          'dividendRate':         'Tingkat Dividen (Dividend Rate)', 
+          'dividendYield':        'Hasil Dividen (Dividend Yield)', 
+          'earningsGrowth':       'Pertumbuhan Laba (Earnings Growth)',
+          'profitMargins':        'Margin Laba (Profit Margins)', 
+          'grossMargins':         'Margin Kotor (Gross Margins)', 
+          'beta':                 'Beta', 
+          'bookValue':            'Nilai Buku (Book Value)', 
+          'priceToBook':          'Rasio Harga terhadap Nilai Buku (Price To Book)', 
+          'quickRatio':           'Rasio Cepat (Quick Ratio)', 
+          'currentRatio':         'Rasio Saat Ini (Current Ratio)', 
+          'debtToEquity':         'Rasio Utang terhadap Ekuitas (Debt To Equity)', 
+          'revenuePerShare':      'Pendapatan per Saham (Revenue Per Share)', 
+          'revenueGrowth':        'Pertumbuhan Pendapatan (Revenue Growth)', 
+          'ebitda':               'Ebitda', 
+          'regularMarketChange':  'Perubahan Harga di Pasar Reguler (Regular Market Change)', 
+          'payoutRatio':          'Rasio Pembayaran Dividen (Payout Ratio)',
+          'trailingPE':           'Rasio P/E Historis (Trailing P/E)', 
+          'forwardPE':            'Rasio P/E Proyeksi (Forward P/E)', 
+          'trailingEps':          'EPS Historis (Trailing EPS)', 
+          'forwardEps':           'EPS Proyeksi (Forward EPS)'
+        }
+
+        logger.info(f'[ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ {issuer_symbol} ] Generate Report...')
+        pdf_report.generate_report_fundamental(
+          symbol        = issuer_symbol,
+          short_name    = row['shortName'],
+          issuer_labels = fundamental_labels,
+          issuer_datas  = fundamentals_json
+        )
+        logger.info(f'[ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ {issuer_symbol} ] Generate Report Success...')
 
       return infographic
     
