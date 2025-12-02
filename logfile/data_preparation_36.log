@@ -258,105 +258,155 @@ This warnings indicates broken support for the dtype!
 2025-08-14 07:09:00 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ ITMG ] Generate Data Saved on "indonesia_stocks/fundamentals/ITMG.json"...
 2025-08-14 07:09:00 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ITMG ] Generate Report...
 2025-08-14 07:09:00 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ITMG ] Generate Report Success...
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:07 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:08 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:14 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:18 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:22 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:24 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:26 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:27 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:29 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:35 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:37 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:38 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:41 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:43 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:45 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:46 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:48 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:50 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:51 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:54 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:55 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:09:57 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MLPT.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:00 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MASA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:03 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ADRO.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:04 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRMS.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:07 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/GEMS.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:08 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SUPR.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:10 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CASA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:12 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TBIG.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:14 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MDKA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:15 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEGA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:16 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BUMI.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:21 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EXCL.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:23 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EMTK.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:26 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SRAJ.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:31 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MIKA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:32 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PNBN.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:39 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INKP.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:42 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SILO.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:44 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PTRO.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:46 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INCO.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:52 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/NISP.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:10:57 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TCPI.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:11:00 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MSIN.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:11:02 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEDC.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:11:04 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/FILM.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:11:08 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ARTO.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:11:10 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BINA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:11:13 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AKRA.csv"
-[*********************100%***********************]  1 of 1 completed
+
+[*********************100%***********************]  1 of 1 completed
 2025-08-14 07:11:16 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ITMG.csv"
 2025-08-14 07:11:16 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] technical_indicator.py:555 - generate_indicator_by_dataframe_sync() - [ PROCESSED ] [ HISTORICAL ] [ BBCA ] Generate Data...
 2025-08-14 07:11:16 [PID:4991] [TID:MainThread] [INFO] [Data Preparation Service] technical_indicator.py:570 - generate_indicator_by_dataframe_sync() - [ SUCCESS ] [ HISTORICAL ] [ BBCA ] Generate Data Success...
@@ -1243,3 +1293,5 @@ drwxrwxrwx 1 hanxzo hanxzo 4096 Aug 14 02:10 ..
 -rwxrwxrwx 1 hanxzo hanxzo   75 Aug 14 07:24 workloads_7.json
 -rwxrwxrwx 1 hanxzo hanxzo   75 Aug 14 07:24 workloads_8.json
 -rwxrwxrwx 1 hanxzo hanxzo   75 Aug 14 07:24 workloads_9.json
+
+trigger 1
