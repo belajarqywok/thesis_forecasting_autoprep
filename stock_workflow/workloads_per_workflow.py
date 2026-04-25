@@ -13,7 +13,7 @@ filterwarnings("ignore")
 
 """
 
-  -- Technical Indicator (Feature Engineering) --
+  -- Workloads per Workflow (Distributed Parallelism) --
 
   Writer : Al-Fariqy Raihan Azhwar
   NPM    : 202143501514

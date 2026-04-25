@@ -5,9 +5,20 @@ from datetime import datetime, timedelta
 from jinja2 import Template, Environment, FileSystemLoader
 
 
+"""
+
+  -- PDF Report --
+
+  Writer : Al-Fariqy Raihan Azhwar
+  NPM    : 202143501514
+  Class  : R8Q
+  Email  : alfariqyraihan@gmail.com
+
+"""
 
 
 class PdfReport:
+
   CONTRACTS_PATH:      str = './stock_report'
 
   ISSUER_REPORT:       str = './indonesia_stocks'
@@ -25,19 +36,21 @@ class PdfReport:
     self.npm_numbers:  str = '202143501514'
 
     self.month_name_mapping = {
-    'January':   'Januari',
-    'February':  'Februari',
-    'March':     'Maret',
-    'April':     'April',
-    'May':       'Mei',
-    'June':      'Juni',
-    'July':      'Juli',
-    'August':    'Agustus',
-    'September': 'September',
-    'October':   'Oktober',
-    'November':  'November',
-    'December':  'Desember',
-  }
+      'January':   'Januari',
+      'February':  'Februari',
+      'March':     'Maret',
+      'April':     'April',
+      'May':       'Mei',
+      'June':      'Juni',
+      'July':      'Juli',
+      'August':    'Agustus',
+      'September': 'September',
+      'October':   'Oktober',
+      'November':  'November',
+      'December':  'Desember'
+    }
+
+    self.tomorrow: datetime = datetime.now() + timedelta(days = 1)
 
 
   """ 
@@ -51,6 +64,9 @@ class PdfReport:
 
     [ description ]:
       Generate Report Indicators
+
+      jinja template: 
+        - technical_report.jinja2
   """
   def generate_report_indicators(
     self, symbol: str, 
@@ -61,8 +77,13 @@ class PdfReport:
       template: Template = self.environment \
         .get_template('technical_report.jinja2')
 
-      tomorrow: datetime = datetime.now() + timedelta(days = 1)
-      full_date: str = f"{tomorrow.strftime('%d')} {self.month_name_mapping[tomorrow.strftime('%B')]} {tomorrow.strftime('%Y')}"
+      ##  get full date
+      get_day:   str  = self.tomorrow.strftime('%d')
+      get_month: str  = self.month_name_mapping[self.tomorrow.strftime('%B')]
+      get_year:  str  = self.tomorrow.strftime('%Y')
+
+      full_date: str  = f"{get_day} {get_month} {get_year}"
+      ##  get full date
 
       template_context: Dict[str, Any] = {
         'symbol':      symbol,
@@ -94,6 +115,9 @@ class PdfReport:
 
     [ description ]:
       Generate Report Historicals
+
+      jinja template: 
+        - historical_report.jinja2
   """
   def generate_report_historicals(
     self, symbol: str, 
@@ -104,8 +128,13 @@ class PdfReport:
       template: Template = self.environment \
         .get_template('historical_report.jinja2')
 
-      tomorrow: datetime = datetime.now() + timedelta(days = 1)
-      full_date: str = f"{tomorrow.strftime('%d')} {self.month_name_mapping[tomorrow.strftime('%B')]} {tomorrow.strftime('%Y')}"
+      ##  get full date
+      get_day:   str  = self.tomorrow.strftime('%d')
+      get_month: str  = self.month_name_mapping[self.tomorrow.strftime('%B')]
+      get_year:  str  = self.tomorrow.strftime('%Y')
+
+      full_date: str  = f"{get_day} {get_month} {get_year}"
+      ##  get full date
 
       template_context: Dict[str, Any] = {
         'symbol':       symbol,
@@ -137,14 +166,22 @@ class PdfReport:
 
     [ description ]:
       Generate Report Issuers
+
+      jinja template: 
+        - issuers_report.jinja2
   """
   def generate_report_issuers(self, issuers: List[Any]) -> None:
     try:
       template: Template = self.environment \
         .get_template('issuers_report.jinja2')
 
-      tomorrow: datetime = datetime.now() + timedelta(days = 1)
-      full_date: str = f"{tomorrow.strftime('%d')} {self.month_name_mapping[tomorrow.strftime('%B')]} {tomorrow.strftime('%Y')}"
+      ##  get full date
+      get_day:   str  = self.tomorrow.strftime('%d')
+      get_month: str  = self.month_name_mapping[self.tomorrow.strftime('%B')]
+      get_year:  str  = self.tomorrow.strftime('%Y')
+
+      full_date: str  = f"{get_day} {get_month} {get_year}"
+      ##  get full date
 
       template_context: Dict[str, Any] = {
         'issuers':      issuers,
@@ -175,6 +212,9 @@ class PdfReport:
 
     [ description ]:
       Generate Report Historicals
+      
+      jinja template: 
+        - issuers_report.jinja2
   """
   def generate_report_fundamental(
     self, symbol: str, 
@@ -186,8 +226,13 @@ class PdfReport:
       template: Template = self.environment \
         .get_template('fundamental_report.jinja2')
 
-      tomorrow: datetime = datetime.now() + timedelta(days = 1)
-      full_date: str = f"{tomorrow.strftime('%d')} {self.month_name_mapping[tomorrow.strftime('%B')]} {tomorrow.strftime('%Y')}"
+      ##  get full date
+      get_day:   str  = self.tomorrow.strftime('%d')
+      get_month: str  = self.month_name_mapping[self.tomorrow.strftime('%B')]
+      get_year:  str  = self.tomorrow.strftime('%Y')
+
+      full_date: str  = f"{get_day} {get_month} {get_year}"
+      ##  get full date
 
       template_context: Dict[str, Any] = {
         'symbol':       symbol,

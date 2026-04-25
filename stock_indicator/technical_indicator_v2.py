@@ -29,47 +29,6 @@ filterwarnings("ignore")
 
 
 class TechnicalIndicator(ScraperRules, LocationRules):
-  __PDF_REPORT: PdfReport = PdfReport()
-
-  """
-    [ name ]:
-      __generate_pdf_report (return dtype: None)
-
-    [ parameters ]
-      - symbol             (dtype: str)
-      - short_name_company (dtype: str)
-      - historical_json    (dtype: List[Dict[str, str]])
-      - indicator_json     (dtype: List[Dict[str, str]])
-
-    [ description ]
-      Generate PDF Report
-  """
-  def __generate_pdf_report(
-    self, symbol: str, short_name_company: str,
-    historical_json: List[Dict[str, str]], 
-    indicator_json:  List[Dict[str, str]]
-  ) -> None:
-    logger.info(f'[ PROCESSED ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
-    self.__PDF_REPORT.generate_report_historicals(
-      symbol     = symbol,
-      short_name = short_name_company,
-          
-      # reverse indicator
-      historicals = historical_json[::-1]
-    )
-    logger.info(f'[ SUCCESS ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
-
-    logger.info(f'[ PROCESSED ] [ INDICATOR/TECHNICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
-    self.__PDF_REPORT.generate_report_indicators(
-      symbol     = symbol,
-      short_name = short_name_company,
-          
-      # reverse indicator
-      indicators = indicator_json[::-1]
-    )
-    logger.info(f'[ SUCCESS ] [ INDICATOR/TECHNICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
-
-
   """
     [ name ]:
       __simple_moving_average (return dtype: Series)
@@ -89,13 +48,11 @@ class TechnicalIndicator(ScraperRules, LocationRules):
   ) -> Series:
     try:
       if column_name not in dataframe.columns:
-        # raise KeyError(f'Column name "{column_name}" do not exist')
         logger.critical(f'Column name "{column_name}" do not exist')
         return dataframe
 
       single_column: DataFrame = dataframe[column_name].values.astype(float)
       if len(single_column) < window_size:
-        # raise ValueError("amount of data is smaller than window")
         logger.critical('Amount of data is smaller than window')
         return dataframe
 
@@ -131,13 +88,11 @@ class TechnicalIndicator(ScraperRules, LocationRules):
   ) -> Series or np.ndarray:
     try:
       if column_name not in dataframe.columns:
-        # raise KeyError(f'Column name "{column_name}" do not exist')
         logger.critical(f'Column name "{column_name}" do not exist')
         return dataframe
 
       single_column: DataFrame = dataframe[column_name].values.astype(float)
       if len(single_column) < window_size:
-        # raise ValueError("amount of data is smaller than window")
         logger.critical('Amount of data is smaller than window')
         return dataframe
 
@@ -176,16 +131,13 @@ class TechnicalIndicator(ScraperRules, LocationRules):
     column_name: str = 'Close',
     window_size: int = 14
   ) -> Series:
-    __INDICATOR__ = 'RSI'
     try:
       if column_name not in dataframe.columns:
-        # raise KeyError(f'Column name "{column_name}" do not exist')
         logger.critical(f'Column name "{column_name}" do not exist')
         return dataframe
 
       single_column: DataFrame = dataframe[column_name].values.astype(float)
       if len(single_column) < window_size:
-        # raise ValueError("amount of data is smaller than window")
         logger.critical('Amount of data is smaller than window')
         return dataframe
 
@@ -287,7 +239,6 @@ class TechnicalIndicator(ScraperRules, LocationRules):
       return dataframe
 
 
-
   """
     [ name ]:
       __volume_flow_indicator (return dtype: Series)
@@ -335,7 +286,6 @@ class TechnicalIndicator(ScraperRules, LocationRules):
       return dataframe
 
 
-
   """
     [ name ]:
       __moving_average_convergence_divergence (return dtype: Series)
@@ -359,7 +309,6 @@ class TechnicalIndicator(ScraperRules, LocationRules):
   ) -> Dict[str, Series]:
     try:
       if column_name not in dataframe.columns:
-        # raise KeyError(f'Column name "{column_name}" do not exist')
         logger.critical(f'Column name "{column_name}" do not exist')
         return dataframe
 
@@ -389,6 +338,308 @@ class TechnicalIndicator(ScraperRules, LocationRules):
       logger.error(error_message)
       return dataframe
 
+  """
+    [ name ]:
+      __bollinger_bands (return dtype: Dict[str, Series])
+
+    [ parameters ]
+      - dataframe   (dtype: DataFrame)
+      - column_name (dtype: str; default: "Close")
+      - window_size (dtype: int; default: 20)
+      - num_std     (dtype: float; default: 2.0)
+
+    [ description ]
+      Bollinger Bands — upper, middle (SMA), and lower band.
+      Also returns %B (position within the band, 0–1 range) which is
+      more model-friendly than raw price levels.
+  """
+  def __bollinger_bands(
+    self, dataframe: DataFrame,
+    column_name: str   = 'Close',
+    window_size: int   = 20,
+    num_std:     float = 2.0
+  ) -> Dict[str, Series]:
+    try:
+      if column_name not in dataframe.columns:
+        logger.critical(f'Column name "{column_name}" do not exist')
+        return dataframe
+
+      single_column: Series = dataframe[column_name].astype(float)
+      if len(single_column) < window_size:
+        logger.critical('Amount of data is smaller than window')
+        return dataframe
+
+      rolling_mean: Series = single_column.rolling(window=window_size).mean()
+      rolling_std:  Series = single_column.rolling(window=window_size).std(ddof=0)
+
+      upper_band: Series = rolling_mean + (num_std * rolling_std)
+      lower_band: Series = rolling_mean - (num_std * rolling_std)
+
+      band_width: Series = upper_band - lower_band
+      percent_b: Series  = np.where(
+        band_width != 0,
+        (single_column - lower_band) / band_width,
+        np.nan
+      )
+
+      return {
+        "upper":     upper_band,
+        "middle":    rolling_mean,
+        "lower":     lower_band,
+        "percent_b": Series(percent_b, index=dataframe.index)
+      }
+
+    except Exception as error_message:
+      logger.error(error_message)
+      return dataframe
+
+
+  """
+    [ name ]:
+      __average_true_range (return dtype: Series)
+
+    [ parameters ]
+      - dataframe   (dtype: DataFrame)
+      - window_size (dtype: int; default: 14)
+
+    [ description ]
+      Average True Range — measures market volatility.
+      Uses Wilder's smoothing (same as RSI) for consistency.
+  """
+  def __average_true_range(
+    self, dataframe: DataFrame,
+    window_size: int = 14
+  ) -> Series:
+    try:
+      required_cols = ['High', 'Low', 'Close']
+      if not all(col in dataframe.columns for col in required_cols):
+        logger.critical(f'Dataframe missing required columns: {required_cols}')
+        return dataframe
+
+      high:  np.ndarray = dataframe['High'].values.astype(float)
+      low:   np.ndarray = dataframe['Low'].values.astype(float)
+      close: np.ndarray = dataframe['Close'].values.astype(float)
+
+      prev_close: np.ndarray = np.roll(close, 1)
+      prev_close[0] = np.nan
+
+      true_range: np.ndarray = np.maximum(
+        high - low,
+        np.maximum(
+          np.abs(high - prev_close),
+          np.abs(low  - prev_close)
+        )
+      )
+
+      atr: np.ndarray = np.full_like(close, np.nan)
+      atr[window_size - 1] = np.nanmean(true_range[:window_size])
+
+      # Wilder's smoothing
+      wilder_alpha: float = 1 / window_size
+      for _idx_col in range(window_size, len(close)):
+        atr[_idx_col] = (true_range[_idx_col] * wilder_alpha) + \
+          (atr[_idx_col - 1] * (1 - wilder_alpha))
+
+      return Series(atr, index=dataframe.index)
+
+    except Exception as error_message:
+      logger.error(error_message)
+      return dataframe
+
+
+  """
+    [ name ]:
+      __stochastic_oscillator (return dtype: Dict[str, Series])
+
+    [ parameters ]
+      - dataframe      (dtype: DataFrame)
+      - k_window_size  (dtype: int; default: 14)
+      - d_window_size  (dtype: int; default: 3)
+
+    [ description ]
+      Stochastic Oscillator — %K and its smoothed signal %D.
+      Bounded 0-100, low correlation with RSI despite similar range.
+  """
+  def __stochastic_oscillator(
+    self, dataframe: DataFrame,
+    k_window_size: int = 14,
+    d_window_size: int = 3
+  ) -> Dict[str, Series]:
+    try:
+      required_cols = ['High', 'Low', 'Close']
+      if not all(col in dataframe.columns for col in required_cols):
+        logger.critical(f'Dataframe missing required columns: {required_cols}')
+        return dataframe
+
+      high:  Series = dataframe['High'].astype(float)
+      low:   Series = dataframe['Low'].astype(float)
+      close: Series = dataframe['Close'].astype(float)
+
+      if len(close) < k_window_size:
+        logger.critical('Amount of data is smaller than window')
+        return dataframe
+
+      lowest_low:   Series = low.rolling(window=k_window_size).min()
+      highest_high: Series = high.rolling(window=k_window_size).max()
+
+      denominator: Series = highest_high - lowest_low
+      stoch_k: Series = np.where(
+        denominator != 0,
+        100 * (close - lowest_low) / denominator,
+        np.nan
+      )
+      stoch_k = Series(stoch_k, index=dataframe.index)
+      stoch_d: Series = stoch_k.rolling(window=d_window_size).mean()
+
+      return {
+        "stoch_k": stoch_k,
+        "stoch_d": stoch_d
+      }
+
+    except Exception as error_message:
+      logger.error(error_message)
+      return dataframe
+
+
+  """
+    [ name ]:
+      __commodity_channel_index (return dtype: Series)
+
+    [ parameters ]
+      - dataframe   (dtype: DataFrame)
+      - window_size (dtype: int; default: 20)
+
+    [ description ]
+      Commodity Channel Index — identifies cyclical trends and
+      overbought/oversold conditions. Unbounded but typically ±100.
+  """
+  def __commodity_channel_index(
+    self, dataframe: DataFrame,
+    window_size: int = 20
+  ) -> Series:
+    try:
+      required_cols = ['High', 'Low', 'Close']
+      if not all(col in dataframe.columns for col in required_cols):
+        logger.critical(f'Dataframe missing required columns: {required_cols}')
+        return dataframe
+
+      typical_price: Series = (
+        dataframe['High'].astype(float) +
+        dataframe['Low'].astype(float)  +
+        dataframe['Close'].astype(float)
+      ) / 3
+
+      if len(typical_price) < window_size:
+        logger.critical('Amount of data is smaller than window')
+        return dataframe
+
+      rolling_mean: Series = typical_price.rolling(window=window_size).mean()
+
+      # mean absolute deviation (manual — pandas mad() deprecated)
+      rolling_mad: Series = typical_price.rolling(window=window_size).apply(
+        lambda x: np.mean(np.abs(x - np.mean(x))), raw=True
+      )
+
+      cci: Series = np.where(
+        rolling_mad != 0,
+        (typical_price - rolling_mean) / (0.015 * rolling_mad),
+        np.nan
+      )
+
+      return Series(cci, index=dataframe.index)
+
+    except Exception as error_message:
+      logger.error(error_message)
+      return dataframe
+
+
+  """
+    [ name ]:
+      __on_balance_volume (return dtype: Series)
+
+    [ parameters ]
+      - dataframe (dtype: DataFrame)
+
+    [ description ]
+      On-Balance Volume — cumulative volume indicator that maps
+      buying/selling pressure. Trend direction matters more than value.
+  """
+  def __on_balance_volume(
+    self, dataframe: DataFrame
+  ) -> Series:
+    try:
+      required_cols = ['Close', 'Volume']
+      if not all(col in dataframe.columns for col in required_cols):
+        logger.critical(f'Dataframe missing required columns: {required_cols}')
+        return dataframe
+
+      close:  np.ndarray = dataframe['Close'].values.astype(float)
+      volume: np.ndarray = dataframe['Volume'].values.astype(float)
+
+      delta:  np.ndarray = np.diff(close, prepend=np.nan)
+      direction: np.ndarray = np.sign(delta)   # +1, 0, -1
+
+      obv: np.ndarray = np.cumsum(np.where(
+        np.isnan(delta), 0, direction * volume
+      ))
+
+      return Series(obv, index=dataframe.index)
+
+    except Exception as error_message:
+      logger.error(error_message)
+      return dataframe
+
+
+  """
+    [ name ]:
+      __chaikin_money_flow (return dtype: Series)
+
+    [ parameters ]
+      - dataframe   (dtype: DataFrame)
+      - window_size (dtype: int; default: 20)
+
+    [ description ]
+      Chaikin Money Flow — measures buying/selling pressure as a
+      ratio of volume-weighted price position. Bounded -1 to +1.
+  """
+  def __chaikin_money_flow(
+    self, dataframe: DataFrame,
+    window_size: int = 20
+  ) -> Series:
+    try:
+      required_cols = ['High', 'Low', 'Close', 'Volume']
+      if not all(col in dataframe.columns for col in required_cols):
+        logger.critical(f'Dataframe missing required columns: {required_cols}')
+        return dataframe
+
+      high:   Series = dataframe['High'].astype(float)
+      low:    Series = dataframe['Low'].astype(float)
+      close:  Series = dataframe['Close'].astype(float)
+      volume: Series = dataframe['Volume'].astype(float)
+
+      if len(close) < window_size:
+        logger.critical('Amount of data is smaller than window')
+        return dataframe
+
+      hl_range: Series = high - low
+      money_flow_multiplier: Series = np.where(
+        hl_range != 0,
+        ((close - low) - (high - close)) / hl_range,
+        0.0
+      )
+      money_flow_volume: Series = Series(
+        money_flow_multiplier, index=dataframe.index) * volume
+
+      cmf: Series = (
+        money_flow_volume.rolling(window=window_size).sum() /
+        volume.rolling(window=window_size).sum()
+      )
+
+      return cmf
+
+    except Exception as error_message:
+      logger.error(error_message)
+      return dataframe
 
   """ 
     [ name ]:
@@ -478,28 +729,53 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           
           dataframe: DataFrame = read_csv(historical_csv_path, index_col = 'Date')
           dataframe.dropna(inplace = True)
-          dataframe['MFI'] = self.__money_flow_index(dataframe)
-          # dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
 
-          dataframe: DataFrame = dataframe[['Close', 'Volume', 'MFI']]
-          # dataframe: DataFrame = dataframe[['Close', 'Volume', 'VFI']]
-          relative_strength_index: Series = \
-            self.__relative_strength_index(dataframe)
-          dataframe['RSI'] = relative_strength_index
+          # --- existing indicators ---
+          dataframe['MFI']  = self.__money_flow_index(dataframe)
+
+          dataframe = dataframe[['Close', 'Volume', 'High', 'Low', 'MFI']]
+          dataframe['RSI']  = self.__relative_strength_index(dataframe)
           dataframe.dropna(inplace = True)
             
-          moving_average_convergence_divergence: Dict[str, Series] = \
+          macd_result: Dict[str, Series] = \
             self.__moving_average_convergence_divergence(dataframe)
-          dataframe['MACD'] = moving_average_convergence_divergence.get('line')
+          dataframe['MACD'] = macd_result.get('line')
           dataframe.dropna(inplace = True)
 
-          dataframe_indicator: DataFrame = dataframe.copy()
-          dataframe_indicator: DataFrame = dataframe_indicator[['MFI', 'RSI', 'MACD']]
-          # dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
+          # --- new indicators ---
+          bb_result = self.__bollinger_bands(dataframe)
+          dataframe['BB_PERCENT_B'] = bb_result.get('percent_b')
+
+          dataframe['ATR'] = self.__average_true_range(dataframe)
+
+          stoch_result = self.__stochastic_oscillator(dataframe)
+          dataframe['STOCH_K'] = stoch_result.get('stoch_k')
+          dataframe['STOCH_D'] = stoch_result.get('stoch_d')
+
+          dataframe['CCI'] = self.__commodity_channel_index(dataframe)
+          dataframe['OBV'] = self.__on_balance_volume(dataframe)
+          dataframe['CMF'] = self.__chaikin_money_flow(dataframe)
+
+          dataframe.dropna(inplace = True)
+
+          dataframe_indicator: DataFrame = dataframe[
+            ['MFI', 'RSI', 'MACD',
+             'BB_PERCENT_B', 'ATR',
+             'STOCH_K', 'STOCH_D',
+             'CCI', 'OBV', 'CMF']
+          ].copy()
           dataframe_indicator.to_csv(path_or_buf = indicator_csv_path)
 
+          dataframe_modeling: DataFrame = dataframe[
+            ['Close', 'Volume',
+             'MFI', 'RSI', 'MACD',
+             'BB_PERCENT_B', 'ATR',
+             'STOCH_K', 'STOCH_D',
+             'CCI', 'OBV', 'CMF']
+          ].copy()
+
           dataframe_norm, dataframe_min_max = \
-            self.__min_max_normalization(dataframe)
+            self.__min_max_normalization(dataframe_modeling)
             
           with open(min_max_json_path, "w") as min_max_value:
             dump(dataframe_min_max, min_max_value)
@@ -513,8 +789,6 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         retry_count += 1
         if failed_symbols:
           logger.info(f'[ RETRY MECHANISM ] Waiting {exponential_backoff} seconds before next retry...')
-          # sleep(exponential_backoff)
-          # exponential_backoff += (self.SCRAPER_EXPONENTIAL_RETRY + uniform(0.1, 0.4))
 
       if failed_symbols:
           logger.warning(f"[ RETRY MECHANISM ] Symbols failed after {max_retries} retries: {failed_symbols}")
@@ -548,9 +822,10 @@ class TechnicalIndicator(ScraperRules, LocationRules):
 
       for symbol in dataframe['symbol'].tolist():
         symbol: str = symbol[:len(symbol) - 3]
+
         # json path
         min_max_json_path:     str = f'{self.DATASET_MINMAX_CSV_PATH}/{symbol}.json'
-        fundamental_json_path: str = f'{self.DATASET_FUNDAMENTAL_JSON_PATH}/{symbol}.json' 
+        fundamental_json_path: str = f'{self.DATASET_FUNDAMENTAL_JSON_PATH}/{symbol}.json'
 
         # csv path
         historical_csv_path: str = f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.csv'
@@ -561,7 +836,6 @@ class TechnicalIndicator(ScraperRules, LocationRules):
         dataframe.index = to_datetime(dataframe.index, errors = 'coerce')
 
         with open(fundamental_json_path, 'r') as fundamental_json:
-          # hiraukan "Dict[Any, Any]", nanti saya refactor lagi :)
           fundamental_json_data: Dict[Any, Any] = load(fundamental_json)
           short_name_company: str = fundamental_json_data \
             .get('fundamentals').get('shortName')
@@ -600,60 +874,82 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           if isnull(dt):
             continue
           historical_json.append({
-            "date": dt.strftime("%Y-%m-%d"),
+            "date":      dt.strftime("%Y-%m-%d"),
             "full_date": f"{day_name_maping[dt.strftime('%A')]}, {dt.strftime('%d')} {month_name_maping[dt.strftime('%B')]} {dt.strftime('%Y')}",
-            "open": row["Open"],
-            "high": row["High"],
-            "low": row["Low"],
-            "close": row["Close"],
-            "volume": row["Volume"]
+            "open":      row["Open"],
+            "high":      row["High"],
+            "low":       row["Low"],
+            "close":     row["Close"],
+            "volume":    row["Volume"]
           })
         logger.info(f'[ SUCCESS ] [ HISTORICAL ] [ {symbol} ] Generate Data Success...')
 
 
         # indicator / technical
         logger.info(f'[ PROCESSED ] [ INDICATOR/TECHNICAL ] [ {symbol} ] Generate Data...')
-        # dataframe['VFI'] = self.__volume_flow_indicator(dataframe)
+
+        # --- existing indicators ---
         dataframe['MFI'] = self.__money_flow_index(dataframe)
 
-        dataframe: DataFrame = dataframe[['Close', 'Volume', 'MFI']]
-        # dataframe: DataFrame = dataframe[['Close', 'Volume', 'VFI']]
-        relative_strength_index: Series = \
-          self.__relative_strength_index(dataframe)
-        dataframe['RSI'] = relative_strength_index
+        dataframe = dataframe[['Close', 'Volume', 'High', 'Low', 'MFI']]
+        dataframe['RSI']  = self.__relative_strength_index(dataframe)
         dataframe.dropna(inplace = True)
-          
-        moving_average_convergence_divergence: Dict[str, Series] = \
+
+        macd_result: Dict[str, Series] = \
           self.__moving_average_convergence_divergence(dataframe)
-        dataframe['MACD'] = moving_average_convergence_divergence.get('line')
+        dataframe['MACD'] = macd_result.get('line')
         dataframe.dropna(inplace = True)
 
-        dataframe_indicator: DataFrame = dataframe.copy()
-        dataframe_indicator: DataFrame = dataframe_indicator[['MFI', 'RSI', 'MACD']]
-        # dataframe_indicator: DataFrame = dataframe_indicator[['VFI', 'RSI', 'MACD']]
-        dataframe_indicator.to_csv(path_or_buf = indicator_csv_path)
+        # --- new indicators ---
+        bb_result = self.__bollinger_bands(dataframe)
+        dataframe['BB_PERCENT_B'] = bb_result.get('percent_b')
 
+        dataframe['ATR'] = self.__average_true_range(dataframe)
+
+        stoch_result = self.__stochastic_oscillator(dataframe)
+        dataframe['STOCH_K'] = stoch_result.get('stoch_k')
+        dataframe['STOCH_D'] = stoch_result.get('stoch_d')
+
+        dataframe['CCI'] = self.__commodity_channel_index(dataframe)
+        dataframe['OBV'] = self.__on_balance_volume(dataframe)
+        dataframe['CMF'] = self.__chaikin_money_flow(dataframe)
+
+        dataframe.dropna(inplace = True)
+        logger.info(f'[ SUCCESS ] [ INDICATOR/TECHNICAL ] [ {symbol} ] Generate Data Success...')
+
+
+        # --- save indicator CSV & JSON ---
+        indicator_cols = ['MFI', 'RSI', 'MACD',
+                          'BB_PERCENT_B', 'ATR',
+                          'STOCH_K', 'STOCH_D',
+                          'CCI', 'OBV', 'CMF']
+        dataframe_indicator: DataFrame = dataframe[indicator_cols].copy()
+        dataframe_indicator.to_csv(path_or_buf = indicator_csv_path)
 
         dataframe_indicator.index = to_datetime(dataframe_indicator.index, errors='coerce')
         indicator_json: list[dict[str, str]] = [
           {
-            "date": dt.strftime("%Y-%m-%d"),
+            "date":      dt.strftime("%Y-%m-%d"),
             "full_date": f"{day_name_maping[dt.strftime('%A')]}, {dt.strftime('%d')} {month_name_maping[dt.strftime('%B')]} {dt.strftime('%Y')}",
-            "MFI": row["MFI"],
-            "RSI": row["RSI"],
-            "MACD": row["MACD"]
+            "MFI":         row["MFI"],
+            "RSI":         row["RSI"],
+            "MACD":        row["MACD"],
+            "BB_PERCENT_B": row["BB_PERCENT_B"],
+            "ATR":         row["ATR"],
+            "STOCH_K":     row["STOCH_K"],
+            "STOCH_D":     row["STOCH_D"],
+            "CCI":         row["CCI"],
+            "OBV":         row["OBV"],
+            "CMF":         row["CMF"]
           }
           for dt, row in dataframe_indicator.iterrows()
           if not isnull(dt)
         ]
-        logger.info(f'[ SUCCESS ] [ INDICATOR/TECHNICAL ] [ {symbol} ] Generate Data Success...')
 
-
-        # saved indicator/technical and historical to json file
         indicator_json_path: str = f'{self.DATASET_INDICATOR_CSV_PATH}/{symbol}.json'
         with open(indicator_json_path, "w") as indicator_json_file:
           dump({'indicators': indicator_json}, indicator_json_file)
-          logger.info(f'[ SAVED ] [ HISTORICAL ] [ {symbol} ] Generate Data Saved on "{indicator_json_path}"...')
+          logger.info(f'[ SAVED ] [ INDICATOR/TECHNICAL ] [ {symbol} ] Generate Data Saved on "{indicator_json_path}"...')
 
         historical_json = historical_json[-len(indicator_json):]
         historical_json_path: str = f'{self.DATASET_HISTORICAL_CSV_PATH}/{symbol}.json'
@@ -661,15 +957,37 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           dump({'historicals': historical_json}, historical_json_file)
           logger.info(f'[ SAVED ] [ HISTORICAL ] [ {symbol} ] Generate Data Saved on "{historical_json_path}"...')
 
-        # generate reports
-        self.__generate_pdf_report(
-          symbol, short_name_company, 
-          historical_json, indicator_json
-        )
 
-        # normalization
+        # --- generate reports ---
+        pdf_report: PdfReport = PdfReport()
+
+        logger.info(f'[ PROCESSED ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
+        pdf_report.generate_report_historicals(
+          symbol      = symbol,
+          short_name  = short_name_company,
+          historicals = historical_json[::-1]
+        )
+        logger.info(f'[ SUCCESS ] [ HISTORICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
+
+        logger.info(f'[ PROCESSED ] [ INDICATOR/TECHNICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report...')
+        pdf_report.generate_report_indicators(
+          symbol     = symbol,
+          short_name = short_name_company,
+          indicators = indicator_json[::-1]
+        )
+        logger.info(f'[ SUCCESS ] [ INDICATOR/TECHNICAL ] [ PDF REPORT ] [ {symbol} ] Generate Report Success...')
+
+
+        # --- normalization (modeling CSV) ---
+        modeling_cols = ['Close', 'Volume',
+                         'MFI', 'RSI', 'MACD',
+                         'BB_PERCENT_B', 'ATR',
+                         'STOCH_K', 'STOCH_D',
+                         'CCI', 'OBV', 'CMF']
+        dataframe_modeling: DataFrame = dataframe[modeling_cols].copy()
+
         dataframe_norm, dataframe_min_max = \
-          self.__min_max_normalization(dataframe)
+          self.__min_max_normalization(dataframe_modeling)
 
         with open(min_max_json_path, "w") as min_max_value:
           dump(dataframe_min_max, min_max_value)
@@ -682,9 +1000,7 @@ class TechnicalIndicator(ScraperRules, LocationRules):
           logger.warning(f'[ FAILED SYMBOL ] Append "{symbol}" to LIST -> failed_symbols: List[str]')
 
       # Retry mechanism with throttling and exponential back-off
-      # to prevent scraping failure
       if failed_symbols: self.__retry_mechanism(failed_symbols)
 
     except Exception as error_message:
       logger.error(error_message)
-

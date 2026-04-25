@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: "0 19 * * *"
     # 2 - 7 = [ -5 ]
-    # karena minus, jadi 24 - 5 = [ 19 ]
+    # karena minus, jadi 24 - 5 = [ 19 ] test
 
 jobs:
   data_preparation_job:

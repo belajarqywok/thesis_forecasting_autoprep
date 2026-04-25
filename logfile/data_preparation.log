@@ -1,0 +1,1253 @@
+---------------------------------------------------------
+------------------ [ Iteration - 1 ] ------------------
+---------------------------------------------------------
+/mnt/f/projects/1. bachelor_thesis/thesis_forecasting_dataprep/venv/ubuntu/lib/python3.11/site-packages/numpy/_core/getlimits.py:551: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+2026-04-26 04:26:19 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] infographic_scraper.py:319 - get_stocks_infographic() - "indonesia_stocks/infographic_stocks.csv" already exists.
+2026-04-26 04:26:20 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:198 - by_default_infographic() - [ PROCESSED ] [ ISSUERS ] [ PDF REPORT ] Generate Report...
+2026-04-26 04:26:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:200 - by_default_infographic() - [ SUCCESS ] [ ISSUERS ] [ PDF REPORT ] Generate Report Success...
+2026-04-26 04:26:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:207 - by_default_infographic() - [ SAVED ] [ SECTORS ] Generate Data Saved on "indonesia_stocks/sectors.json"...
+2026-04-26 04:26:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BBCA ] Generate Data...
+2026-04-26 04:26:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BBCA ] Generate Data Success...
+2026-04-26 04:26:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BBCA ] Generate Data Saved on "indonesia_stocks/fundamentals/BBCA.json"...
+2026-04-26 04:26:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BBCA ] Generate Report...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BBCA ] Generate Report Success...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ TPIA ] Generate Data...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ TPIA ] Generate Data Success...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ TPIA ] Generate Data Saved on "indonesia_stocks/fundamentals/TPIA.json"...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ TPIA ] Generate Report...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ TPIA ] Generate Report Success...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BYAN ] Generate Data...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BYAN ] Generate Data Success...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BYAN ] Generate Data Saved on "indonesia_stocks/fundamentals/BYAN.json"...
+2026-04-26 04:26:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BYAN ] Generate Report...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BYAN ] Generate Report Success...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BBRI ] Generate Data...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BBRI ] Generate Data Success...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BBRI ] Generate Data Saved on "indonesia_stocks/fundamentals/BBRI.json"...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BBRI ] Generate Report...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BBRI ] Generate Report Success...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ DSSA ] Generate Data...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ DSSA ] Generate Data Success...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ DSSA ] Generate Data Saved on "indonesia_stocks/fundamentals/DSSA.json"...
+2026-04-26 04:26:24 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ DSSA ] Generate Report...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ DSSA ] Generate Report Success...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PANI ] Generate Data...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PANI ] Generate Data Success...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ PANI ] Generate Data Saved on "indonesia_stocks/fundamentals/PANI.json"...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ PANI ] Generate Report...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ PANI ] Generate Report Success...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ ASII ] Generate Data...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ ASII ] Generate Data Success...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ ASII ] Generate Data Saved on "indonesia_stocks/fundamentals/ASII.json"...
+2026-04-26 04:26:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ASII ] Generate Report...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ASII ] Generate Report Success...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BBNI ] Generate Data...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BBNI ] Generate Data Success...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BBNI ] Generate Data Saved on "indonesia_stocks/fundamentals/BBNI.json"...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BBNI ] Generate Report...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BBNI ] Generate Report Success...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ DNET ] Generate Data...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ DNET ] Generate Data Success...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ DNET ] Generate Data Saved on "indonesia_stocks/fundamentals/DNET.json"...
+2026-04-26 04:26:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ DNET ] Generate Report...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ DNET ] Generate Report Success...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ ICBP ] Generate Data...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ ICBP ] Generate Data Success...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ ICBP ] Generate Data Saved on "indonesia_stocks/fundamentals/ICBP.json"...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ICBP ] Generate Report...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ICBP ] Generate Report Success...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BRIS ] Generate Data...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BRIS ] Generate Data Success...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BRIS ] Generate Data Saved on "indonesia_stocks/fundamentals/BRIS.json"...
+2026-04-26 04:26:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BRIS ] Generate Report...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BRIS ] Generate Report Success...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ SMMA ] Generate Data...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ SMMA ] Generate Data Success...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ SMMA ] Generate Data Saved on "indonesia_stocks/fundamentals/SMMA.json"...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SMMA ] Generate Report...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SMMA ] Generate Report Success...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ AMRT ] Generate Data...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ AMRT ] Generate Data Success...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ AMRT ] Generate Data Saved on "indonesia_stocks/fundamentals/AMRT.json"...
+2026-04-26 04:26:28 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ AMRT ] Generate Report...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ AMRT ] Generate Report Success...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BNLI ] Generate Data...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BNLI ] Generate Data Success...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BNLI ] Generate Data Saved on "indonesia_stocks/fundamentals/BNLI.json"...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BNLI ] Generate Report...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BNLI ] Generate Report Success...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ CPIN ] Generate Data...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ CPIN ] Generate Data Success...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ CPIN ] Generate Data Saved on "indonesia_stocks/fundamentals/CPIN.json"...
+2026-04-26 04:26:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ CPIN ] Generate Report...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ CPIN ] Generate Report Success...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ UNTR ] Generate Data...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ UNTR ] Generate Data Success...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ UNTR ] Generate Data Saved on "indonesia_stocks/fundamentals/UNTR.json"...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ UNTR ] Generate Report...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ UNTR ] Generate Report Success...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BRPT ] Generate Data...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BRPT ] Generate Data Success...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BRPT ] Generate Data Saved on "indonesia_stocks/fundamentals/BRPT.json"...
+2026-04-26 04:26:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BRPT ] Generate Report...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BRPT ] Generate Report Success...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ INDF ] Generate Data...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ INDF ] Generate Data Success...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ INDF ] Generate Data Saved on "indonesia_stocks/fundamentals/INDF.json"...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ INDF ] Generate Report...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ INDF ] Generate Report Success...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ UNVR ] Generate Data...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ UNVR ] Generate Data Success...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ UNVR ] Generate Data Saved on "indonesia_stocks/fundamentals/UNVR.json"...
+2026-04-26 04:26:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ UNVR ] Generate Report...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ UNVR ] Generate Report Success...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ KLBF ] Generate Data...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ KLBF ] Generate Data Success...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ KLBF ] Generate Data Saved on "indonesia_stocks/fundamentals/KLBF.json"...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ KLBF ] Generate Report...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ KLBF ] Generate Report Success...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ ANTM ] Generate Data...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ ANTM ] Generate Data Success...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ ANTM ] Generate Data Saved on "indonesia_stocks/fundamentals/ANTM.json"...
+2026-04-26 04:26:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ANTM ] Generate Report...
+2026-04-26 04:26:33 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ANTM ] Generate Report Success...
+2026-04-26 04:26:33 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ MLPT ] Generate Data...
+2026-04-26 04:26:33 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ MLPT ] Generate Data Success...
+2026-04-26 04:26:33 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ MLPT ] Generate Data Saved on "indonesia_stocks/fundamentals/MLPT.json"...
+2026-04-26 04:26:33 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MLPT ] Generate Report...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MLPT ] Generate Report Success...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ MASA ] Generate Data...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ MASA ] Generate Data Success...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ MASA ] Generate Data Saved on "indonesia_stocks/fundamentals/MASA.json"...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MASA ] Generate Report...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MASA ] Generate Report Success...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ ADRO ] Generate Data...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ ADRO ] Generate Data Success...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ ADRO ] Generate Data Saved on "indonesia_stocks/fundamentals/ADRO.json"...
+2026-04-26 04:26:34 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ADRO ] Generate Report...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ADRO ] Generate Report Success...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BRMS ] Generate Data...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BRMS ] Generate Data Success...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BRMS ] Generate Data Saved on "indonesia_stocks/fundamentals/BRMS.json"...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BRMS ] Generate Report...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BRMS ] Generate Report Success...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ GEMS ] Generate Data...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ GEMS ] Generate Data Success...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ GEMS ] Generate Data Saved on "indonesia_stocks/fundamentals/GEMS.json"...
+2026-04-26 04:26:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ GEMS ] Generate Report...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ GEMS ] Generate Report Success...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ SUPR ] Generate Data...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ SUPR ] Generate Data Success...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ SUPR ] Generate Data Saved on "indonesia_stocks/fundamentals/SUPR.json"...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SUPR ] Generate Report...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SUPR ] Generate Report Success...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ CASA ] Generate Data...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ CASA ] Generate Data Success...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ CASA ] Generate Data Saved on "indonesia_stocks/fundamentals/CASA.json"...
+2026-04-26 04:26:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ CASA ] Generate Report...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ CASA ] Generate Report Success...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ TBIG ] Generate Data...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ TBIG ] Generate Data Success...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ TBIG ] Generate Data Saved on "indonesia_stocks/fundamentals/TBIG.json"...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ TBIG ] Generate Report...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ TBIG ] Generate Report Success...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ MDKA ] Generate Data...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ MDKA ] Generate Data Success...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ MDKA ] Generate Data Saved on "indonesia_stocks/fundamentals/MDKA.json"...
+2026-04-26 04:26:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MDKA ] Generate Report...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MDKA ] Generate Report Success...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ MEGA ] Generate Data...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ MEGA ] Generate Data Success...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ MEGA ] Generate Data Saved on "indonesia_stocks/fundamentals/MEGA.json"...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MEGA ] Generate Report...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MEGA ] Generate Report Success...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BUMI ] Generate Data...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BUMI ] Generate Data Success...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BUMI ] Generate Data Saved on "indonesia_stocks/fundamentals/BUMI.json"...
+2026-04-26 04:26:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BUMI ] Generate Report...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BUMI ] Generate Report Success...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ EXCL ] Generate Data...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ EXCL ] Generate Data Success...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ EXCL ] Generate Data Saved on "indonesia_stocks/fundamentals/EXCL.json"...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ EXCL ] Generate Report...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ EXCL ] Generate Report Success...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ EMTK ] Generate Data...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ EMTK ] Generate Data Success...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ EMTK ] Generate Data Saved on "indonesia_stocks/fundamentals/EMTK.json"...
+2026-04-26 04:26:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ EMTK ] Generate Report...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ EMTK ] Generate Report Success...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ SRAJ ] Generate Data...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ SRAJ ] Generate Data Success...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ SRAJ ] Generate Data Saved on "indonesia_stocks/fundamentals/SRAJ.json"...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SRAJ ] Generate Report...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SRAJ ] Generate Report Success...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ MIKA ] Generate Data...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ MIKA ] Generate Data Success...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ MIKA ] Generate Data Saved on "indonesia_stocks/fundamentals/MIKA.json"...
+2026-04-26 04:26:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MIKA ] Generate Report...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MIKA ] Generate Report Success...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PNBN ] Generate Data...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PNBN ] Generate Data Success...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ PNBN ] Generate Data Saved on "indonesia_stocks/fundamentals/PNBN.json"...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ PNBN ] Generate Report...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ PNBN ] Generate Report Success...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ INKP ] Generate Data...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ INKP ] Generate Data Success...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ INKP ] Generate Data Saved on "indonesia_stocks/fundamentals/INKP.json"...
+2026-04-26 04:26:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ INKP ] Generate Report...
+2026-04-26 04:26:42 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ INKP ] Generate Report Success...
+2026-04-26 04:26:42 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ SILO ] Generate Data...
+2026-04-26 04:26:42 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ SILO ] Generate Data Success...
+2026-04-26 04:26:42 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ SILO ] Generate Data Saved on "indonesia_stocks/fundamentals/SILO.json"...
+2026-04-26 04:26:42 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SILO ] Generate Report...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ SILO ] Generate Report Success...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PTRO ] Generate Data...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PTRO ] Generate Data Success...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ PTRO ] Generate Data Saved on "indonesia_stocks/fundamentals/PTRO.json"...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ PTRO ] Generate Report...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ PTRO ] Generate Report Success...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ INCO ] Generate Data...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ INCO ] Generate Data Success...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ INCO ] Generate Data Saved on "indonesia_stocks/fundamentals/INCO.json"...
+2026-04-26 04:26:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ INCO ] Generate Report...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ INCO ] Generate Report Success...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ NISP ] Generate Data...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ NISP ] Generate Data Success...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ NISP ] Generate Data Saved on "indonesia_stocks/fundamentals/NISP.json"...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ NISP ] Generate Report...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ NISP ] Generate Report Success...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ TCPI ] Generate Data...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ TCPI ] Generate Data Success...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ TCPI ] Generate Data Saved on "indonesia_stocks/fundamentals/TCPI.json"...
+2026-04-26 04:26:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ TCPI ] Generate Report...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ TCPI ] Generate Report Success...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ MSIN ] Generate Data...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ MSIN ] Generate Data Success...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ MSIN ] Generate Data Saved on "indonesia_stocks/fundamentals/MSIN.json"...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MSIN ] Generate Report...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MSIN ] Generate Report Success...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ MEDC ] Generate Data...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ MEDC ] Generate Data Success...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ MEDC ] Generate Data Saved on "indonesia_stocks/fundamentals/MEDC.json"...
+2026-04-26 04:26:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MEDC ] Generate Report...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ MEDC ] Generate Report Success...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ FILM ] Generate Data...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ FILM ] Generate Data Success...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ FILM ] Generate Data Saved on "indonesia_stocks/fundamentals/FILM.json"...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ FILM ] Generate Report...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ FILM ] Generate Report Success...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ ARTO ] Generate Data...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ ARTO ] Generate Data Success...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ ARTO ] Generate Data Saved on "indonesia_stocks/fundamentals/ARTO.json"...
+2026-04-26 04:26:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ARTO ] Generate Report...
+2026-04-26 04:26:47 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ARTO ] Generate Report Success...
+2026-04-26 04:26:47 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ BINA ] Generate Data...
+2026-04-26 04:26:47 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ BINA ] Generate Data Success...
+2026-04-26 04:26:47 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ BINA ] Generate Data Saved on "indonesia_stocks/fundamentals/BINA.json"...
+2026-04-26 04:26:47 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BINA ] Generate Report...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ BINA ] Generate Report Success...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ AKRA ] Generate Data...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ AKRA ] Generate Data Success...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ AKRA ] Generate Data Saved on "indonesia_stocks/fundamentals/AKRA.json"...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ AKRA ] Generate Report...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ AKRA ] Generate Report Success...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:215 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ ITMG ] Generate Data...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:252 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ ITMG ] Generate Data Success...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:257 - by_default_infographic() - [ SAVED ] [ FUNDAMENTAL ] [ ITMG ] Generate Data Saved on "indonesia_stocks/fundamentals/ITMG.json"...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:290 - by_default_infographic() - [ PROCESSED ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ITMG ] Generate Report...
+2026-04-26 04:26:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] sorter.py:297 - by_default_infographic() - [ SUCCESS ] [ FUNDAMENTAL ] [ PDF REPORT ] [ ITMG ] Generate Report Success...
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BBCA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:27:06 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
+2026-04-26 04:27:06 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BBCA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:27:16 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
+2026-04-26 04:27:16 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "TPIA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:27:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
+2026-04-26 04:27:27 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BYAN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BBRI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:27:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
+2026-04-26 04:27:37 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BBRI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['DSSA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:27:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
+2026-04-26 04:27:48 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "DSSA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['PANI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:27:58 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
+2026-04-26 04:27:58 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "PANI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ASII.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:28:09 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
+2026-04-26 04:28:09 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ASII.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BBNI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:28:19 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
+2026-04-26 04:28:19 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BBNI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['DNET.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:28:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
+2026-04-26 04:28:30 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "DNET.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ICBP.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:28:40 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
+2026-04-26 04:28:40 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ICBP.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BRIS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:28:51 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
+2026-04-26 04:28:51 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BRIS.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SMMA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:29:01 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
+2026-04-26 04:29:01 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "SMMA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['AMRT.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:29:11 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
+2026-04-26 04:29:11 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "AMRT.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BNLI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:29:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
+2026-04-26 04:29:22 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BNLI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['CPIN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:29:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
+2026-04-26 04:29:32 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "CPIN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['UNTR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:29:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
+2026-04-26 04:29:43 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "UNTR.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BRPT.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:29:53 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
+2026-04-26 04:29:53 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BRPT.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['INDF.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:30:04 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
+2026-04-26 04:30:04 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "INDF.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['UNVR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:30:14 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
+2026-04-26 04:30:14 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "UNVR.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['KLBF.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:30:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
+2026-04-26 04:30:25 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "KLBF.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ANTM.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:30:35 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
+2026-04-26 04:30:35 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ANTM.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MLPT.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:30:45 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MLPT.csv"
+2026-04-26 04:30:45 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MLPT.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MASA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:30:56 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MASA.csv"
+2026-04-26 04:30:56 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MASA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ADRO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:31:06 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ADRO.csv"
+2026-04-26 04:31:06 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ADRO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BRMS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:31:17 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRMS.csv"
+2026-04-26 04:31:17 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BRMS.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['GEMS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:31:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/GEMS.csv"
+2026-04-26 04:31:27 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "GEMS.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SUPR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:31:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SUPR.csv"
+2026-04-26 04:31:38 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "SUPR.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['CASA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:31:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CASA.csv"
+2026-04-26 04:31:48 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "CASA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['TBIG.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:31:59 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TBIG.csv"
+2026-04-26 04:31:59 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "TBIG.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MDKA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:32:09 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MDKA.csv"
+2026-04-26 04:32:09 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MDKA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MEGA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:32:20 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEGA.csv"
+2026-04-26 04:32:20 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MEGA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BUMI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:32:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BUMI.csv"
+2026-04-26 04:32:30 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BUMI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['EXCL.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:32:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EXCL.csv"
+2026-04-26 04:32:41 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "EXCL.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['EMTK.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:32:51 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EMTK.csv"
+2026-04-26 04:32:51 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "EMTK.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SRAJ.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:33:02 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SRAJ.csv"
+2026-04-26 04:33:02 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "SRAJ.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MIKA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:33:12 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MIKA.csv"
+2026-04-26 04:33:12 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MIKA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['PNBN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:33:23 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PNBN.csv"
+2026-04-26 04:33:23 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "PNBN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['INKP.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:33:33 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INKP.csv"
+2026-04-26 04:33:33 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "INKP.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SILO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:33:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SILO.csv"
+2026-04-26 04:33:44 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "SILO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['PTRO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:33:54 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PTRO.csv"
+2026-04-26 04:33:54 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "PTRO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['INCO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:34:05 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INCO.csv"
+2026-04-26 04:34:05 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "INCO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['NISP.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:34:15 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/NISP.csv"
+2026-04-26 04:34:15 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "NISP.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['TCPI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:34:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TCPI.csv"
+2026-04-26 04:34:26 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "TCPI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MSIN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:34:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MSIN.csv"
+2026-04-26 04:34:36 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MSIN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MEDC.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:34:47 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEDC.csv"
+2026-04-26 04:34:47 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "MEDC.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['FILM.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:34:57 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/FILM.csv"
+2026-04-26 04:34:57 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "FILM.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ARTO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:35:08 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ARTO.csv"
+2026-04-26 04:35:08 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ARTO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BINA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:35:18 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BINA.csv"
+2026-04-26 04:35:18 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "BINA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['AKRA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:35:29 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AKRA.csv"
+2026-04-26 04:35:29 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "AKRA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ITMG.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:35:39 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ITMG.csv"
+2026-04-26 04:35:39 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ FAILED SYMBOL ] Append "ITMG.JK" to LIST -> failed_symbols: List[str]
+2026-04-26 04:35:39 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] retry count: 1
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BBCA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:35:50 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBCA.csv"
+2026-04-26 04:35:50 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BBCA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['TPIA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:36:01 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TPIA.csv"
+2026-04-26 04:36:01 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "TPIA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BYAN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:36:11 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BYAN.csv"
+2026-04-26 04:36:11 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BYAN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BBRI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:36:22 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBRI.csv"
+2026-04-26 04:36:22 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BBRI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['DSSA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:36:33 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DSSA.csv"
+2026-04-26 04:36:33 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "DSSA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['PANI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:36:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PANI.csv"
+2026-04-26 04:36:44 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "PANI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ASII.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:36:55 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ASII.csv"
+2026-04-26 04:36:55 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "ASII.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BBNI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:37:06 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BBNI.csv"
+2026-04-26 04:37:06 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BBNI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['DNET.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:37:16 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/DNET.csv"
+2026-04-26 04:37:16 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "DNET.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ICBP.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:37:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ICBP.csv"
+2026-04-26 04:37:27 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "ICBP.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BRIS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:37:38 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRIS.csv"
+2026-04-26 04:37:38 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BRIS.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SMMA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:37:49 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SMMA.csv"
+2026-04-26 04:37:49 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "SMMA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['AMRT.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:38:00 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AMRT.csv"
+2026-04-26 04:38:00 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "AMRT.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BNLI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:38:11 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BNLI.csv"
+2026-04-26 04:38:11 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BNLI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['CPIN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:38:21 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CPIN.csv"
+2026-04-26 04:38:21 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "CPIN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['UNTR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:38:32 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNTR.csv"
+2026-04-26 04:38:32 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "UNTR.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BRPT.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:38:43 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRPT.csv"
+2026-04-26 04:38:43 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BRPT.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['INDF.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:38:54 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INDF.csv"
+2026-04-26 04:38:54 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "INDF.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['UNVR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:39:05 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/UNVR.csv"
+2026-04-26 04:39:05 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "UNVR.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['KLBF.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:39:16 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/KLBF.csv"
+2026-04-26 04:39:16 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "KLBF.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ANTM.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:39:27 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ANTM.csv"
+2026-04-26 04:39:27 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "ANTM.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MLPT.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:39:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MLPT.csv"
+2026-04-26 04:39:37 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "MLPT.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MASA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:39:48 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MASA.csv"
+2026-04-26 04:39:48 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "MASA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ADRO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:39:59 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ADRO.csv"
+2026-04-26 04:39:59 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "ADRO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BRMS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:40:10 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BRMS.csv"
+2026-04-26 04:40:10 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BRMS.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['GEMS.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:40:21 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/GEMS.csv"
+2026-04-26 04:40:21 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "GEMS.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SUPR.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:40:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SUPR.csv"
+2026-04-26 04:40:31 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "SUPR.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['CASA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:40:42 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/CASA.csv"
+2026-04-26 04:40:42 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "CASA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['TBIG.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:40:53 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TBIG.csv"
+2026-04-26 04:40:53 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "TBIG.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MDKA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:41:04 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MDKA.csv"
+2026-04-26 04:41:04 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "MDKA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MEGA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:41:15 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEGA.csv"
+2026-04-26 04:41:15 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "MEGA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BUMI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:41:26 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BUMI.csv"
+2026-04-26 04:41:26 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BUMI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['EXCL.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:41:37 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EXCL.csv"
+2026-04-26 04:41:37 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "EXCL.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['EMTK.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:41:47 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/EMTK.csv"
+2026-04-26 04:41:47 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "EMTK.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SRAJ.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:41:58 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SRAJ.csv"
+2026-04-26 04:41:58 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "SRAJ.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MIKA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:42:09 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MIKA.csv"
+2026-04-26 04:42:09 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "MIKA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['PNBN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:42:20 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PNBN.csv"
+2026-04-26 04:42:20 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "PNBN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['INKP.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:42:31 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INKP.csv"
+2026-04-26 04:42:31 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "INKP.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['SILO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:42:42 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/SILO.csv"
+2026-04-26 04:42:42 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "SILO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['PTRO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:42:52 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/PTRO.csv"
+2026-04-26 04:42:52 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "PTRO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['INCO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:43:03 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/INCO.csv"
+2026-04-26 04:43:03 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "INCO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['NISP.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:43:14 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/NISP.csv"
+2026-04-26 04:43:14 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "NISP.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['TCPI.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:43:25 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/TCPI.csv"
+2026-04-26 04:43:25 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "TCPI.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MSIN.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:43:36 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MSIN.csv"
+2026-04-26 04:43:36 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "MSIN.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['MEDC.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:43:46 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/MEDC.csv"
+2026-04-26 04:43:46 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "MEDC.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['FILM.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:43:57 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/FILM.csv"
+2026-04-26 04:43:57 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "FILM.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ARTO.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:44:08 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ARTO.csv"
+2026-04-26 04:44:08 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "ARTO.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['BINA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:44:19 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/BINA.csv"
+2026-04-26 04:44:19 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "BINA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['AKRA.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:44:30 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/AKRA.csv"
+2026-04-26 04:44:30 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "AKRA.JK" to LIST -> failed_symbols: List[str]
+[*********************100%***********************]  1 of 1 completed
+
+1 Failed download:
+['ITMG.JK']: DNSError('Failed to perform, curl: (6) Could not resolve host: fc.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+2026-04-26 04:44:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ SAVED ] Datasets are stored on "indonesia_stocks/historicals/ITMG.csv"
+2026-04-26 04:44:41 [PID:226] [TID:MainThread] [WARNING] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] [ FAILED SYMBOL ] Append "ITMG.JK" to LIST -> failed_symbols: List[str]
+2026-04-26 04:44:41 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] main.py:52 - run_pipeline() - [ RETRY MECHANISM ] Waiting 3 seconds before next retry...
+2026-04-26 04:44:44 [PID:226] [TID:MainThread] [ERROR] [Data Preparation Service] main.py:52 - run_pipeline() - Expected int, got float
+2026-04-26 04:44:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] technical_indicator_v2.py:870 - generate_indicator_by_dataframe_sync() - [ PROCESSED ] [ HISTORICAL ] [ BBCA ] Generate Data...
+2026-04-26 04:44:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] technical_indicator_v2.py:885 - generate_indicator_by_dataframe_sync() - [ SUCCESS ] [ HISTORICAL ] [ BBCA ] Generate Data Success...
+2026-04-26 04:44:44 [PID:226] [TID:MainThread] [INFO] [Data Preparation Service] technical_indicator_v2.py:889 - generate_indicator_by_dataframe_sync() - [ PROCESSED ] [ INDICATOR/TECHNICAL ] [ BBCA ] Generate Data...
+2026-04-26 04:44:44 [PID:226] [TID:MainThread] [CRITICAL] [Data Preparation Service] technical_indicator_v2.py:203 - __money_flow_index() - Amount of data is smaller than window
+2026-04-26 04:44:44 [PID:226] [TID:MainThread] [ERROR] [Data Preparation Service] technical_indicator_v2.py:1006 - generate_indicator_by_dataframe_sync() - Cannot set a DataFrame with multiple columns to the single column MFI
+YF.download() has changed argument auto_adjust default to True
+---------------------------------------------------------
+-------------------- [ Historicals ] --------------------
+---------------------------------------------------------
+total 11924
+drwxrwxrwx 1 hanxzo hanxzo   4096 Aug 13  2025 .
+drwxrwxrwx 1 hanxzo hanxzo   4096 Aug 14  2025 ..
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:39 ADRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 109792 Aug 14  2025 ADRO.json
+-rwxrwxrwx 1 hanxzo hanxzo 133955 Aug 14  2025 ADRO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:44 AKRA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 111878 Aug 14  2025 AKRA.json
+-rwxrwxrwx 1 hanxzo hanxzo 132794 Aug 14  2025 AKRA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:38 AMRT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 109019 Aug 14  2025 AMRT.json
+-rwxrwxrwx 1 hanxzo hanxzo 132360 Aug 14  2025 AMRT.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:39 ANTM.csv
+-rwxrwxrwx 1 hanxzo hanxzo 110673 Aug 14  2025 ANTM.json
+-rwxrwxrwx 1 hanxzo hanxzo 132916 Aug 14  2025 ANTM.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:44 ARTO.csv
+-rwxrwxrwx 1 hanxzo hanxzo  85453 Aug 14  2025 ARTO.json
+-rwxrwxrwx 1 hanxzo hanxzo 129778 Aug 14  2025 ARTO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:36 ASII.csv
+-rwxrwxrwx 1 hanxzo hanxzo 107225 Aug 14  2025 ASII.json
+-rwxrwxrwx 1 hanxzo hanxzo 131800 Aug 14  2025 ASII.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:35 BBCA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 104802 Aug 14  2025 BBCA.json
+-rwxrwxrwx 1 hanxzo hanxzo 135765 Aug 14  2025 BBCA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:37 BBNI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106628 Aug 14  2025 BBNI.json
+-rwxrwxrwx 1 hanxzo hanxzo 132612 Aug 14  2025 BBNI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:36 BBRI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106662 Aug 14  2025 BBRI.json
+-rwxrwxrwx 1 hanxzo hanxzo 133850 Aug 14  2025 BBRI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:44 BINA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  84173 Aug 14  2025 BINA.json
+-rwxrwxrwx 1 hanxzo hanxzo 126816 Aug 14  2025 BINA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:38 BNLI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106203 Aug 14  2025 BNLI.json
+-rwxrwxrwx 1 hanxzo hanxzo 129369 Aug 14  2025 BNLI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:37 BRIS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 109192 Aug 14  2025 BRIS.json
+-rwxrwxrwx 1 hanxzo hanxzo 132839 Aug 14  2025 BRIS.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:40 BRMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo  83920 Aug 14  2025 BRMS.json
+-rwxrwxrwx 1 hanxzo hanxzo 130389 Aug 14  2025 BRMS.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:38 BRPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo  99150 Aug 14  2025 BRPT.json
+-rwxrwxrwx 1 hanxzo hanxzo 133289 Aug 14  2025 BRPT.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:41 BUMI.csv
+-rwxrwxrwx 1 hanxzo hanxzo  83302 Aug 14  2025 BUMI.json
+-rwxrwxrwx 1 hanxzo hanxzo 130358 Aug 14  2025 BUMI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:36 BYAN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 102622 Aug 14  2025 BYAN.json
+-rwxrwxrwx 1 hanxzo hanxzo 150269 Aug 14  2025 BYAN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:40 CASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82783 Aug 14  2025 CASA.json
+-rwxrwxrwx 1 hanxzo hanxzo 128128 Aug 14  2025 CASA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:38 CPIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106649 Aug 14  2025 CPIN.json
+-rwxrwxrwx 1 hanxzo hanxzo 132216 Aug 14  2025 CPIN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:37 DNET.csv
+-rwxrwxrwx 1 hanxzo hanxzo 105726 Aug 14  2025 DNET.json
+-rwxrwxrwx 1 hanxzo hanxzo 129017 Aug 14  2025 DNET.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:36 DSSA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  85368 Aug 14  2025 DSSA.json
+-rwxrwxrwx 1 hanxzo hanxzo 139778 Aug 14  2025 DSSA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:41 EMTK.csv
+-rwxrwxrwx 1 hanxzo hanxzo 107915 Aug 14  2025 EMTK.json
+-rwxrwxrwx 1 hanxzo hanxzo 131962 Aug 14  2025 EMTK.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:41 EXCL.csv
+-rwxrwxrwx 1 hanxzo hanxzo 107586 Aug 14  2025 EXCL.json
+-rwxrwxrwx 1 hanxzo hanxzo 131451 Aug 14  2025 EXCL.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:43 FILM.csv
+-rwxrwxrwx 1 hanxzo hanxzo  99042 Aug 14  2025 FILM.json
+-rwxrwxrwx 1 hanxzo hanxzo 132932 Aug 14  2025 FILM.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:40 GEMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106401 Aug 14  2025 GEMS.json
+-rwxrwxrwx 1 hanxzo hanxzo 134336 Aug 14  2025 GEMS.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:37 ICBP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 108396 Aug 14  2025 ICBP.json
+-rwxrwxrwx 1 hanxzo hanxzo 149268 Aug 14  2025 ICBP.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:43 INCO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 107544 Aug 14  2025 INCO.json
+-rwxrwxrwx 1 hanxzo hanxzo 133535 Aug 14  2025 INCO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:38 INDF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 107458 Aug 14  2025 INDF.json
+-rwxrwxrwx 1 hanxzo hanxzo 131258 Aug 14  2025 INDF.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:42 INKP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 107427 Aug 14  2025 INKP.json
+-rwxrwxrwx 1 hanxzo hanxzo 136468 Aug 14  2025 INKP.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:44 ITMG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106146 Aug 14  2025 ITMG.json
+-rwxrwxrwx 1 hanxzo hanxzo 153439 Aug 14  2025 ITMG.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:39 KLBF.csv
+-rwxrwxrwx 1 hanxzo hanxzo 109865 Aug 14  2025 KLBF.json
+-rwxrwxrwx 1 hanxzo hanxzo 131921 Aug 14  2025 KLBF.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:39 MASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  96517 Aug 14  2025 MASA.json
+-rwxrwxrwx 1 hanxzo hanxzo 128226 Aug 14  2025 MASA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:41 MDKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  85768 Aug 14  2025 MDKA.json
+-rwxrwxrwx 1 hanxzo hanxzo 130480 Aug 14  2025 MDKA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:43 MEDC.csv
+-rwxrwxrwx 1 hanxzo hanxzo 109952 Aug 14  2025 MEDC.json
+-rwxrwxrwx 1 hanxzo hanxzo 133106 Aug 14  2025 MEDC.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:41 MEGA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 103773 Aug 14  2025 MEGA.json
+-rwxrwxrwx 1 hanxzo hanxzo 128446 Aug 14  2025 MEGA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:42 MIKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 108749 Aug 14  2025 MIKA.json
+-rwxrwxrwx 1 hanxzo hanxzo 132151 Aug 14  2025 MIKA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:39 MLPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106637 Aug 14  2025 MLPT.json
+-rwxrwxrwx 1 hanxzo hanxzo 137343 Aug 14  2025 MLPT.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:43 MSIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo  83084 Aug 14  2025 MSIN.json
+-rwxrwxrwx 1 hanxzo hanxzo 128420 Aug 14  2025 MSIN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:43 NISP.csv
+-rwxrwxrwx 1 hanxzo hanxzo 105549 Aug 14  2025 NISP.json
+-rwxrwxrwx 1 hanxzo hanxzo 130645 Aug 14  2025 NISP.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:36 PANI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 108002 Aug 14  2025 PANI.json
+-rwxrwxrwx 1 hanxzo hanxzo 140783 Aug 14  2025 PANI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:42 PNBN.csv
+-rwxrwxrwx 1 hanxzo hanxzo 110051 Aug 14  2025 PNBN.json
+-rwxrwxrwx 1 hanxzo hanxzo 131706 Aug 14  2025 PNBN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:42 PTRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo 108219 Aug 14  2025 PTRO.json
+-rwxrwxrwx 1 hanxzo hanxzo 131889 Aug 14  2025 PTRO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:42 SILO.csv
+-rwxrwxrwx 1 hanxzo hanxzo  98174 Aug 14  2025 SILO.json
+-rwxrwxrwx 1 hanxzo hanxzo 130539 Aug 14  2025 SILO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:37 SMMA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  85165 Aug 14  2025 SMMA.json
+-rwxrwxrwx 1 hanxzo hanxzo 143405 Aug 14  2025 SMMA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:41 SRAJ.csv
+-rwxrwxrwx 1 hanxzo hanxzo  83405 Aug 14  2025 SRAJ.json
+-rwxrwxrwx 1 hanxzo hanxzo 127782 Aug 14  2025 SRAJ.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:40 SUPR.csv
+-rwxrwxrwx 1 hanxzo hanxzo  80257 Aug 14  2025 SUPR.json
+-rwxrwxrwx 1 hanxzo hanxzo 135223 Aug 14  2025 SUPR.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:40 TBIG.csv
+-rwxrwxrwx 1 hanxzo hanxzo 109499 Aug 14  2025 TBIG.json
+-rwxrwxrwx 1 hanxzo hanxzo 131039 Aug 14  2025 TBIG.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:43 TCPI.csv
+-rwxrwxrwx 1 hanxzo hanxzo 107410 Aug 14  2025 TCPI.json
+-rwxrwxrwx 1 hanxzo hanxzo 132990 Aug 14  2025 TCPI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:36 TPIA.csv
+-rwxrwxrwx 1 hanxzo hanxzo 108091 Aug 14  2025 TPIA.json
+-rwxrwxrwx 1 hanxzo hanxzo 136368 Aug 14  2025 TPIA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:38 UNTR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 106648 Aug 14  2025 UNTR.json
+-rwxrwxrwx 1 hanxzo hanxzo 153889 Aug 14  2025 UNTR.pdf
+-rwxrwxrwx 1 hanxzo hanxzo     42 Apr 26 04:39 UNVR.csv
+-rwxrwxrwx 1 hanxzo hanxzo 108941 Aug 14  2025 UNVR.json
+-rwxrwxrwx 1 hanxzo hanxzo 132977 Aug 14  2025 UNVR.pdf
+---------------------------------------------------------
+--------------------- [ Indicators ] --------------------
+---------------------------------------------------------
+total 12584
+drwxrwxrwx 1 hanxzo hanxzo   4096 Aug 13  2025 .
+drwxrwxrwx 1 hanxzo hanxzo   4096 Aug 14  2025 ..
+-rwxrwxrwx 1 hanxzo hanxzo  38263 Aug 14  2025 ADRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82259 Aug 14  2025 ADRO.json
+-rwxrwxrwx 1 hanxzo hanxzo 129045 Aug 14  2025 ADRO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38435 Aug 14  2025 AKRA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82431 Aug 14  2025 AKRA.json
+-rwxrwxrwx 1 hanxzo hanxzo 130050 Aug 14  2025 AKRA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38401 Aug 14  2025 AMRT.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82397 Aug 14  2025 AMRT.json
+-rwxrwxrwx 1 hanxzo hanxzo 130256 Aug 14  2025 AMRT.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38404 Aug 14  2025 ANTM.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82400 Aug 14  2025 ANTM.json
+-rwxrwxrwx 1 hanxzo hanxzo 131069 Aug 14  2025 ANTM.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38530 Aug 14  2025 ARTO.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82526 Aug 14  2025 ARTO.json
+-rwxrwxrwx 1 hanxzo hanxzo 131161 Aug 14  2025 ARTO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38405 Aug 14  2025 ASII.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82401 Aug 14  2025 ASII.json
+-rwxrwxrwx 1 hanxzo hanxzo 129070 Aug 14  2025 ASII.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38365 Aug 14  2025 BBCA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82361 Aug 14  2025 BBCA.json
+-rwxrwxrwx 1 hanxzo hanxzo 127532 Aug 14  2025 BBCA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38373 Aug 14  2025 BBNI.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82369 Aug 14  2025 BBNI.json
+-rwxrwxrwx 1 hanxzo hanxzo 127589 Aug 14  2025 BBNI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38346 Aug 14  2025 BBRI.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82342 Aug 14  2025 BBRI.json
+-rwxrwxrwx 1 hanxzo hanxzo 129184 Aug 14  2025 BBRI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38297 Aug 14  2025 BINA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82293 Aug 14  2025 BINA.json
+-rwxrwxrwx 1 hanxzo hanxzo 127836 Aug 14  2025 BINA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38393 Aug 14  2025 BNLI.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82389 Aug 14  2025 BNLI.json
+-rwxrwxrwx 1 hanxzo hanxzo 129754 Aug 14  2025 BNLI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38227 Aug 14  2025 BRIS.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82223 Aug 14  2025 BRIS.json
+-rwxrwxrwx 1 hanxzo hanxzo 129102 Aug 14  2025 BRIS.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38357 Aug 14  2025 BRMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82353 Aug 14  2025 BRMS.json
+-rwxrwxrwx 1 hanxzo hanxzo 130811 Aug 14  2025 BRMS.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38382 Aug 14  2025 BRPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82378 Aug 14  2025 BRPT.json
+-rwxrwxrwx 1 hanxzo hanxzo 129192 Aug 14  2025 BRPT.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38532 Aug 14  2025 BUMI.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82528 Aug 14  2025 BUMI.json
+-rwxrwxrwx 1 hanxzo hanxzo 129446 Aug 14  2025 BUMI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38418 Aug 14  2025 BYAN.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82414 Aug 14  2025 BYAN.json
+-rwxrwxrwx 1 hanxzo hanxzo 128914 Aug 14  2025 BYAN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38363 Aug 14  2025 CASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82359 Aug 14  2025 CASA.json
+-rwxrwxrwx 1 hanxzo hanxzo 126304 Aug 14  2025 CASA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38436 Aug 14  2025 CPIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82432 Aug 14  2025 CPIN.json
+-rwxrwxrwx 1 hanxzo hanxzo 129014 Aug 14  2025 CPIN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38253 Aug 14  2025 DNET.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82249 Aug 14  2025 DNET.json
+-rwxrwxrwx 1 hanxzo hanxzo 129368 Aug 14  2025 DNET.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38126 Aug 14  2025 DSSA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82122 Aug 14  2025 DSSA.json
+-rwxrwxrwx 1 hanxzo hanxzo 124947 Aug 14  2025 DSSA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38494 Aug 14  2025 EMTK.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82490 Aug 14  2025 EMTK.json
+-rwxrwxrwx 1 hanxzo hanxzo 129214 Aug 14  2025 EMTK.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38295 Aug 14  2025 EXCL.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82291 Aug 14  2025 EXCL.json
+-rwxrwxrwx 1 hanxzo hanxzo 130641 Aug 14  2025 EXCL.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38367 Aug 14  2025 FILM.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82363 Aug 14  2025 FILM.json
+-rwxrwxrwx 1 hanxzo hanxzo 127988 Aug 14  2025 FILM.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38335 Aug 14  2025 GEMS.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82331 Aug 14  2025 GEMS.json
+-rwxrwxrwx 1 hanxzo hanxzo 128425 Aug 14  2025 GEMS.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38485 Aug 14  2025 ICBP.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82481 Aug 14  2025 ICBP.json
+-rwxrwxrwx 1 hanxzo hanxzo 127773 Aug 14  2025 ICBP.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38588 Aug 14  2025 INCO.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82584 Aug 14  2025 INCO.json
+-rwxrwxrwx 1 hanxzo hanxzo 128579 Aug 14  2025 INCO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38341 Aug 14  2025 INDF.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82337 Aug 14  2025 INDF.json
+-rwxrwxrwx 1 hanxzo hanxzo 128783 Aug 14  2025 INDF.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38515 Aug 14  2025 INKP.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82511 Aug 14  2025 INKP.json
+-rwxrwxrwx 1 hanxzo hanxzo 128213 Aug 14  2025 INKP.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38376 Aug 14  2025 ITMG.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82372 Aug 14  2025 ITMG.json
+-rwxrwxrwx 1 hanxzo hanxzo 129630 Aug 14  2025 ITMG.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38596 Aug 14  2025 KLBF.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82592 Aug 14  2025 KLBF.json
+-rwxrwxrwx 1 hanxzo hanxzo 130966 Aug 14  2025 KLBF.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38455 Aug 14  2025 MASA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82451 Aug 14  2025 MASA.json
+-rwxrwxrwx 1 hanxzo hanxzo 126683 Aug 14  2025 MASA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38511 Aug 14  2025 MDKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82507 Aug 14  2025 MDKA.json
+-rwxrwxrwx 1 hanxzo hanxzo 131146 Aug 14  2025 MDKA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38394 Aug 14  2025 MEDC.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82390 Aug 14  2025 MEDC.json
+-rwxrwxrwx 1 hanxzo hanxzo 131201 Aug 14  2025 MEDC.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38506 Aug 14  2025 MEGA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82502 Aug 14  2025 MEGA.json
+-rwxrwxrwx 1 hanxzo hanxzo 130626 Aug 14  2025 MEGA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38400 Aug 14  2025 MIKA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82396 Aug 14  2025 MIKA.json
+-rwxrwxrwx 1 hanxzo hanxzo 131140 Aug 14  2025 MIKA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38428 Aug 14  2025 MLPT.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82424 Aug 14  2025 MLPT.json
+-rwxrwxrwx 1 hanxzo hanxzo 130579 Aug 14  2025 MLPT.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38663 Aug 14  2025 MSIN.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82659 Aug 14  2025 MSIN.json
+-rwxrwxrwx 1 hanxzo hanxzo 126768 Aug 14  2025 MSIN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38309 Aug 14  2025 NISP.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82305 Aug 14  2025 NISP.json
+-rwxrwxrwx 1 hanxzo hanxzo 130400 Aug 14  2025 NISP.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38136 Aug 14  2025 PANI.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82132 Aug 14  2025 PANI.json
+-rwxrwxrwx 1 hanxzo hanxzo 128314 Aug 14  2025 PANI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38411 Aug 14  2025 PNBN.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82407 Aug 14  2025 PNBN.json
+-rwxrwxrwx 1 hanxzo hanxzo 130866 Aug 14  2025 PNBN.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38286 Aug 14  2025 PTRO.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82282 Aug 14  2025 PTRO.json
+-rwxrwxrwx 1 hanxzo hanxzo 129406 Aug 14  2025 PTRO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38280 Aug 14  2025 SILO.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82276 Aug 14  2025 SILO.json
+-rwxrwxrwx 1 hanxzo hanxzo 129103 Aug 14  2025 SILO.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38300 Aug 14  2025 SMMA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82296 Aug 14  2025 SMMA.json
+-rwxrwxrwx 1 hanxzo hanxzo 123310 Aug 14  2025 SMMA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38192 Aug 14  2025 SRAJ.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82188 Aug 14  2025 SRAJ.json
+-rwxrwxrwx 1 hanxzo hanxzo 127899 Aug 14  2025 SRAJ.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38095 Aug 14  2025 SUPR.csv
+-rwxrwxrwx 1 hanxzo hanxzo  80130 Aug 14  2025 SUPR.json
+-rwxrwxrwx 1 hanxzo hanxzo 121954 Aug 14  2025 SUPR.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38461 Aug 14  2025 TBIG.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82457 Aug 14  2025 TBIG.json
+-rwxrwxrwx 1 hanxzo hanxzo 128773 Aug 14  2025 TBIG.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38469 Aug 14  2025 TCPI.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82465 Aug 14  2025 TCPI.json
+-rwxrwxrwx 1 hanxzo hanxzo 128765 Aug 14  2025 TCPI.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38281 Aug 14  2025 TPIA.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82277 Aug 14  2025 TPIA.json
+-rwxrwxrwx 1 hanxzo hanxzo 127792 Aug 14  2025 TPIA.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38290 Aug 14  2025 UNTR.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82286 Aug 14  2025 UNTR.json
+-rwxrwxrwx 1 hanxzo hanxzo 128626 Aug 14  2025 UNTR.pdf
+-rwxrwxrwx 1 hanxzo hanxzo  38557 Aug 14  2025 UNVR.csv
+-rwxrwxrwx 1 hanxzo hanxzo  82553 Aug 14  2025 UNVR.json
+-rwxrwxrwx 1 hanxzo hanxzo 129266 Aug 14  2025 UNVR.pdf
+---------------------------------------------------------
+----------------------- [ Min-Max ] ---------------------
+---------------------------------------------------------
+total 0
+drwxrwxrwx 1 hanxzo hanxzo 4096 May 21  2025 .
+drwxrwxrwx 1 hanxzo hanxzo 4096 Aug 14  2025 ..
+-rwxrwxrwx 1 hanxzo hanxzo  292 Aug 14  2025 ADRO.json
+-rwxrwxrwx 1 hanxzo hanxzo  279 Aug 14  2025 AKRA.json
+-rwxrwxrwx 1 hanxzo hanxzo  293 Aug 14  2025 AMRT.json
+-rwxrwxrwx 1 hanxzo hanxzo  291 Aug 14  2025 ANTM.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 Aug 14  2025 ARTO.json
+-rwxrwxrwx 1 hanxzo hanxzo  285 Aug 14  2025 ASII.json
+-rwxrwxrwx 1 hanxzo hanxzo  288 Aug 14  2025 BBCA.json
+-rwxrwxrwx 1 hanxzo hanxzo  291 Aug 14  2025 BBNI.json
+-rwxrwxrwx 1 hanxzo hanxzo  288 Aug 14  2025 BBRI.json
+-rwxrwxrwx 1 hanxzo hanxzo  261 Aug 14  2025 BINA.json
+-rwxrwxrwx 1 hanxzo hanxzo  272 Aug 14  2025 BNLI.json
+-rwxrwxrwx 1 hanxzo hanxzo  289 Aug 14  2025 BRIS.json
+-rwxrwxrwx 1 hanxzo hanxzo  270 Aug 14  2025 BRMS.json
+-rwxrwxrwx 1 hanxzo hanxzo  269 Aug 14  2025 BRPT.json
+-rwxrwxrwx 1 hanxzo hanxzo  266 Aug 14  2025 BUMI.json
+-rwxrwxrwx 1 hanxzo hanxzo  283 Aug 14  2025 BYAN.json
+-rwxrwxrwx 1 hanxzo hanxzo  260 Aug 14  2025 CASA.json
+-rwxrwxrwx 1 hanxzo hanxzo  272 Aug 14  2025 CPIN.json
+-rwxrwxrwx 1 hanxzo hanxzo  281 Aug 14  2025 DNET.json
+-rwxrwxrwx 1 hanxzo hanxzo  264 Aug 14  2025 DSSA.json
+-rwxrwxrwx 1 hanxzo hanxzo  278 Aug 14  2025 EMTK.json
+-rwxrwxrwx 1 hanxzo hanxzo  279 Aug 14  2025 EXCL.json
+-rwxrwxrwx 1 hanxzo hanxzo  282 Aug 14  2025 FILM.json
+-rwxrwxrwx 1 hanxzo hanxzo  284 Aug 14  2025 GEMS.json
+-rwxrwxrwx 1 hanxzo hanxzo  287 Aug 14  2025 ICBP.json
+-rwxrwxrwx 1 hanxzo hanxzo  290 Aug 14  2025 INCO.json
+-rwxrwxrwx 1 hanxzo hanxzo  277 Aug 14  2025 INDF.json
+-rwxrwxrwx 1 hanxzo hanxzo  281 Aug 14  2025 INKP.json
+-rwxrwxrwx 1 hanxzo hanxzo  280 Aug 14  2025 ITMG.json
+-rwxrwxrwx 1 hanxzo hanxzo  290 Aug 14  2025 KLBF.json
+-rwxrwxrwx 1 hanxzo hanxzo  272 Aug 14  2025 MASA.json
+-rwxrwxrwx 1 hanxzo hanxzo  269 Aug 14  2025 MDKA.json
+-rwxrwxrwx 1 hanxzo hanxzo  293 Aug 14  2025 MEDC.json
+-rwxrwxrwx 1 hanxzo hanxzo  269 Aug 14  2025 MEGA.json
+-rwxrwxrwx 1 hanxzo hanxzo  287 Aug 14  2025 MIKA.json
+-rwxrwxrwx 1 hanxzo hanxzo  273 Aug 14  2025 MLPT.json
+-rwxrwxrwx 1 hanxzo hanxzo  263 Aug 14  2025 MSIN.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Aug 14  2025 NISP.json
+-rwxrwxrwx 1 hanxzo hanxzo  288 Aug 14  2025 PANI.json
+-rwxrwxrwx 1 hanxzo hanxzo  292 Aug 14  2025 PNBN.json
+-rwxrwxrwx 1 hanxzo hanxzo  278 Aug 14  2025 PTRO.json
+-rwxrwxrwx 1 hanxzo hanxzo  280 Aug 14  2025 SILO.json
+-rwxrwxrwx 1 hanxzo hanxzo  263 Aug 14  2025 SMMA.json
+-rwxrwxrwx 1 hanxzo hanxzo  261 Aug 14  2025 SRAJ.json
+-rwxrwxrwx 1 hanxzo hanxzo  267 Aug 14  2025 SUPR.json
+-rwxrwxrwx 1 hanxzo hanxzo  274 Aug 14  2025 TBIG.json
+-rwxrwxrwx 1 hanxzo hanxzo  285 Aug 14  2025 TCPI.json
+-rwxrwxrwx 1 hanxzo hanxzo  276 Aug 14  2025 TPIA.json
+-rwxrwxrwx 1 hanxzo hanxzo  284 Aug 14  2025 UNTR.json
+-rwxrwxrwx 1 hanxzo hanxzo  278 Aug 14  2025 UNVR.json
+---------------------------------------------------------
+--------------------- [ Workloads ] ---------------------
+---------------------------------------------------------
+total 0
+drwxrwxrwx 1 hanxzo hanxzo 4096 Jun 10  2025 .
+drwxrwxrwx 1 hanxzo hanxzo 4096 Aug 14  2025 ..
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_1.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_10.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_2.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_3.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_4.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_5.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_6.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_7.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_8.json
+-rwxrwxrwx 1 hanxzo hanxzo   75 Apr 26 04:44 workloads_9.json
